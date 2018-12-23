@@ -1,0 +1,662 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%  automatica.sty  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ================================================================-==========
+%%%  @LaTeX-style-file{
+%%%     author          = "Silvano Balemi",
+%%%     version         = "1.6",
+%%%     date            = "7 JUNE 1994",
+%%%     filename        = "automatica.sty",
+%%%     address         = "Automatic Control Laboratory
+%%%                        Swiss Federal Institute of Technology (ETH)
+%%%                        8092 Zurich, Switzerland",
+%%%     telephone       = "+41 (1) 632.55.34",
+%%%     FAX             = "+41 (1) 262.43.62",
+%%%     email           = "balemi@aut.ee.ethz.ch (Internet)",
+%%%     keywords        = "LaTeX, publisher style",
+%%%     supported       = "yes, but with delay",
+%%%     mainserver      = "ifa.ethz.ch"
+%%%     docstring       = "document-style for automatica, the journal
+%%%                        of the International Federation of Automatic
+%%%                        Control (IFAC).
+%%%                        The default font size is 10 points (IFAC10.sty)
+%%%                        but 9pt, 11pt and 12pt are available too.
+%%%
+%%%                        Usage:
+%%%                           \documentstyle[twocolumn,Xpt,twoside]{automatica}
+%%%                           \author{} 
+%%%                           \title{} 
+%%%                           \shortabstract{}
+%%%                           \keywords{}
+%%%                           \maketitle
+%%%                           \begin{abstract} ... \end{abstract}
+%%%
+%%%                        The command "\markboth{leftTEXT}{rightTEXT}" 
+%%%                        puts the text "leftTEXT" and "rightTEXT" 
+%%%                        with the page number on the even resp. odd
+%%%                        headers when the "twoside" option is selected.
+%%%                        The head on the title page is defined by
+%%%                        "\head{firstHEAD}".
+%%%                        In order to remove headers, insert
+%%%                           \thispagestyle{empty}\pagestyle{empty} or
+%%%                           \thispagestyle{plain}\pagestyle{plain}
+%%%                        right after the \maketitle command!!
+%%%
+%%%                        See also IFACarticle.sty, IFAC.bst",
+%%%  }
+%%% ===========================================================================
+\typeout{Document Style `automatica' <3-AUG-93>.}
+\def\shortabstract#1{\gdef\@shortabstract{#1}}
+\def\keywords#1{\gdef\@keywords{#1}}
+\newif\if@tmptwocolumn \@tmptwocolumnfalse 
+\newif\if@draftversion \@draftversionfalse 
+
+\def\@ptsize{10} 
+\@namedef{ds@9pt}{\def\@ptsize{9}}
+\@namedef{ds@10pt}{\def\@ptsize{10}}
+\@namedef{ds@11pt}{\def\@ptsize{11}}
+\@namedef{ds@12pt}{\def\@ptsize{12}} 
+% the file twocolumn.sty is not read as it changes \textwidth. 
+% Next line sets @tmptwocolumn to true which lets later execute \twocolumn
+\@namedef{ds@twocolumn}{\global\@tmptwocolumntrue }
+\def\ds@twoside{\@twosidetrue \@mparswitchtrue}
+\@namedef{ds@draft}{\global\@draftversiontrue \overfullrule 5pt  } 
+\@options
+
+
+
+\textheight       245mm
+\textwidth        160mm
+\columnsep        8.5mm
+\topmargin        -15mm
+\parindent          1em
+\parskip            0em
+\headsep            3ex
+\headheight        12pt
+\lineskip           1pt
+\normallineskip     1pt
+\def\baselinestretch{1}
+\oddsidemargin      4mm
+\evensidemargin     4mm
+
+
+
+%%
+%% Check if we have selected 10 points
+\def\@tempa{10}\ifx\@ptsize\@tempa 
+\typeout{-- This is a 10 point document}
+\def\@normalsize{\@setsize\normalsize{12pt}\xpt\@xpt
+\abovedisplayskip 10pt plus2pt minus5pt\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip \z@ plus3pt\belowdisplayshortskip 6pt plus3pt
+minus3pt\let\@listi\@listI} 
+\def\small{\@setsize\small{11pt}\ixpt\@ixpt
+\abovedisplayskip 8.5pt plus 3pt minus 4pt\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip \z@ plus2pt\belowdisplayshortskip 4pt plus2pt minus 2pt
+\def\@listi{\leftmargin\leftmargini \topsep 4pt plus 2pt minus 2pt\parsep 2pt
+plus 1pt minus 1pt
+\itemsep \parsep}}
+\def\footnotesize{\@setsize\footnotesize{9.5pt}\viiipt\@viiipt}
+\def\scriptsize{\@setsize\scriptsize{8pt}\viipt\@viipt}
+\def\tiny{\@setsize\tiny{6pt}\vpt\@vpt}
+\def\large{\@setsize\large{14pt}\xiipt\@xiipt}
+\def\Large{\@setsize\Large{18pt}\xivpt\@xivpt}
+\def\LARGE{\@setsize\LARGE{22pt}\xviipt\@xviipt}
+\def\huge{\@setsize\huge{25pt}\xxpt\@xxpt}
+\def\Huge{\@setsize\Huge{30pt}\xxvpt\@xxvpt}
+\fi
+%%
+%% Check if we have selected 11 points
+\def\@tempa{11}\ifx\@ptsize\@tempa
+\typeout{-- This is an 11 point document}
+\def\@normalsize{\@setsize\normalsize{13.6pt}\xipt\@xipt
+\abovedisplayskip 1em plus2pt minus5pt\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip \z@ plus3pt\belowdisplayshortskip .6em plus3pt minus3pt}
+\def\small{\@setsize\small{12pt}\xpt\@xpt}
+\def\footnotesize{\@setsize\footnotesize{11pt}\ixpt\@ixpt}
+\def\scriptsize{\@setsize\scriptsize{9.5pt}\viiipt\@viiipt}
+\def\tiny{\@setsize\tiny{7pt}\vipt\@vipt}
+\def\large{\@setsize\large{14pt}\xiipt\@xiipt}
+\def\Large{\@setsize\Large{18pt}\xivpt\@xivpt}
+\def\LARGE{\@setsize\LARGE{22pt}\xviipt\@xviipt}
+\def\huge{\@setsize\huge{25pt}\xxpt\@xxpt}
+\def\Huge{\@setsize\Huge{30pt}\xxvpt\@xxvpt}
+\fi
+%%
+%% Check if we have selected 12 points
+\def\@tempa{12}\ifx\@ptsize\@tempa
+\typeout{-- This is a 12 point document}
+\def\@normalsize{\@setsize\normalsize{14pt}\xiipt\@xiipt
+\abovedisplayskip 1em plus3pt minus6pt\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip \z@ plus3pt\belowdisplayshortskip .6em plus4pt minus4pt}
+\def\small{\@setsize\small{11.4pt}\xpt\@xpt}
+\def\footnotesize{\@setsize\footnotesize{10pt}\ixpt\@ixpt}
+\def\scriptsize{\@setsize\scriptsize{9pt}\viiipt\@viiipt}
+\def\tiny{\@setsize\tiny{8pt}\vipt\@vipt}
+\def\large{\@setsize\large{18pt}\xivpt\@xivpt}
+\def\Large{\@setsize\Large{22pt}\xviipt\@xviipt}
+\def\LARGE{\@setsize\LARGE{25pt}\xxpt\@xxpt}
+\def\huge{\@setsize\huge{30pt}\xxvpt\@xxvpt}
+\let\Huge=\huge
+\fi
+
+%% Definitions for PARAGRAPHS
+%%
+\abovedisplayskip 1em plus.3em minus.6em
+\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip \z@ plus.3em
+\belowdisplayshortskip .6em plus.4em minus.4em
+
+%% Definitions for LISTS
+%%
+\leftmargini          2em
+\leftmarginii         1em
+\leftmarginiii        1em
+\leftmarginiv        .5em
+\leftmarginv         .5em
+\leftmarginvi        .5em
+\marginparwidth      48pt
+\marginparsep        10pt
+\labelsep             5pt
+\leftmargin\leftmargini
+%\labelwidth           \z@
+\labelwidth\leftmargini\advance\labelwidth-\labelsep
+
+\def\@listI{\leftmargin\leftmargini
+    \topsep -\parskip \addtolength{\topsep}{0.5em}}
+\@listI
+\def\@listi{\leftmargin\leftmargini
+    \topsep -\parskip \addtolength{\topsep}{0.5em}}
+\def\@listii{\leftmargin\leftmarginii\labelwidth\leftmarginii
+    \advance\labelwidth-\labelsep    \topsep \z@}
+\def\@listiii{\leftmargin\leftmarginiii\labelwidth\leftmarginiii
+    \advance\labelwidth-\labelsep    \topsep \z@}
+\def\@listiv{\leftmargin\leftmarginiv\labelwidth\leftmarginiv
+    \advance\labelwidth-\labelsep    \topsep \z@}
+\def\@listv{\leftmargin\leftmarginv\labelwidth\leftmarginv
+    \advance\labelwidth-\labelsep    \topsep \z@}
+\def\@listvi{\leftmargin\leftmarginvi\labelwidth\leftmarginvi
+    \advance\labelwidth-\labelsep    \topsep \z@}
+
+\def\labelenumi{\theenumi.} 
+\def\theenumi{\arabic{enumi}} 
+\def\labelenumii{(\theenumii)}
+\def\theenumii{\alph{enumii}}
+\def\p@enumii{\theenumi}
+\def\labelenumiii{\theenumiii.}
+\def\theenumiii{\roman{enumiii}}
+\def\p@enumiii{\theenumi(\theenumii)}
+\def\labelenumiv{\theenumiv.}
+\def\theenumiv{\Alph{enumiv}} 
+\def\p@enumiv{\p@enumiii\theenumiii}
+
+\def\labelitemi{$\bullet$}
+\def\labelitemii{\bf --}
+\def\labelitemiii{$\ast$}
+\def\labelitemiv{$\cdot$}
+
+%%% Defines footnotes to bear symbols instead of numbers.
+%%% Reset with each new page
+\def\automaticafn#1{\@automaticafn{\@nameuse{c@#1}}}
+\def\@automaticafn#1{\ifcase#1\or \dagger\or \ddagger\or 
+   \mathchar "278\or \mathchar "27B\or \|\or **\or \dagger\dagger
+   \or \ddagger\ddagger \else\@ctrerr\fi\relax}
+\@addtoreset{footnote}{page}
+\def\thefootnote{\automaticafn{footnote}}
+
+\def\verse{\let\\=\@centercr 
+ \list{}{\itemsep\z@ \itemindent -1.5em\listparindent \itemindent 
+ \rightmargin\leftmargin\advance\leftmargin 1.5em}\item[]}
+\let\endverse\endlist
+\def\quotation{\list{}{\listparindent 1.5em
+ \itemindent\listparindent
+ \rightmargin\leftmargin \parsep 0pt plus 1pt}\item[]}
+\let\endquotation=\endlist
+\def\quote{\list{}{\rightmargin\leftmargin}\item[]}
+\let\endquote=\endlist
+
+\def\descriptionlabel#1{\hspace\labelsep \bf #1}
+\def\description{\list{}{\labelwidth\z@ \itemindent-\leftmargin
+ \let\makelabel\descriptionlabel}}
+\let\enddescription\endlist
+
+
+\def\theequation{\arabic{equation}}
+% equation numbering starts with section.
+\def\theequation{\thesection.\arabic{equation}}
+
+
+\def\titlepage{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+ \else \newpage \fi \thispagestyle{empty}\c@page\z@}
+\def\endtitlepage{\if@restonecol\twocolumn \else \newpage \fi}
+
+\arraycolsep 5pt \tabcolsep 6pt \arrayrulewidth .4pt \doublerulesep 2pt 
+\tabbingsep \labelsep 
+
+\skip\@mpfootins = \skip\footins
+\fboxsep = 3pt \fboxrule = .4pt 
+
+\newcounter{part}
+\newcounter {section}
+\newcounter {subsection}[section]
+\newcounter {subsubsection}[subsection]
+\newcounter {paragraph}[subsubsection]
+\newcounter {subparagraph}[paragraph]
+\def\paragraph{\subsubsection*}
+\setcounter{secnumdepth}{3}
+
+\def\thepart{\Roman{part}} 
+\def\thesection {\arabic{section}}
+\def\thesubsection {{\rm \arabic{section}.\arabic{subsection}}}
+\def\thesubsubsection {\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\def\theparagraph {\thesubsubsection.\arabic{paragraph}}
+\def\thesubparagraph {\theparagraph.\arabic{subparagraph}}
+
+\def\@pnumwidth{1.55em}
+\def\@tocrmarg {2.55em}
+\def\@dotsep{4.5}
+\setcounter{tocdepth}{3}
+
+\def\tableofcontents{\section*{Contents\@mkboth{CONTENTS}{CONTENTS}}
+ \@starttoc{toc}}
+\def\l@part#1#2{\addpenalty{\@secpenalty}
+ \addvspace{2.25em plus 1pt} \begingroup
+ \@tempdima 3em \parindent \z@ \rightskip \@pnumwidth \parfillskip
+-\@pnumwidth 
+ {\large \bf \leavevmode #1\hfil \hbox to\@pnumwidth{\hss #2}}\par
+ \nobreak \endgroup}
+\def\l@section#1#2{\addpenalty{\@secpenalty} \addvspace{1.0em plus 1pt}
+\@tempdima 1.5em \begingroup
+ \parindent \z@ \rightskip \@pnumwidth 
+ \parfillskip -\@pnumwidth 
+ \bf \leavevmode \advance\leftskip\@tempdima \hskip -\leftskip #1\nobreak\hfil
+\nobreak\hbox to\@pnumwidth{\hss #2}\par
+ \endgroup}
+ 
+\def\l@subsection{\@dottedtocline{2}{1.5em}{2.3em}}
+\def\l@subsubsection{\@dottedtocline{3}{3.8em}{3.2em}}
+\def\l@paragraph{\@dottedtocline{4}{7.0em}{4.1em}}
+\def\l@subparagraph{\@dottedtocline{5}{10em}{5em}}
+\def\listoffigures{\section*{List of Figures\@mkboth
+ {LIST OF FIGURES}{LIST OF FIGURES}}\@starttoc{lof}}
+\def\l@figure{\@dottedtocline{1}{1.5em}{2.3em}}
+\def\listoftables{\section*{List of Tables\@mkboth
+ {LIST OF TABLES}{LIST OF TABLES}}\@starttoc{lot}}
+\let\l@table\l@figure
+
+
+\newif\if@restonecol
+\def\theindex{\@restonecoltrue\if@twocolumn\@restonecolfalse\fi
+\columnseprule \z@
+\columnsep 35pt\twocolumn[\section*{Index}]
+ \@mkboth{INDEX}{INDEX}\thispagestyle{plain}\parindent\z@
+ \parskip\z@ plus .3pt\relax\let\item\@idxitem}
+\def\@idxitem{\par\hangindent 40pt}
+\def\subitem{\par\hangindent 40pt \hspace*{20pt}}
+\def\subsubitem{\par\hangindent 40pt \hspace*{30pt}}
+\def\endtheindex{\if@restonecol\onecolumn\else\clearpage\fi}
+\def\indexspace{\par \vskip 10pt plus 5pt minus 3pt\relax}
+
+
+%% FOOTNOTES
+%
+\skip\footins 10pt plus 4pt minus 2pt 
+\footnotesep 7pt
+\footskip 3.5em
+\skip\@mpfootins = \skip\footins
+\fboxsep = 3pt \fboxrule = .4pt
+ 
+\def\footnoterule{\kern-3\p@ 
+ \hrule width .33\columnwidth 
+ \kern 2.6\p@} 
+
+\long\def\@makefntext#1{\parindent 1em\noindent 
+ \hbox to 1.8em{\hss$^{\@thefnmark}$}#1}
+
+
+
+%% Definitions for FLOATS
+%%
+%% Normal floats                      %% Floats on double columns
+\floatsep 12pt plus 2pt minus 2pt     \dblfloatsep 12pt plus 2pt minus 2pt
+\textfloatsep 12pt plus 2pt minus 4pt \dbltextfloatsep 12pt plus 2pt minus 4pt
+\@maxsep 20pt                         \@dblmaxsep 20pt
+\@fptop 0pt plus 1fil                 \@dblfptop 0pt plus 1fil 
+\@fpsep 18pt plus 2fil                \@dblfpsep 8pt plus 2fil
+\@fpbot 0pt plus 1fil                 \@dblfpbot 0pt plus 1fil
+\def\topfraction{1.0}                 \def\dbltopfraction{1.0}
+\def\floatpagefraction{0.8}           \def\dblfloatpagefraction{0.8}
+\setcounter{topnumber}{2}             \setcounter{dbltopnumber}{4}
+%
+\intextsep 12pt plus 2pt minus 2pt 
+\setcounter{bottomnumber}{2}
+\def\bottomfraction{.4}
+\setcounter{totalnumber}{4}
+\def\textfraction{.2}
+
+% redefine CAPTION
+
+\long\def\@caption#1[#2]#3{\par\addcontentsline{\csname
+  ext@#1\endcsname}{#1}{\protect\numberline{\csname 
+  the#1\endcsname}{\ignorespaces #2}}\begingroup
+    \@parboxrestore
+    \normalsize
+    \@makecaption{\csname fnum@#1\endcsname}{\ignorespaces #3}{#1}\par
+  \endgroup}
+
+% redefine caption
+
+\def\tablestring{table}
+\def\figurestring{figure}
+
+\long\def\@makecaption#1#2#3{
+\ifx\figurestring#3 
+    \vskip 3pt 
+    \setbox\@tempboxa\hbox{\small #1.~ #2}
+    \ifdim\wd\@tempboxa>\hsize \centering{\small #1. #2}\par 
+    \else \hbox to\hsize{\hfil\box\@tempboxa\hfil} 
+    \fi
+    \vskip -3pt \vskip -\topsep 
+\else
+    \vskip -3pt 
+    \setbox\@tempboxa\hbox{\small #1.~ {\sc #2}}
+    \ifdim\wd\@tempboxa>\hsize \centering{\small #1. {\sc #2}}\par 
+    \else \hbox to\hsize{\hfil\box\@tempboxa\hfil} 
+    \fi
+    \vskip 10pt 
+\fi
+}
+
+\newcounter{figure}
+\def\thefigure{\@arabic\c@figure}
+\def\fps@figure{tbp}
+\def\ftype@figure{1}
+\def\ext@figure{lof}
+\def\fnum@figure{{\sc Fig.} \thefigure}
+\def\figure{\@float{figure}}
+\let\endfigure\end@float
+\@namedef{figure*}{\@dblfloat{figure}}
+\@namedef{endfigure*}{\end@dblfloat}
+\newcounter{table}
+\def\thetable{\@arabic\c@table}
+\def\fps@table{tbp}
+\def\ftype@table{2}
+\def\ext@table{lot}
+\def\fnum@table{{\sc Table } \thetable}
+\def\table{\@float{table}}
+\let\endtable\end@float
+\@namedef{table*}{\@dblfloat{table}}
+\@namedef{endtable*}{\end@dblfloat}
+
+
+\def\@begintheorem#1#2{\it \trivlist \item[\hskip \labelsep{\em  #1\ #2:}]}
+
+\if@twoside \def\ps@headings{\let\@mkboth\markboth
+\def\@oddfoot{}\def\@evenfoot{}\def\@evenhead{\rm \thepage\hfil \sl
+\leftmark}\def\@oddhead{\hbox{}\sl \rightmark \hfil
+\rm\thepage}\def\sectionmark##1{\markboth {\uppercase{\ifnum \c@secnumdepth
+>\z@
+ \thesection\hskip 1em\relax \fi ##1}}{}}\def\subsectionmark##1{\markright
+{\ifnum \c@secnumdepth >\@ne
+ \thesubsection\hskip 1em\relax \fi ##1}}}
+\else \def\ps@headings{\let\@mkboth\markboth
+\def\@oddfoot{}\def\@evenfoot{}\def\@oddhead{\hbox {}\sl \rightmark \hfil
+\rm\thepage}\def\sectionmark##1{\markright {\uppercase{\ifnum \c@secnumdepth
+>\z@
+ \thesection\hskip 1em\relax \fi ##1}}}}
+\fi
+\def\ps@myheadings{\let\@mkboth\@gobbletwo
+   \def\@oddhead{\hbox{}\hfil\rightmark \hfil \thepage}
+   \def\@oddfoot{}
+   \def\@evenhead{\thepage \hfil{\sc \leftmark}\hfil\hbox{}}
+   \def\@evenfoot{}
+   \def\sectionmark##1{}
+   \def\subsectionmark##1{}
+}
+\def\head#1{\def\@head{#1}}
+\head{\parbox{\textwidth}{\scriptsize{\em Automatica}, 
+Vol. XX, No. Y, pp. xx--yy, 1999\hfill
+0001-0001/99 \$6.00+0.00\protect\\
+Printed in Great Britain\hfill\copyright 1999 Pergamon Press Ltd}}
+
+\def\ps@titlepagestyle{\let\@mkboth\@gobbletwo
+     \def\@oddhead{\hfil\@head\hfil}
+     \def\@oddfoot{\rm\hfil\thepage\hfil}
+     \def\@evenhead{\hfil\@head\hfil}
+     \let\@evenfoot\@oddfoot
+}
+
+%% defines the command for putting the header
+%% footernote{TEXT} is the same as markboth{TEXT}{TEXT}. Here for
+%% compatibility with other style files.
+\def\markboth#1#2{\def\leftmark{#1}\def\rightmark{#2}}
+\def\footernote#1{\markboth{#1}{#1}\head{#1}}
+
+
+\def\today{\ifcase\month\or
+ January\or February\or March\or April\or May\or June\or
+ July\or August\or September\or October\or November\or December\fi
+ \space\number\day, \number\year}
+
+\ps@myheadings 
+
+\pagenumbering{arabic} \onecolumn \if@twoside\else\raggedbottom\fi 
+
+\def\maketitle{
+\par
+ \begingroup
+ \def\thefootnote{\fnsymbol{footnote}}
+ \def\@makefnmark{\hbox 
+ to 0pt{$^{\@thefnmark}$\hss}} 
+ \if@twocolumn 
+ \twocolumn[\@maketitle] 
+ \else \newpage
+ \global\@topnum\z@ \@maketitle \fi\thispagestyle{titlepagestyle}\@thanks
+ \endgroup
+ \let\maketitle\relax
+ \let\@maketitle\relax
+ \gdef\@thanks{}\gdef\@author{}\gdef\@keywords{}\gdef\@shortabstract{}\gdef\@title{}\let\thanks\relax}
+
+\def\@maketitle{\newpage
+ \null
+ \vskip 15mm 
+\begin{center}
+\advance \rightskip by 15mm
+\advance \leftskip by 15mm
+ {\huge \@title \par} \vskip 2.5em { \lineskip .5em
+\rm\@author 
+}
+\end{center}
+\par
+\advance \rightskip by 15mm
+\advance \leftskip by 15mm
+ \vskip 0.7em {\noindent\large\it\@shortabstract\par} \normalsize\rm
+ \par
+ \vskip 0.7em
+ \vskip 1em \noindent {\footnotesize\bf{Key Words}--- }\footnotesize\@keywords
+ \par
+ \vskip 2.5em
+}
+
+\def\abstract{\footnotesize\noindent{\bf Abstract}---}
+\def\endabstract{\par}
+
+\mark{{}{}} 
+
+\def\@startsection#1#2#3#4#5#6{\if@noskipsec \leavevmode \fi
+   \par \@tempskipa #4\relax
+   \@afterindenttrue
+   \ifdim \@tempskipa <\z@ \@tempskipa -\@tempskipa \@afterindentfalse\fi
+   \addtolength{\@tempskipa}{-\parskip}
+   \if@nobreak \everypar{}\else
+     \addpenalty{\@secpenalty}\addvspace{\@tempskipa}\fi \@ifstar
+     {\@ssect{#2}{#3}{#4}{#5}{#6}}{\@dblarg{\@sect{#1}{#2}{#3}{#4}{#5}{#6}}}}
+
+\gdef\@punct{.~~ }  % Punctuation after run-in section heading
+
+\def\@sect#1#2#3#4#5#6[#7]#8{%
+   \ifnum #2>\c@secnumdepth
+      \def\@svsec{}
+   \else 
+       \refstepcounter{#1}
+       \edef\@svsec{{\rm\csname the#1\endcsname}.\hskip .5em }
+   \fi
+  \@tempskipa #5\relax
+  \ifdim \@tempskipa>\z@ 
+     \begingroup #6\relax
+     \@hangfrom{\hskip #3\relax}{\@svsec\interlinepenalty \@M #8\par}
+     \endgroup
+     \csname #1mark\endcsname{#7}
+     \addcontentsline{toc}{#1}{\ifnum #2>\c@secnumdepth\else
+               \protect\numberline{\csname the#1\endcsname}\fi#7}
+  \else
+     \def\@svsechd{#6\hskip #3\@svsec #8\@punct\csname#1mark\endcsname{#7}%
+     \addcontentsline{toc}{#1}{\ifnum #2>\c@secnumdepth\else
+               \protect\numberline{\csname the#1\endcsname}\fi#7}}%
+  \fi%
+  \@xsect{#5}}
+
+\def\@ssect#1#2#3#4#5#6{\@tempskipa #4\relax
+  \ifdim \@tempskipa>\z@
+     \begingroup #5\@hangfrom{\hskip #2}{\interlinepenalty \@M 
+       #6\par}\endgroup
+  \else \def\@svsechd{#5\hskip #2\relax #6\@punct}\fi
+  \@xsect{#4}}
+
+\def\@xsect#1{\@tempskipa #1\relax
+      \ifdim \@tempskipa>\z@
+       \par \nobreak
+       \addtolength{\@tempskipa}{-\parskip}
+       \vskip \@tempskipa
+       \@afterheading
+    \else \global\@nobreakfalse \global\@noskipsectrue
+       \everypar{\if@noskipsec \global\@noskipsecfalse
+                   \clubpenalty\@M \hskip -\parindent
+                   \begingroup \@svsechd \endgroup \unskip
+                   \hskip -#1
+                  \else \clubpenalty \@clubpenalty
+                    \everypar{}\fi}\fi\ignorespaces}
+
+
+\def\section{\@startsection{section}{1}{\z@}
+{3.3ex plus 1ex minus 1ex}{0.1ex plus 0.1ex}{\centering\small}}
+\def\subsection{\@startsection{subsection}{2}{\z@}{2.9ex plus 
+.5ex minus .1ex}{.2ex plus .0ex}{\it}}
+%.5ex minus .1ex}{0ex plus .0ex}{\advance \leftskip by 3mm\ \ \it}{.\mbox{~}}}
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{2.9ex plus 
+.5ex minus .1ex}{0ex plus .0ex}{\indent\it}}
+
+\if@tmptwocolumn \twocolumn \sloppy \flushbottom\fi
+\if@draftversion \def\baselinestretch{1.5} \fi
+
+%      ****************************************
+%      *            BIBLIOGRAPHY              *
+%      ****************************************
+%
+
+
+
+\def\thebibliography#1{\section*{REFERENCES\@mkboth
+ {REFERENCES}{REFERENCES}}\vskip 0.5ex\list
+ {[\arabic{enumi}]}{\labelwidth 0mm \leftmargin\labelwidth
+ \itemindent -3mm
+\advance\leftmargin 3mm
+ \usecounter{enumi}}
+\footnotesize
+ \def\newblock{\hskip .11em plus .33em minus .07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax}
+\let\endthebibliography=\endlist
+
+\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do
+    {\@citea\def\@citea{;\penalty\@m\ }\@ifundefined
+       {b@\@citeb}{{\bf ?}\@warning
+       {Citation `\@citeb' on page \thepage \space undefined}}%
+\hbox{\csname b@\@citeb\endcsname}}}{#1}}
+
+\def\@biblabel#1{\hfill}
+\def\@mynamedef#1{\expandafter\def\csname #1\endcsname}
+\def\bibcite#1#2{\global\@mynamedef{b@#1}{#2}}
+
+
+%% This is mostly taken from: HARVARD.STY     Source: FILESERV@SHSU.BITNET
+%% written by Peter Williams' <peterw@archsci.arch.su.OZ.AU>
+
+%DEFAULT DEFINITIONS
+\def\@cite#1#2{({#1\if@tempswa ; #2\fi})}
+\def\@citeasnoun#1#2{{#1\if@tempswa ; #2\fi)}}
+
+\def\@hiteml[#1]#2#3#4{\item[]\if@filesw%
+      { \def\protect##1{\string ##1\space}\immediate%
+\write\@auxout{\string\harvardcite{#4}{#2}{#1}{#3}}}\fi%
+\protect\hspace*{-\labelwidth}\protect\hspace*{-\labelsep}\ignorespaces}
+
+\def\@hitem#1#2#3{\item[]\if@filesw%
+      { \def\protect##1{\string ##1\space}\immediate%
+\write\@auxout{\string\harvardcite{#3}{#1}{#1}{#2}}}\fi%
+\protect\hspace*{-\labelwidth}\protect\hspace*{-\labelsep}\ignorespaces}
+
+\def\harvarditem{\@ifnextchar [{\@hiteml}{\@hitem}}
+
+\def\harvardcite#1#2#3#4{
+  \global\@namedef{bhf@#1}{#2}
+  \global\@namedef{bha@#1}{#3}
+  \global\@namedef{bhy@#1}{#4}\global\@namedef{b@#1}{\csname bhf@#1\endcsname}
+}
+
+\def\cite{\@ifnextchar [{\@tempswatrue\@citex}{\@tempswafalse\@citex[]}}
+\def\citeasnoun{\@ifnextchar [{\@tempswatrue\@citexasnoun}
+                           {\@tempswafalse\@citexasnoun[]}
+}
+
+\def\@enamedef#1{\expandafter\edef\csname #1\endcsname}
+
+\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do
+    {\@citea\def\@citea{\@hisep\penalty\@m\ }\@ifundefined
+       {b@\@citeb}{{\bf ?}\@warning
+       {Citation `\@citeb' on page \thepage \space undefined}}%
+{{\csname b@\@citeb\endcsname\@hysep\csname bhy@\@citeb\endcsname}%
+\global\@enamedef{b@\@citeb}{\csname bha@\@citeb\endcsname}}%
+}}{#1}}
+
+\def\@citexasnoun[#1]#2{%
+\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi%
+\@citeasnoun{{\@ifundefined%
+{b@#2}%
+{{\bf ?}\@warning{Citation `#2' on page \thepage \space undefined}}%
+{{\csname b@#2\endcsname\ (\csname bhy@#2\endcsname}%
+\global\@namedef{b@#2}{\csname bha@#2\endcsname}}%
+}}{#1}}
+
+\gdef\hysep@agsm{\ }\gdef\hisep@agsm{,}%
+\gdef\hysep@dcu{, }\gdef\hisep@dcu{;}%
+\let\@hysep\hysep@agsm \let\@hisep\hisep@agsm
+\def\citationstyle#1{%
+\global\@namedef{@hysep}{\csname hysep@#1\endcsname}%
+\global\@namedef{@hisep}{\csname hisep@#1\endcsname}}
+
+% CHANGE \end{document} - to handle double definitions
+\def\enddocument{\@checkend{document}\clearpage\begingroup
+\if@filesw \immediate\closeout\@mainaux
+\def\global\@namedef##1##2{}\def\newlabel{\@testdef r}%
+\def\bibcite{\@testdef b}%
+\def\harvardcite{\@testbibh}\@tempswafalse \makeatletter\input \jobname.aux
+\if@tempswa \@warning{Label(s) may have changed.  Rerun to get
+cross-references right}\fi\fi\endgroup\deadcycles\z@\@@end}
+
+\def\@testbibh #1#2#3{
+  \def\@tempa{#2}\expandafter
+  \ifx \csname bhf@#1\endcsname \@tempa
+     \def\@tempa{#3}\expandafter
+     \ifx \csname bha@#1\endcsname \@tempa
+     \else \@tempswatrue
+     \fi
+  \else
+     \@tempswatrue
+  \fi
+}
+
+%DEFAULT DEFINITIONS
+\def\@cite#1#2{({#1\if@tempswa ; #2\fi})}
+\def\@citeasnoun#1#2{{#1\if@tempswa ; #2\fi)}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  End of automatica.sty  %%%%%%%%%%%%%%%%%%%%%%%%%%%

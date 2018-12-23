@@ -1,0 +1,3435 @@
+% Bibtex--Datenbank
+		  
+%% bibtexfile{
+%% author   = "Rainer Nitsche",		 
+%% version  = "1.0",
+%% date	    = "07 August 1997",
+%% filename = "semiactive.bib",  
+%% address  = "Institut A fuer Mechanik,
+%%             Universitaet Stuttgart ",		  
+%% email    = "<r.nitsche at uni-stuttgart.de>"
+%% Die folgenden Abk"urzungen sind von Ralf's feedbacklin.bib
+%% Achtung die Studien/Diplomarbeiten und die Praktikumsberichte wurden
+%% rausgenommen und in studies.tex abgespeichert. (R.N. 12.Nov.01)
+
+ @STRING{AMR = "Applied Mechanics Reviews"}
+ @STRING{AMS = "Amer. Math. Soc."}
+ @STRING{AP = "Academic Press"}
+ @STRING{Aut = "Automatica"}
+ @STRING{AW = "Addison Wesley"}
+ @STRING{Birk = "Birkh{\"a}user"}
+ @STRING{crasP = "C.~R. Acad. Sci. Paris, S\'erie I"}
+ @STRING{crasPzwei = "C.~R. Acad. Sci. Paris, S\'erie II b"}
+ @STRING{FM = "Forum Math."}
+ @STRING{IeeeTAC = "IEEE Trans. Automat. Control"}
+ @STRING{IeeeCST = "IEEE Trans. Control Systems Technology"}
+ @STRING{IJC = "Int. J. Control"}
+ @STRING{EJC = "European J. Control"}
+ @STRING{IJES = "Int. J.  Engineering Sci."}
+ @STRING{IJMTDR = "Int. J. Machine Tool Design and Research"}
+ @STRING{IJSS = "Int. J. Systems Sci."}
+ @STRING{ISR = "Interner Bericht. Institut f{\"u}r Systemdynamik und Regelungstechnik,
+		  Universit{\"a}t Stuttgart"}
+% @STRING{Sta = "Studienarbeit, Institut f{\"u}r Systemdynamik und Regelungstechnik,
+%                Universit{\"a}t Stuttgart"}
+ @STRING{PrktMSE = "Praktikumsbericht, Robert Bosch GmbH, Abt. FV/FLI-MSE"}
+ @STRING{Sta = "Studienarbeit, Institut {A} f{\"u}r Mechanik,
+                Universit{\"a}t Stuttgart"}
+ @STRING{Dpa = "Diplomarbeit, Institut {A} f{\"u}r Mechanik,
+                Universit{\"a}t Stuttgart"}
+ @STRING{DpaEngl = "Master Thesis, Institute {A} of Mechanics,
+                University of Stuttgart"}
+ @STRING{StaEngl = "Research Thesis, Institute {A} of Mechanics,
+                University of Stuttgart"}
+ @STRING{JGCD = "AIAA J. of Guidance, Control, and Dynamics"}	
+ @STRING{JVASR = "ASME J. of Vibration, Acoustics, Stress, and
+		  Reliability in Design"}
+ @STRING{JDMC = "ASME J. of Dynamic Systems, Measurement, and Control"}
+ @STRING{JSV = "J. of Sound and Vibration"}
+ @STRING{JMSEC = "J. of Mathematical Systems, Estimation, and Control"}
+ @STRING{JWS = "John Wiley \& Sons, Inc."}
+ @STRING{Kyb = "Kybernetika"}
+ @STRING{LAA = "Linear Algebra Applications"}
+ @STRING{LNCIS = "Lect. Notes in Contr. Inform. Sci."}
+ @STRING{MCSS = "Math. Control Signals Systems"}
+ @STRING{MGH = "McGraw-Hill"}
+ @STRING{MSM = "Mechanics of Structures and Machines"}
+ @STRING{MSSP = "Mechanical Systems and Signal Processing"}
+ @STRING{MST = "Math. Systems Theory"}
+ @STRING{OV = "R. Oldenbourg-Verlag"}
+ @STRING{PH = "Prentice-Hall"}
+ @STRING{PSCT = "Progress in Systems and Control Theory"}
+ @STRING{SCL = "Systems \&\ Control Letters"}
+ @STRING{SCL = "Systems Control Letters"}
+ @STRING{siamAM = "SIAM J. Appl. Math."}
+ @STRING{siamC = "SIAM J. Control"}
+ @STRING{siamCO = "SIAM J. Control and Optim."}
+ @STRING{SV = "Springer-Verlag"}
+ @STRING{SVD = "The Shock and Vibration Digest"}
+ @STRING{TASME = "Transactions of the ASME"}
+ @STRING{VDI = "VDI-Fortschritt-Berichte"}
+ @STRING{ZAMM = "Zeitschrift f{\"u}r angewandte Mathematik und Mechanik"}
+%........................................................................
+ @STRING{ECC91 = "Proc. 1st European Control Conference ECC '91, Grenoble/France
+    	         "}
+ @STRING{ECC93 = "Proc. 2nd European Control Conference ECC '93,
+		  Groningen/The Netherlands"}
+ @STRING{ECC95 = "Proc. 3rd European Control Conference ECC '95,
+		  Roma/Italy"}
+ @STRING{ECC97 = "Proc. 4th European Control Conference ECC '97,
+		  Brussels/Belgium"}
+ @STRING{ECC99 = "5th European Control Conference ECC '99,
+		  Karlsruhe/Germany"}
+ @STRING{NOLCOS92 = "Proc. 2nd IFAC-Symposium NOLCOS '92, Bordeaux/France"}
+ @STRING{NOLCOS95 = "Proc. 3rd IFAC-Symposium NOLCOS '95, Lake Tahoe/USA"}
+ @STRING{IFACWC96 = "Proc. 13th IFAC World Congress '96, San
+		  Francisco, USA"}
+ @STRING{IMACSLille = "Proc. Symposium on Control, Optimization and
+		  Supervision ``Computational Engineering in Systems
+		  Applications'' IMACS Multiconference, Lille/France,
+		  July 9-12, 1996"}
+ @STRING{EDITORCESA96 = "{Borne, P. \emph{et al.}}"}
+ @STRING{EDITORECC95  = "{Isidori, A. \emph{et al.}}"}
+ @STRING{EDITORECC97  = "{N.N.}"}
+ @STRING{EDITORECC99  = "{N.N.}"}
+ @STRING{EDITORMSM  = "{E.J. Haug}"}
+ @STRING{EDITORMTNS93 = "{Helmke, U. \emph{et al.}}"}
+ @STRING{MTNS93 = "Proc. of the Int. Symposium MTNS '93,
+		   Regensburg, Germany, 2-6 August 1993"}		  
+%........................................................................
+%************************************************************************
+% <<A>>
+%************************************************************************
+%**<FF>******************************************************************
+@InProceedings{AkbayAktan:90,
+  author = 	 {Akbay, Z. and Aktan, H.M.},
+  title = 	 {Intelligent Energy Dissipation Devices},
+  booktitle = 	 {Proc. of the 4th U.S. National Conference 
+                  on Earthquake Engineering},
+  pages = 	 {427-435},
+  year = 	 {1990},
+  volume = 	 {3},
+  number = 	 {4}
+}
+%**<FF>******************************************************************
+@InProceedings{AkbayAktan:91,
+  author = 	 {Akbay, Z. and Aktan, H.M.},
+  title = 	 {Actively Regulated Friction Slip Devices},
+  booktitle = 	 {Proc. of the 6th Canadian Conference 
+                  on Earthquake Engineering},
+  pages = 	 {367-374},
+  year = 	 {1991}
+}
+%**<FF>******************************************************************
+@book{Ackermann:83,
+      AUTHOR={Ackermann, J.},
+      TITLE={{A}btastregelung},
+      YEAR=1983, 
+      PUBLISHER=SV}
+%**<FF>******************************************************************
+@book{Ackermann:85,
+      AUTHOR={Ackermann, J.},
+      TITLE={{S}ampled-{D}ata {C}ontrol {S}ystems},
+      YEAR=1985, 
+      PUBLISHER=SV}
+%**<FF>******************************************************************
+@manual{ACSL,
+      TITLE = {{A}dvanced {C}ontinuous {S}imulation {L}anguage --
+		  Reference Manual},
+      AUTHOR = {Mitchell \& Gauthier},
+      ORGANIZATION = {MGA Inc.},
+      YEAR = 1991}
+%**<FF>******************************************************************
+@inproceedings{AkhrifBlankenship:88,
+            AUTHOR ={Akhrif, O. and Blankenship, G. L.} ,
+            TITLE={Computer algebra algorithms for nonlinear control} ,
+            BOOKTITLE={Advanced Computing Concepts and Techniques in
+		  Control Engeneering} ,
+            EDITOR={Denham, M.J. and Laub, A.J.},
+            PUBLISHER=SV,
+            PAGES={53-80},
+            YEAR=1988}
+%**<FF>******************************************************************
+@PhdThesis{Altpeter:99,
+  author = 	 {Altpeter, F.},
+  title = 	 {Friction Modeling, Identification and Compensation},
+  school = 	 {{\'E}cole Polytechnique F{\'e}d{\'e}rale de Lausanne},
+  year = 	 {1999},
+  OPTaddress = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {Th{\'e}se No. 1988},
+  OPTannote = 	 {}
+}
+
+%**<FF>******************************************************************
+@Article{AndersonFerri:90,
+  author = 	 "Anderson, J.R. and Ferri, A.A.",
+  title = 	 "Behavior of a Single-Degree-of-Freedom System
+		  With a Generalized Friction Law",
+  journal = 	 JSV,
+  year = 	 "1990",
+  volume = 	 "140",
+  number = 	 "2",
+  pages = 	 "287-304",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@Book{AntesPana:92,
+  author = 	 "Antes, H. and Panagiotopoulos, P.D.",
+  title = 	 "The boundary integral approach to static and
+		  dynamic contact problems",
+  publisher = 	 Birk,
+  year = 	 "1992",
+  address = 	 "Basel u.a."
+}
+%**<FF>******************************************************************
+@Book{Armstrong:91,
+  author = 	 "Armstrong-H\'elouvry, B.",
+  title = 	 "Control of Machines with Friction",
+  publisher = 	 "Kluwer Academic Publisher",
+  year = 	 "1991",
+  address = 	 "Boston, Ma."
+}
+%**<FF>******************************************************************
+@Article{ArmDupontWit:94,
+  author = 	 "Armstrong-H\'elouvry, B. and Dupont, P. and Canudas
+		  de Wit, C.",
+  title = 	 "A Survey of Models, Analysis Tools and Compensation
+		  Methods for the Control of Machines with Friction",
+  journal = 	 Aut,
+  year = 	 "1994",
+  volume = 	 "30",
+  number = 	 "7",
+  pages = 	 "1083-1138",
+  month = 	 "July"
+}
+%**<FF>******************************************************************
+@Article{Ashley:84,
+  author = 	 "Ashley, H. ",
+  title = 	 "On Passive Damping Mechanisms in Large Space Structures",
+  journal = 	 JGCD,
+  year = 	 "1984",
+  volume = 	 "21",
+  number = 	 "5",
+  pages = 	 "448-455"
+}
+%**<FF>******************************************************************
+@InProceedings{Astroem:98,
+  author = 	 "{\AA}str{\"o}m, K.J.",
+  title = 	 "Control of systems with friction",
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "",
+  booktitle = "MOVIC'98",
+  year = 	 "1998",
+  OPTorganization = "",
+  OPTpublisher = "",
+  OPTaddress = 	 "",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+%************************************************************************
+% <<B>>
+%************************************************************************  
+%**<FF>******************************************************************
+@Article{BailyHubbard:85,
+  author = 	 "Baily, T. and Hubbard, J.E.",
+  title = 	 "Distributed Piezoelectric-Polymer Active Vibration Control 
+                  of Cantilever Beam",
+  journal = 	 JGCD,
+  year = 	 "1985",
+  volume = 	 "8",
+  number = 	 "5",
+  pages = 	 "605-611"
+}
+%**<FF>******************************************************************
+@Article{BeuckeKelly:85,
+  author = 	 "Beucke, K.E. and Kelly, J.M.",
+  title = 	 "Equivalent Linearizations for Practical Hysteretic Systems",
+  journal = 	 "Int. J. of Non-Linear Mechanics",
+  year = 	 "1985",
+  volume = 	 "23",
+  number = 	 "4",
+  pages = 	 "211-238"
+}
+%**<FF>******************************************************************
+@InProceedings{Beards:83,
+  author = 	 "Beards, C.F.",
+  title = 	 "The Damping of Structural Vibration by Controlled
+		  Interface Slip in Joints",
+  volume = 	 "105",
+  pages = 	 "369-373",
+  booktitle = "ASME J. of Vibration",
+  year = 	 "1983",
+  OPTorganization = "ASME",
+  OPTpublisher = "ASME",
+  month = 	 "July",
+}
+%**<FF>******************************************************************
+@article{Beards:92,
+  author = 	 "Beards, C.F.",
+  title = 	 "Damping in Structural Joints",
+  volume = 	 "24",
+  number = 	 "7",
+  pages = 	 "3-7",
+  journal =       SVD,
+  year = 	 "1992",
+}
+%**<FF>******************************************************************
+@article{BeardsWilliams:77,
+  author = 	 "Beards, C.F. and Williams, J.L.",
+  title = 	 "The Damping of Structural Vibration by Rotational
+		  Slip in Joints",
+  volume = 	 "53",
+  number = 	 "3",
+  pages = 	 "333-340",
+  journal =       JSV,
+  year = 	 "1977",
+}
+%**<FF>******************************************************************
+@Article{BeardsWoowat:85,
+  author = 	 "Beards, C.F. and Woowat, A.",
+  title = 	 "The Control of Frame Vibration by Friction Damping
+		  on Joints",
+  journal = 	 JVASR,
+  year = 	 "1985",
+  volume = 	 "107",
+  OPTnumber = 	 "",
+  pages = 	 "26-32",
+  month = 	 "January",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@inproceedings{BesanconBornard:95,
+      AUTHOR  = {Besan\c{c}on, G. and Bornard, G.},
+      TITLE   = {Performance and Limitations of Symbolic Computation
+		  in Nonlinear Analysis and Control: An Example Using {M}athematica},
+      PAGES   = {617-622},
+      BOOKTITLE = {Proc. IFAC Conference System Structure and
+		  Control, Nantes/France},
+      YEAR    = 1995}
+%**<FF>******************************************************************
+@Article{BicosPakTrentUitto:89,
+  author = 	 {Bicos, A.S. and Pak, Y.H. and Trent, C.L. and Uitto R.J.},
+  title = 	 {Passive and Active Vibration Suppression of Large Space Structures},
+  journal = 	 {SPIE Fiber Optic Smart Structures and Skins II},
+  year = 	 {1989},
+  volume = 	 {1170},
+  pages = 	 {359-371}
+}
+%**<FF>******************************************************************
+@Article{BindelNitscheRothfussZeitz:00at,
+  author = 	 "Bindel, R. and Nitsche, R. and Rothfu{\ss}, R. and Zeitz, M.",
+  title = 	 "{F}lachheitsbasierte {R}egelung eines hydraulischen
+		  {A}ntriebs mit zwei {V}entilen f{\"u}r einen {G}ro{\ss}manipulator",
+  journal = 	 "at Automatisierungstechnik",
+  year = 	 "2000",
+  volume = 	 "48",
+  number =       "3",
+  pages = 	 "124-131",
+  month = 	 "March",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+
+%**<FF>******************************************************************
+@PhdThesis{Binde:93,
+  author = 	 "Bindemann, A.C.",
+  title = 	 "Dry Friction Damping of Built-Up Structures",
+  school = 	 "School of Mechanical Engineering",
+  year = 	 "1993",
+  OPTcrossref =  "",
+  OPTkey = 	 "",
+  address = 	 "Georgia Institute of Technology",
+  month = 	 "March",
+  OPTtype = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@phdthesis{Birk:92,
+      AUTHOR = {Birk, J.},
+      TITLE  = {{R}echnergest\"utzte {A}nalyse und {L}\"osung nichtlinearer
+           {B}eobachtungsaufgaben},
+      SCHOOL = {VDI-Fortschritt-Berichte Nr.8/294, VDI-Verlag},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@inproceedings{BirkZeitz:91,
+            AUTHOR ={Birk, J. and Zeitz, M.} ,
+            TITLE={Program for Symbolic and Rule-Based Analysis and
+                   Design of Nonlinear Systems} ,
+            EDITOR={Jacob, G. and Lamnabhi-Lagarrigue, F.},
+            BOOKTITLE={Algebraic Computing in Control. Proc. of
+                       the first European Conference. Lectures Notes in
+                       Control and Information Sciences 165} ,
+            PUBLISHER=SV,
+            PAGES={115-119},
+            YEAR=1991}
+%**<FF>******************************************************************
+@article{BirkZeitz:88,
+      TITLE = {{E}xtended {L}uenberger observer for nonlinear
+		  multivariable systems},
+      AUTHOR = {Birk, J. and Zeitz, M.},
+      JOURNAL = IJC,
+      VOLUME = {47},
+      PAGES  = {1823-1836},
+      YEAR = 1988} 		  
+%**<FF>******************************************************************
+@Article{Bliman:92,
+  author = 	 {Bliman, P.-A.},
+  title = 	 {Mathematical study of the {D}ahl's friction model},
+  journal = 	 {European J. of Mechanics. A/Solids},
+  year = 	 {1992},
+  volume = 	 {11},
+  number = 	 {6},
+  pages = 	 {835-848}
+}
+%**<FF>******************************************************************
+@Article{BowdenDugundji:90,
+  author = 	 {Bowden, M. and Dugundji, J.},
+  title = 	 {Joint Damping and Nonlinearity in Dynamics of Structures},
+  journal = 	 {AIAA J. of Spacecraft and Rockets},
+  year = 	 {1990},
+  volume = 	 {28},
+  number = 	 {4},
+  pages = 	 {740-750}
+}
+%**<FF>******************************************************************
+@phdthesis{Bohlen:87,
+      AUTHOR = {Bohlen, S.},
+      TITLE  = {{Z}ur {B}erechnung und {M}essung mechanischer
+		  {S}chwingungen in {S}trukturen mit nichtlinearem
+		  {F}{\"u}gestellenverhalten},
+      SCHOOL = {VDI-Fortschritt-Berichte Nr.11/91, VDI-Verlag},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@InProceedings{BullockPeterson:94,
+  author = 	 "Bullock, S.J. and Peterson, L.D.",
+  title = 	 "Identification of Nonlinear Micron-Level Mechanics
+		  for a Precision Deployable Joint",
+  number = 	 "AIAA-94-1347",
+  year = 	 "1994",
+  booktitle = "The 35th AIAA/ASME/ASCE/AHS/ASC Structures, Structural
+		  Dynamics, and Materials Conference",
+    month = 	 "April"
+}
+%**<FF>******************************************************************
+@Book{ButkovskiyPustyilnikov:87,
+  author = 	 {Butkovskiy, A.G. and Pustyilnikov, A.M.},
+  title = 	 {{M}obile {C}ontrol of {D}istributed {P}arameter {S}ystems},
+  publisher = 	 JWS,
+  year = 	 1987
+}
+%**<FF>******************************************************************
+
+
+
+%************************************************************************
+% <<C>>
+%************************************************************************
+%**<FF>******************************************************************
+@InProceedings{CanudasDeWitHorowitzTsiotras:99,
+  author = 	 {Canudas de Wit, C. and Horowitz, R. and Tsiotras, P.},
+  title = 	 {Model-Based Observer for Tire/Road Contact Friction Prediction},
+  booktitle = 	 {New Directions in Nonlinear Observer Design},
+  pages = 	 {23-42},
+  year = 	 {1999},
+  editor = 	 {H. Nijmeijer and T.I. Fossen},
+  volume = 	 {244},
+  series = 	 {Lecture Notes in Control and Information Sciences},
+  address = 	 {London},
+  publisher =    SV
+}
+%**<FF>******************************************************************
+@Article{CanudasDeWit:98,
+  author = 	 {Canudas de Wit, C.},
+  title = 	 {Comments on: A New Model for Control of Systems with Friction},
+  journal = 	 IeeeTAC,
+  year = 	 1998,
+  volume = 	 43,
+  number =       8,
+  pages = 	 {1189-1190},
+  month = 	 {August}
+}
+%**<FF>******************************************************************
+@Article{CanudasDeWitLischinsky:97,
+  author = 	 {Canudas de Wit, C. and Lischinsky, P.},
+  title = 	 {Adaptive Friction Compensation with Partially Known
+		  Dynamic Friction Model},
+  journal = 	 {Int. J. of Adaptive Control and Signal 
+		  Processing},
+  year = 	 1997,
+  volume = 	 {11},
+  pages = 	 {65-80}
+}
+%**<FF>******************************************************************
+@InProceedings{CanudasOlsson:93,
+  author = 	 {Canudas de Wit, C. and Olsson, H. and
+		  {\AA}str{\"o}m, K.J. and Lischinsky, P.},
+  title = 	 {Dynamic Friction Models and Control Design},
+  booktitle = 	 {Proc. of the 1993 American Control Conference},
+  pages = 	 {1920-1926},
+  year = 	 {1993},
+  address = 	 {San Francisco, CA}
+}
+
+%**<FF>******************************************************************
+@Article{CaoSemercigil:94,
+  author = 	 "Cao, S. and Semercigil, S.E.",
+  title = 	 "A Semi-Active Controller for Excessive Transient 
+                  Vibrations of Light Structures",
+  journal = 	 JSV,
+  year = 	 "1994",
+  volume = 	 "178",
+  number = 	 "2",
+  pages = 	 "145-161"
+}
+%**<FF>******************************************************************
+@Article{deWitOlsson:95,
+  author = 	 "Canudas de Wit, C. and Olsson, H. and
+		  {\AA}str{\"o}m, K.J. and Lischinsky, P.",
+  title = 	 "A New Model for Control of Systems with Friction",
+  OPTjournal = 	 "IEEE Transactions on Automatic Control",
+  journal =      IeeeTAC,
+  year = 	 "1995",
+  volume = 	 "40",
+  number = 	 "3",
+  pages = 	 "419-425",
+  month = 	 "March",
+}
+%**<FF>******************************************************************
+@InProceedings{ChenDeng:99,
+  author = 	 "Chen, W. and Deng, X. ",
+  title = 	 "A Finite Element Analysis of Friciton Damping in a
+		  Slip Joint ",
+  number = 	 "DETC99/VIB-8189",
+  pages = 	 "1-7",
+  booktitle = "CDROM-Proc. of the 1999 ASME Design Engineering
+		  Technical Conferences",
+  year = 	 "1999",
+  organization = "ASME",
+  OPTpublisher = "",
+  address = 	 "Las Vegas, Nevada",
+  month = 	 "September 12-16"
+}%**<FF>******************************************************************  
+@Article{Crandall:70,
+  author = 	 "Crandall, S.H.",
+  title = 	 "The Role of  Damping in Vibration Theory",
+  journal = 	 JSV,
+  year = 	 "1970",
+  volume = 	 "11",
+  pages = 	 "3-18"
+}		  
+%**<FF>******************************************************************
+@Article{CrawlyAubert:86,
+  author = 	 "Crawly, E.F. and Aubert A.C.",
+  title = 	 "Identification of  Nonlinear Structural Elements by
+		  Force-State Mapping",
+  year = 	 "1986",
+  journal = 	 {AIAA J.},
+  volume = 	 "24",
+  pages = 	 "155-162",
+  month = 	 "Jan."
+}
+%**<FF>******************************************************************
+@Article{CrawlyDonnell:87,
+  author = 	 "Crawly, E.F. and O'Donnell, K.J.",
+  title = 	 "Force-State Mapping Identification of Nonlinear Joints",
+  year = 	 "1987",
+  journal = 	 {AIAA J.},
+  volume = 	 "25",
+  pages = 	 "1003-1010",
+  month = 	 "July"
+}
+%**<FF>******************************************************************
+@InProceedings{Courtney-PrattEisner:57,
+  author = 	 {Courtney-Pratt, J.S. and Eisner, E.},
+  title = 	 {The Effect of a Tangential Force on the Contact of Metallic Bodies},
+  booktitle = 	 {Proc. Royal Society (London)},
+  pages = 	 {529-550},
+  year = 	 {1957},
+  volume = 	 {A238},
+  address = 	 {London}
+}
+%**<FF>******************************************************************
+@InProceedings{ConnallyHubbard:88,
+  author = 	 {Connally, J.A. and Hubbard, J.E.},
+  title = 	 {Low Authority Control of a Composite Cantilever Beam in Two Dimensions},
+  booktitle = 	 {Proc. of the 1988 American Control Conference},
+  volume = 	 {3},
+  pages = 	 {1903-1908},
+  year = 	 {1988},
+  OPTaddress = 	 {San Francisco, CA}
+}
+%**<FF>******************************************************************
+@Article{ConstaninouTadjbakhsh:84,
+  author = 	 "Constaninou, M. and Tadjbakhsh, I.G.",
+  title = 	 "The Optimum Design of a Base Isolation System with
+		  Frictional Elements",
+  journal = 	 "Earthquake Engineering and Structural Dynamics",
+  year = 	 "1984",
+  volume = 	 "12",
+  pages = 	 "203-214"
+}
+
+%************************************************************************
+% <<D>>
+%************************************************************************
+%**<FF>******************************************************************
+@InProceedings{Dahl:75,
+  author = 	 {Dahl, P.},
+  title = 	 {Solid friction damping of spacecraft oscillations},
+  booktitle = 	 {Proceeding of the AIAA Guidance and Control Conference},
+  year = 	 {1975},
+  number = 	 {75-1104},
+  address =      {Boston, Mass.}		  
+}
+%**<FF>******************************************************************
+@Article{Dahl:76,
+  author = 	 {Dahl, P.},
+  title = 	 {Solid Friction Damping of Mechanical Vibrations},
+  journal = 	 JGCD,
+  year = 	 {1976},
+  volume = 	 {14},
+  number = 	 {12},
+  pages = 	 {1675-1682}
+}
+
+%**<FF>******************************************************************
+@InProceedings{DavisCunningham:94,
+  author = 	 "Davis, P. and Cunningham, D. and Bicos, A. and Enright, M.",
+  title = 	 "Adaptable Passive Viscous Damper 
+              (An Adatable {D}-{S}trut\raisebox{1.2mm}{{\footnotesize T}{\footnotesize M}})",
+  volume = 	 "2193",
+  OPTnumber = 	 "3785-02",
+  series = 	 "SPIE Paper",
+  pages = 	 "47-58",
+  booktitle =    "Proc. of SPIE Int. Society of Optical Engineering",
+  year = 	 "1994",
+  organization = "SPIE",
+  address = 	 "Orlando, FL",
+  month = 	 "February"
+}
+%**<FF>******************************************************************
+@Article{DenHartog:31,
+  author = 	 "Den Hartog, J.P.",
+  title = 	 "Forced Vibrations with Combined {C}oulomb and Viscous Friction",
+  journal = 	 TASME,
+  year = 	 "1931",
+  volume = 	 "APM-53-9",
+  pages = 	 "107-115",
+  OPTannote = 	 "von Ferri's survey paper(s)"
+}
+%**<FF>******************************************************************
+@InProceedings{DupontStokes:95,
+  author = 	 "Dupont, P.E. and Stokes, A.",
+  title = 	 "Semi-Active Control of Friction Dampers",
+  pages = 	 "3331-3336",
+  booktitle = "Proc. of the 34th Conference on Decision and Control",
+  year = 	 1995,
+  address = 	 "New Orleans, LA",
+  month = 	 "December"
+}
+%**<FF>******************************************************************
+@InProceedings{DupontKasturiStokes:96,
+  author = 	 "Dupont, P.E. and Kasturi, P. and Stokes, A.",
+  title = 	 "Experimental Evaluation of a Semi-Active Friction Damper",
+  pages = 	 "69-74",
+  booktitle =    "ASME International Mechanical Engineering Congress and 
+                  Exposition",
+  year = 	 1996,
+  address = 	 "Atlanta, GA",
+  OPTmonth = 	 "November"
+}
+%**<FF>******************************************************************
+@TechReport{DozierKaelber:83,
+  author = 	 "Dozier, J.D and Kaelber, E.",
+  title = 	 "Latch Fittings for the Scientific Instruments on the 
+		  Space Telescope",
+  institution =  "NASA",
+  year = 	 "1983",
+  month =         "May",
+  pages =        "253-265",
+  number = 	 "CP2273"
+}
+%**<FF>******************************************************************
+@Article{Dowell:86,
+  author = 	 "Dowell, E.H.",
+  title = 	 "Damping in Beams and Plates Due to Slipping at the
+		  Support Boundaries",
+  journal = 	 JSV,
+  year = 	 "1986",
+  volume = 	 "105",
+  name  =        "2",
+  pages = 	 "243-253"
+}
+%**<FF>******************************************************************
+@Article{Dowell:83,
+  author = 	 "Dowell, E.H.",
+  title = 	 "The behavior of a linear damped modal system with a
+		  nonlinear spring-mass-dry-friction-damper system attached.",
+  journal = 	 JSV,
+  year = 	 "1983",
+  volume = 	 "89",
+  pages = 	 "65-84"
+}
+%**<FF>******************************************************************
+@InProceedings{DowdellCherry:94,
+  author = 	 {Dowdell, D.J. and Cherry, S. },
+  title = 	 {Structural Control Using Semi-Active Friction Dampers},
+  booktitle = 	 {Proc. of the 1st World Conference on Structural Control},
+  pages = 	 {FA1:59-65},
+  year = 	 {1994},
+  address = 	 {Los Angeles, CA.},
+  month = 	 {August}
+}
+%**<FF>******************************************************************
+@Article{DupontHaywardArmstrong:00,
+  author = 	 {Dupont, P. and Hayward, V. and Armstrong, B.},
+  title = 	 {Singel State Elasto-Plasto Models for Friction Compensation},
+  journal = 	 IeeeTAC,
+  year = 	 2000,
+  OPTvolume = 	 43,
+  OPTnumber =       8,
+  OPTpages = 	 {1189-1190},
+  OPTmonth = 	 {August},
+  note     =     {to appear}
+}
+%************************************************************************
+@Book{dSpace,
+  author = 	 {dSpace GmbH},
+  ALTeditor = 	 {},
+  title = 	 {{{\sc dSpace} user's guide -- Multi-Processor Systems}},
+  publisher = 	 {},
+  year = 	 {1999}
+}
+%************************************************************************
+@Manual{dSpace2,
+  title = 	 {{{\sc dSpace} user's guide -- Multi-Processor Systems}},
+  organization = {dSpace GmBH},
+  OPTaddress = 	 {},
+  OPTedition = 	 {},
+  year = 	 {1999}
+}
+%************************************************************************
+@InProceedings{DykeSpencer:97,
+  author = 	 {Dyke, S.J. and Spencer, Jr.B.F.},
+  title = 	 {A Comparison of Semi-Active Control Strategies for the 
+                  {M}{R} Damper},
+  booktitle = 	 {Proc. of the IASTED Int. Conference on Intelligent Info. Systems},
+  pages = 	 {580-584},
+  year = 	 {1997},
+  address = 	 {Bahamas},
+  month = 	 {Dec. 8-10}
+}
+
+%************************************************************************
+% <<E>>
+%************************************************************************
+%**<FF>******************************************************************
+@Article{EarlesBeards:70,
+  author = 	 {Earles, S.W. and Beards, C.F.},
+  title = 	 {Some Aspects of Frictional Damping as Applied to Vibrating Beams},
+  journal = 	 IJMTDR,
+  year = 	 {1970},
+  volume = 	 {10},
+  pages = 	 {123-131}
+}
+%**<FF>******************************************************************
+@Article{ElBeheiryKarnoppetal:96,
+  author = 	 {ElBeheiry, E.M. and Karnopp, D.C. and ElAraby, E.M. and 
+                 AbedelRaouf, A.M.},
+  title = 	 {Suboptimal Control Design of Active and Passive Suspensions 
+                  Based on a Full Car Model},
+  journal = 	 {Vehicle System Dynamics},
+  year = 	 {1996},
+  volume = 	 {26},
+  number = 	 {3},
+  pages = 	 {197-222}
+}
+%**<FF>******************************************************************
+@Article{ElBeheiryKarnopp:96,
+  author = 	 {ElBeheiry, E.M. and Karnopp, D.C.},
+  title = 	 {Optimal Control of Vehicle  Random Vibration with 
+                  Constrained Suspension Deflection},
+  journal = 	 JSV,
+  year = 	 {1996},
+  volume = 	 {189},
+  number = 	 {5},
+  pages = 	 {547-564}
+}
+%**<FF>******************************************************************
+@Article{EwinsHan:84,
+  author = 	 "Ewins, D.J. and Han, Z.",
+  title = 	 "Resonant vibration levels of a mistunded blade",
+  journal = 	 JVASR,
+  year = 	 "1984",
+  volume = 	 "106",
+  pages = 	 "211-217"
+} 
+%**<FF>******************************************************************
+@Article{EwinsImregun:84,
+  author = 	 "Ewins, D.J. and Imregun, M.",
+  title = 	 "Vibration modes of packeted bladed disks",
+  journal = 	 JVASR,
+  year = 	 "1984",
+  volume = 	 "106",
+  pages = 	 "175-180"
+} 
+%**<FF>******************************************************************
+
+%************************************************************************
+% <<F>>
+%************************************************************************
+%**<FF>******************************************************************
+@InProceedings{FerneyFolkmann:95,
+  author = 	 "Ferney, B.D. and Folkmann S.L.",
+  title = 	 "Results of Force-State Mapping Tests to Characterize 
+		  struts Using Pinned Joints",
+  number = 	 "AIAA-95-1150",
+  year = 	 "1995",
+  booktitle = "The 36th AIAA/ASME/ASCE/AHS/ASC Structures, Structural
+		  Dynamics, and Materials Conference",
+    month = 	 "April"
+}
+%**<FF>******************************************************************
+@Article{Ferri:Survey,
+  author = 	 "Ferri, A.A.",
+  title = 	 "Friction Damping and Isolation Systems",
+  journal = 	 "ASME J. of Vibration and Acoustics",
+  year = 	 "1995",
+  volume = 	 "117B",
+  pages = 	 "196-206",
+  month = 	 "June",
+}
+%**<FF>******************************************************************
+@Article{Ferri:88,
+  author = 	 "Ferri, A.A.",
+  title = 	 "Modeling and Analysis of Nonlinear Sleeve Joints of
+		  Large Space Structures",
+  journal = 	 "AIAA J. of Spacecraft and Rockets",
+  year = 	 "1988",
+  volume = 	 "25",
+  number = 	 "5",
+  pages = 	 "354-360",
+  OPTmonth = 	 "September--October",
+}
+%**<FF>******************************************************************
+@Article{FerriDowell:85,
+  author = 	 "Ferri, A.A. and Dowell, E.H.",
+  title = 	 "The Behavior of a Linear, Damped Modal System with a 
+		  Nonlinear Spring-Mass-Dry Friction Damper System
+		  Attached, {P}art {II}",
+  journal = 	 JSV,
+  year = 	 "1985",
+  volume = 	 "101",
+  number = 	 "1",
+  pages = 	 "55-74"
+}
+%**<FF>******************************************************************
+@Article{FerriHeck:92,
+  author = 	 "Ferri, A.A. and Heck, B.S.",
+  title = 	 "Analytical Investigation of Damping Enhancement
+		  Using Active and Passive Structural Joints",
+  journal = 	 JGCD,
+  year = 	 "1992",
+  volume = 	 "15",
+  number = 	 "5",
+  pages = 	 "1258-1264",
+  month = 	 "September-October",
+}
+%**<FF>******************************************************************
+@InProceedings{FerriHeck:ACC90,
+  author = 	 "Ferri, A.A. and Heck, B.S.",
+  title = 	 "Active and Passive Joints for Damping Augmentation
+		  of Large Space Structures ",
+  booktitle =    "Proc. of the 1990 American Control Conference",
+  year = 	 "1990",
+  address = 	 "San Diego, CA",
+  OPTmonth = 	 "May 23-25",
+}
+%**<FF>******************************************************************
+@Article{FerriBinde:92,
+  author = 	 "Ferri, A.A. and Bindemann, A.C.",
+  title = 	 "Damping and Vibration of Beams with Various Types of
+		  Frictional Support Conditions",
+  journal = 	 "ASME J. of Vibration and Acoustics",
+  year = 	 "1992",
+  volume = 	 "114",
+  number = 	 "3",
+  pages = 	 "289--296",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@InProceedings{FerriHeck:ACC92,
+  author = 	 "Ferri, A.A. and Heck, B.S.",
+  title = 	 "Semiactive Suspension using Dry Friction Energy Dissipation",
+  volume = 	 "1",
+  pages = 	 "31-34",
+  booktitle =    "Proc. of the 1992 American Control Conference",
+  year = 	 "1992",
+  address = 	 "Chicago, Il",
+  month = 	 "June",
+}
+%**<FF>******************************************************************
+@InProceedings{FriedlandPark:91,
+  author = 	 "Friedland, B. and Park, Y.-J.",
+  title = 	 "On adaptive friction compensation",
+  pages = 	 "2899-2902",
+  booktitle = "Proc. of the IEEE Conference on Decision and Control",
+  year = 	 "1991"
+}
+%**<FF>******************************************************************
+@Book{Fuller:84,
+  author = 	 {Fuller, D.D.},
+  title = 	 {Theory and Practice of Lubrication for Engineers},
+  publisher = 	 JWS,
+  year = 	 {1984},
+  address = 	 {New York, Chichester, Brisbane, Toronto, Singapore}
+}
+%**<FF>******************************************************************
+@Article{FolkmanRedd:90,
+  author = 	 "Folkman, S.L. and Redd, F.J.",
+  title = 	 "Gravity Effects on Damping of a Space Structure with 
+		  Pinned Joints",
+  journal = 	 JGCD,
+  year = 	 "1990",
+  volume = 	 "13",
+  number = 	 "2",
+  pages = 	 "228-233",
+  month = 	 "March-April",
+}
+%**<FF>******************************************************************
+@Article{Fuehrer91,
+ author       = "C. F{\"u}hrer and B.J. Leimkuhler",
+ title        = "Numerical solution of differential-algebraic
+		  equations for constrained mechanical motion", 
+ journal      = "Numerische Mathematik",
+ year         = "1991",
+  volume       = "59",
+  number       = "124",
+  pages        = "55--69"
+}
+%**<FF>******************************************************************
+@article{FreemanKokotovic:96,
+      AUTHOR = {Freeman, R.A. and Kokotovi{\'c}, P.V.},
+      TITLE  = {{I}nverse Optimality in robust stabilization},
+      JOURNAL = siamCO, 
+      PAGES   = {1365-1391},
+      VOLUME  = 34,
+      YEAR    = 1996}
+%**<FF>******************************************************************
+@Book{FreemanKokotovicBook:96,
+  author = 	 {Freeman, R.A. and Kokotovi{\'c}, P.V.},
+  title = 	 {{R}obust {C}ontrol of {N}onlinear {S}ystems},
+  publisher = 	 Birk,
+  year = 	 {1996},
+  address = 	 {Boston, Ma.}
+}
+
+%**<FF>******************************************************************
+		  
+%************************************************************************
+% <<G>>
+%************************************************************************
+
+
+%<FF>************************************************************************
+@InProceedings{GaulNitsche:Edin01,
+  author = 	 {Gaul, L. and Nitsche, R.},
+  title = 	 {{S}mart Friction Driven Systems},
+  booktitle = 	 {International Conference on Smart Technology Demonstrator \& Devices},
+  pages = 	 {xx-(+13)},
+  year = 	 {2001},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  OPTaddress = 	 {Edinburgh, UK},
+  OPTmonth = 	 {12.-14. December 2001},
+  OPTorganization = {},
+  OPTpublisher = {Universit{\"a}tsbibliothek Kassel},
+  OPTnote = 	 {ISBN: 3-89792-055-7},
+  OPTannote = 	 {}
+}%************************************************************************
+@InProceedings{GaulNitsche:Cost01,
+  author = 	 {Gaul, L. and Nitsche, R.},
+  title = 	 {{D}amping Control in Systems Assembled by Joint Connections },
+  booktitle = 	 {International Conference on Structural System Identification},
+  pages = 	 {37-48},
+  year = 	 {2001},
+  volume = 	 {1},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Kassel Germany},
+  month = 	 {5.-7. September 2001},
+  OPTorganization = {},
+  OPTpublisher = {Universit{\"a}tsbibliothek Kassel},
+  OPTnote = 	 {ISBN: 3-89792-055-7},
+  OPTannote = 	 {}
+}%************************************************************************
+@InProceedings{GaulNitsche:Queb01,
+  author = 	 {Gaul, L. and Nitsche, R.},
+  title = 	 {{D}amping Control by Smart Joints},
+  booktitle = 	 {International Conference Engineered Adapive Structures III},
+  pages = 	 {xx-xx},
+  year = 	 {2001},
+  OPTvolume = 	 {1},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Quebec City, Canada},
+  month = 	 {July, 2001},
+  OPTorganization = {},
+  OPTpublisher = {},
+  OPTnote = 	 {ISBN: },
+  OPTannote = 	 {}
+}
+%**<FF>******************************************************************
+@InCollection{GaulNitsche:sd2000,
+  author = 	 {Gaul, L. and Nitsche, R.},
+  title = 	 {{D}ynamics of Structures with Joint Connections},
+  booktitle = 	 {Structural Dynamics @ 2000: Current Status and
+		  Future Directions},
+   pages = 	 {29-48},
+  publisher = {Research Studies Press Ltd.},
+  year = 	 {2001},
+  editor = 	 {D.J. Ewins and D.J. Inman},
+  address = 	 {Baldock, Hertfordshire, England},
+  OPTnote = 	 {ISBN:},
+  OPTannote = 	 {}
+}
+
+%**<FF>**************************************************************
+@Article{GaulNitsche:amr2000,
+  author = 	 "Gaul, L. and Nitsche, R.",
+  title = 	 "The Role of Friction in Mechanical Joints",
+  journal = 	 AMR,
+  year = 	 "2001",
+  volume = 	 "54",
+  number = 	 "2",
+  pages = 	 "93-105",
+  month = 	 "March"
+}
+%**<FF>******************************************************************
+@InProceedings{GaulNitscheVIB:99,
+  author = 	 "Gaul, L. and Nitsche, R.",
+  title = 	 "Friction Control for Vibration Suppression ",
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  number = 	 "DETC99/VIB-8191",
+  OPTseries = 	 "",
+  pages = 	 "1-8",
+  booktitle = "CDROM-Proc. of the 1999 ASME Design Engineering
+		  Technical Conferences",
+  year = 	 "1999",
+  organization = "ASME",
+  OPTpublisher = "",
+  address = 	 "Las Vegas, Nevada",
+  month = 	 "September 12-16"
+}
+%**<FF>******************************************************************
+@InProceedings{GaulNitscheCon:99,
+  author = 	 "Gaul, L. and Nitsche, R.",
+  title = 	 "Contact Pressure Control in Bolted Joint Connections ",
+  editor = 	 "L. Gaul and C.A. Brebbia",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "DETC99/VIB-8191",
+  OPTseries = 	 "",
+  pages = 	 "369-378",
+  booktitle = "Computational Methods in Contact Mechanics IV",
+  year = 	 "1999",
+  organization = "WIT Press",
+  OPTpublisher = "",
+  address = 	 "Southampton, Boston ",
+  OPTmonth = 	 "September 12-16"
+}
+%**<FF>******************************************************************
+@Misc{GaulPatent,
+  OPTcrossref =  "",
+  OPTkey = 	 "",
+  author = 	 "Gaul, L.",
+  title = 	 "{A}ktive {B}eeinflussung von {F}{\"u}gestellen in
+		  mechanischen {K}onstruktionselementen und
+		  {S}trukturen --- {A}ctive {C}ontrol of {J}oints in
+		  {M}embers and {S}tructures",
+  OPThowpublished = "Deutsche Offenlegungsschrift DE
+		  197\,02\,518\,A1",
+  howpublished = "German Patent DE 197\,02\,518\,A1",		  
+  year = 	 "1997",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@Article{Gaul:81,
+  author = 	 "Gaul, L.",
+  title = 	 "Zur {D}{\"a}mmung und {D}{\"a}mpfung von
+		  {B}iegewellen an {F}{\"u}gestellen",
+  journal = 	 "Ingenieur Archiv",
+  year = 	 "1981",
+  volume = 	 "51",
+  pages = 	 "101-110"
+}
+%**<FF>******************************************************************
+@Article{Gaul:82,
+  author = 	 "Gaul, L.",
+  title = 	 "Wellenausbreitung in {S}trukturen mit {F}{\"u}gestellen",
+  journal = 	 ZAMM,
+  year = 	 "1984",
+  volume = 	 "62",
+  pages = 	 "T41-T44"
+}
+%**<FF>******************************************************************
+@Article{Gaul:83,
+  author = 	 "Gaul, L.",
+  title = 	 "Wave Transmission and Energy Dissipation at
+		  Structural and Machine Joints",
+  journal = 	 JVASR,
+  year = 	 "1983",
+  volume = 	 "105"
+}
+%**<FF>******************************************************************
+@InProceedings{GaulBohlen:87,
+  author = 	 "Gaul, L. and Bohlen, S.",
+  title = 	 "Identification of Nonlinear Structural Joint Models
+		  and Implementation in Discretized Structure Models",
+  OPTeditor = 	 "",
+  volume = 	 "5",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  pages = 	 "213-219",
+  booktitle = "Proc. 11th ASME Conference on Mechanical Vibration and
+		  Noise: The Role of Damping in Vibration and Noise",
+  year = 	 "1987",
+  OPTorganization = "",
+  OPTpublisher = "",
+  address = 	 "Boston (USA)",
+  OPTmonth = 	 "",
+}
+%**<FF>******************************************************************
+@InProceedings{GaulBohlen:87IMAC,
+  author = 	 "Gaul, L. and Bohlen, S.",
+  title = 	 "Vibration of  Structures Coupled by Nonlinear
+		  Transfer Behaviour of Joints; A Combined
+		  Computational and Experimental Approach",
+   volume = 	 "I",
+  pages = 	 "86-91",
+  booktitle = "Proc. 5th  Int. Modal Analysis Conference",
+  year = 	 "1987",
+  address = 	 "London"
+}
+%**<FF>******************************************************************
+@Article{GaulBohlen:84,
+  author = 	 {Gaul, L. and Bohlen, S.},
+  title = {Zum nichtlinearen {{\"U}}bertragungsverhalten von {F}{\"u}gestellen},
+  journal = 	 ZAMM,
+  year = 	 {1984},
+  volume = 	 {64},
+  pages = 	 {T45-T48}
+}
+%**<FF>******************************************************************
+@Article{GaulLenz:97,
+  author = 	 "Gaul, L. and Lenz, J.",
+  title = 	 "Nonlinear dynamics of structures assembled by bolted
+		  joints",
+  OPTcrossref =  "",
+  OPTkey = 	 "",
+  journal = 	 "Acta Mechanica",
+  year = 	 "1997",
+  volume = 	 "125",
+  number = 	 "1--4",
+  pages = 	 "169--181",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@article{GaulLenzSachau:98,
+      AUTHOR = {Gaul, L. and Lenz, J. and Sachau, D.},
+      TITLE  = {Active Damping of Space Structures by Contact Pressure 
+		  Control in Joints},
+      JOURNAL = MSM,
+      VOLUME  = {26},
+      Editor  = EDITORMSM,
+      PAGES   = {81-100},		  
+      YEAR    = 1998}
+%**<FF>******************************************************************
+@InProceedings{GaulNitsche:98,
+  author = 	 "Gaul, L. and Nitsche, R. and Sachau, D.",
+  booktitle = 	 "Modelling and Control of Adaptive Mechanical Structures",
+  title = 	 "Semi-Active Vibration Control of Flexible Structures",
+  publisher =    VDI,
+  year = 	 "1998",
+  editor = 	 "Gabbert, U.",
+  pages = 	 "277-286",
+  number = 	 "268",
+  series = 	 "VDI-Fortschritt-Berichte Reihe 11",
+  address = 	 "D{\"u}sseldorf",
+  OPTnote = 	 "ISBN 3-18-326811-6",
+}
+%**<FF>******************************************************************
+@InProceedings{GaulNitsche:98proc,
+  author = 	 "Gaul, L. and Nitsche, R. and Sachau, D.",
+  title = 	 "Semi-Active Vibration Control of Flexible Structures",
+  editor = 	 "Gabbert, U.",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  pages = 	 "217--226",
+  booktitle =    "Proc. of the Euromech 373 Colloquium:
+		  Modelling and Control of Adaptive Mechanical Structures",
+  year = 	 "1998",
+  OPTorganization = "",
+  OPTpublisher =  "",
+  address = 	 "Otto-von-Guericke-Universit{\"a}t Magdeburg",
+  month = 	 "March 11--13",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@Article{GaulNitscheMSSP:00,
+  author = 	 "Gaul, L. and Nitsche, R.",
+  title = 	 "Friction Control for Vibration Suppression",
+  journal = 	 MSSP,
+  year = 	 "2000",
+  volume = 	 "14",
+  number = 	 "2",
+  pages = 	 "139-150",
+  month = 	 "March"
+}
+%**<FF>******************************************************************
+@Article{GaulMSSP:99,
+  author = 	 "Gaul, L.",
+  title = 	 "The Influence of Damping on Waves and Vibration",
+  journal = 	 MSSP,
+  year = 	 "1999",
+  volume = 	 "13",
+  number = 	 "1",
+  pages = 	 "1-30"
+}%**<FF>******************************************************************
+@Article{GaulNitscheZAMM:00,
+  author = 	 "Gaul, L. and Nitsche, R.",
+  title = 	 "Vibration Control by Interface Dissipation in
+		  Semi-Active Joints",
+  journal = 	 ZAMM,
+  year = 	 "2000",
+  volume = 	 "80",
+  pages = 	 "S45-S48"		  
+  }
+		  
+%**<FF>******************************************************************
+@Article{GaulSachau:98,
+  author = 	 "Gaul, L. and Lenz, J. and Sachau, D.",
+  title = 	 "Verwende hierf{\"u}r das cite GaulLenzSachau:98 ",
+  journal = 	 "Mechanics of Structures and Machines",
+  year = 	 "xx98",
+  volume = 	 "xx",
+  number = 	 "x",
+  pages = 	 "xx-xx",
+  OPTmonth = 	 "",
+}
+%**<FF>******************************************************************
+@book{Gelb:74,
+      AUTHOR={Gelb, A.},
+      TITLE={{A}pplied Optimal Estimation},
+      YEAR=1974, 
+      PUBLISHER={M.I.T. Press}}
+%**<FF>******************************************************************
+@Book{Gilles:73,
+  author = 	 "Gilles, E.D.",
+  title = 	 "Systeme mit verteilten {P}arametern",
+  publisher = 	 OV,
+  year = 	 "1973",
+  OPTeditor = 	 "F{\"o}llinger, O. and Sartorius, H.",
+  series = 	 "Methoden der {R}egelungstechnik",
+  address = 	 "M{\"u}nchen, Wien"
+}
+%**<FF>******************************************************************
+@Article{GoodmanKlumpp:56,
+  author = 	 "Goodman, L.E. and Klumpp, J.H.",
+  title = 	 "Analysis of Slip Damping with Reference to
+		  Turbine-Blade Vibration",
+  journal = 	 "ASME J. of Applied Mechanics",
+  year = 	 "1956",
+  volume = 	 "23",
+  pages = 	 "421-429"
+}
+%**<FF>******************************************************************
+@InProceedings{Goodman:59,
+  author = 	 "Goodman, L.E. ",
+  title = 	 "A Review of progress in analysis of interfacial slip 
+		  damping",
+  editor = 	 "Jerome E. Ruzicka",
+  pages = 	 "35-48",
+  series = 	 "ASME annual meeting",
+  booktitle = "Structural Damping",
+  year = 	 "1959",
+  address = 	 "Atlatic City, NJ",
+  month = 	 "December"
+}
+%**<FF>******************************************************************
+@InProceedings{GreenwoodWilliamson:66,
+  author = 	 "Greenwood, J.A. and Williamson, J.B.P.",
+  title = 	 "Contact of nominally flat surfaces",
+  volume = 	 "295",
+  OPTnumber = 	 "A",
+  pages = 	 "300-319",
+  booktitle = "Proc. R. Soc. Lond. ",
+  year = 	 "1966"
+}
+%**<FF>******************************************************************  
+@InProceedings{Greenwood:84,
+  author = 	 "Greenwood, J.A.",
+  title = 	 "A unified theory of surface roughness",
+  volume = 	 "295",
+  OPTnumber = 	 "A",
+  pages = 	 "133-157",
+  booktitle = "Proc. R. Soc. Lond. ",
+  year = 	 "1984"
+}
+%**<FF>******************************************************************
+@Article{Griffin:80,
+  author = 	 "Griffin, J.H.",
+  title = 	 "Friction Damping of Resonant Stresses in Gas Turbine 
+		  Engine Airfoils",
+  journal = 	 "ASME J. of Engineering for Power",
+  year = 	 "1980",
+  volume = 	 "102",
+  number = 	 "2",		  
+  month = 	 "April",
+  pages = 	 "329-333"
+}
+%**<FF>******************************************************************  
+
+%************************************************************************
+% <<H>>
+%************************************************************************
+%**<FF>******************************************************************
+@Article{HaessigFriedland:91,
+  author = 	 {Haessig, D.A. and Friedland, B.},
+  title = 	 {On the Modelling and Simulation of Friction},
+  journal = 	 JDMC,
+  year = 	 {1991},
+  volume = 	 {113},
+  number = 	 {3},
+  pages = 	 {354-362}
+}
+%**<FF>******************************************************************
+@Article{Haupt:91,
+  author = 	 "Haupt, P.",
+  title = 	 "{D}ynamische {S}ysteme mit
+		  geschwindigkeitsunabh{\"a}ngiger {D}{\"a}mpfung",
+  journal = 	 ZAMM,
+  year = 	 "1991",
+  volume = 	 "71",
+  pages = 	 "T55-T57"
+}
+%**<FF>******************************************************************
+@Book{HairerNorsettWanner:87,
+  author = 	 {Hairer, E. and N{\o}rsett, S.P. and Wanner, G.},
+  ALTeditor = 	 {},
+  title = 	 {{S}olving {O}rdinary {D}ifferential {E}quations {I}:
+                   {N}onstiff {P}roblems},
+  publisher = 	 SV,
+  year = 	 {1987},
+  address = 	 {Berlin}
+}
+%**<FF>******************************************************************
+@InProceedings{Hayasakaetal:92,
+  author = 	 "Hayasaka et. al., Y.",
+  title = 	 "Analysis of Nonlinear Vibration of Space Apparatuses 
+		  Connected with Pinned-Joints",
+  number = 	 "IAF-92-0315",
+  booktitle = "43rd Congress of teh Inernational Astronautical Federation",
+  year = 	 "1992",
+  address = 	 "Washington D.C.",
+  month = 	 "Sept. 1-4",
+}
+%**<FF>******************************************************************
+@Article{HeckFerri:96,
+  author = 	 "Heck, B.S. and Ferri, A.A.",
+  title = 	 "Model Reduction of {C}oulomb Friction Damped Systems
+		  Using Singular Pertubation Theory",
+  journal = 	 "ASME J. of Dynamic Systems, Measurement, and Control",
+  year = 	 "1996",
+  volume = 	 "118",
+  number = 	 "1",
+  pages = 	 "84--91",
+  month = 	 "March",
+}		  
+%**<FF>******************************************************************
+@Article{Heck:91,
+  author = 	 "Heck, B.S.",
+  title = 	 "Sliding--mode control for singularly perturbated systems",
+  journal = 	 "Int. J. of Control",
+  year = 	 "1991",
+  volume = 	 "53",
+  number = 	 "4",
+  pages = 	 "985--1001",
+  month = 	 "April",
+}
+%**<FF>******************************************************************
+@Article{HeckHaddad:89,
+  author = 	 "Heck, B.S. and Haddad, A.H.",
+  title = 	 "Singular Perturbation in Piecewise--Linear Systems",
+  journal = 	 "IEEE Transactions on Automatic Control",
+  year = 	 "1989",
+  volume = 	 "AC--34",
+  number = 	 "1",
+  pages = 	 "87--90",
+  month = 	 "January",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@Article{HeckFerri:89,
+  author = 	 "Heck, B.S. and Ferri, A.A.",
+  title = 	 "Application of Output Feedback to Variable Structure
+		  Systems",
+  journal = 	 JGCD,
+  year = 	 "1989",
+  volume = 	 "12",
+  number = 	 "6",
+  pages = 	 "932--935",
+  month = 	 "November--December",
+}
+%**<FF>******************************************************************
+@TechReport{Hedgepeth:81,
+  author = 	 "Hedgepeth, J.M.",
+  title = 	 "Critical Requirements for the Design of Large Space Structures",
+  institution =  "NASA",
+  year = 	 "1981",
+  number = 	 "CR-3483"
+}
+%**<FF>******************************************************************
+@Article{HertzCrawly:85,
+  author = 	 {Hertz, T.J. and Crawly, E.F.},
+  title = 	 {Displacement Dependent Friction in Space Structural Joints},
+  year = 	 {1985},
+  journal = 	 {AIAA J.},
+  volume = 	 {23},
+  pages = 	 {1996-2000}
+}
+%**<FF>******************************************************************
+@Article{HessSoom:90,
+  author = 	 {Hess, D.P. and Soom, A.},
+  title = 	 {Friction at lubricated line contact operating at oscillating 
+                  sliding velocities},
+  journal = 	 "J. of Tribology",
+  year = 	 "1990",
+  volume = 	 "112",
+  OPTnumber = 	 "",
+  pages = 	 "147-152"
+}
+%**<FF>******************************************************************
+
+%**<FF>******************************************************************
+@Article{Hrovat:88,
+  author = 	 "Hrovat, D. and Margolis, D. L. and Hubbart, M.",
+  title = 	 "An Approach Toward the Optimal Semi-Active Suspension",
+  journal = 	 "ASME J. of Dynamic Systems, Measurement, and Control",
+  year = 	 "1988",
+  volume = 	 "110",
+  pages = 	 "288-296",
+  month = 	 "September",
+}
+%**<FF>******************************************************************
+@Article{HuMueller:97,
+  author = 	 {Hu, R. and M{\"u}ller, P.C.},
+  title = 	 {Position Control of Robots by Nonlinearity Estimation 
+                  and Compensation: {T}heory and Experiments},
+  journal = 	 {J. of Intelligent and Robotic Systems},
+  year = 	 {1997},
+  volume = 	 {20},
+  OPTnumber = 	 {},
+  pages = 	 {195-209},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+%**<FF>******************************************************************
+
+%************************************************************************
+% <<I>>
+%************************************************************************
+%**<FF>******************************************************************
+@Article{Ibrahim:94a,
+  author = 	 "Ibrahim, R.A.",
+  title = 	 "Friction-Induced Vibration, Chatter, Squeal, and
+		  Chaos --- {P}art {I}: Mechanics of Contact and Friction",
+  journal = 	 AMR,
+  year = 	 "1994",
+  volume = 	 "47",
+  number = 	 "7",
+  pages = 	 "209-226"
+}
+%**<FF>******************************************************************
+@Article{Ibrahim:94b,
+  author = 	 "Ibrahim, R.A.",
+  title = 	 "Friction-Induced Vibration, Chatter, Squeal, and
+		  Chaos --- {P}art {II}: Dynamics and Modeling",
+  journal = 	 AMR,
+  year = 	 "1994",
+  volume = 	 "47",
+  number = 	 "7",
+  pages = 	 "227-253"
+}		  
+%**<FF>******************************************************************
+@Article{IbrahimAfanehLee:91,
+  author = 	 "Ibrahim, R.A. and Afaneh, A. and Lee, B.H.",
+  title = 	 "Structural Modal Bifurcation with Internal
+		  Resonance, {P}art {I}: Deterministic Approach,
+		  {P}art {II}: Stochastic Apporach",
+  journal = 	 "ASME J. of Vibration and Acoustics",
+  year = 	 "1991",
+  volume = 	 "115",
+  number = 	 "2",
+  pages = 	 "182-201"
+}
+%**<FF>******************************************************************
+@Article{IggidrKalitineOutbib:96,
+  author = 	 {Iggidr, A. and Kalitine, B. and Outbib, R.},
+  title = 	 {Semi-definite {L}yapunov functions, stability and stabilization},
+  journal = 	 MCSS,
+  year = 	 {1996},
+  volume = 	 {9},
+  pages = 	 {95-106}
+}
+%**<FF>******************************************************************
+@book{Isidori:95,
+      AUTHOR={Isidori, A.}, 
+      TITLE={{N}onlinear {C}ontrol {S}ystems}, 
+      YEAR=1995, 
+      EDITION={3rd},
+      PUBLISHER=SV}
+%**<FF>*****************************************************************
+%************************************************************************
+% <<J>>
+%************************************************************************
+%**<FF>******************************************************************
+@Book{Jacobsen:77,
+  author = 	 {Jacobsen, D.H.},
+  title = 	 {Extension of {L}inear-{Q}uadratic {C}ontrol, {O}ptimization
+                  and {M}atrix {T}heory},
+  publisher = 	 AP,
+  year = 	 {1977},
+  address = 	 {New York}
+}
+%**<FF>******************************************************************
+@article{Jager:95,
+      AUTHOR = {de Jager, B.},
+      TITLE  = {{T}he Use of Symbolic Computation in Nonlinear
+		  Control: Is It Viable?},
+      JOURNAL = IeeeTAC,
+      VOLUME  = 40, 
+      PAGES  = {84-89},
+      YEAR = 1995}
+%**<FF>******************************************************************
+@Article{Jezequel:83,
+  author = 	 "J{\'e}z{\'e}quel, L.",
+  title = 	 "Structural damping by slip in joints ",
+  journal = 	 JVASR,
+  year = 	 "1983",
+  volume = 	 "105",
+  pages = 	 "497-504"
+}
+
+%**<FF>******************************************************************
+@Article{JurdjevicQuinn:78,
+  author = 	 {Jurdjevic, V. and Quinn, J.P.},
+  title = 	 {Controllability and Stability},
+  journal = 	 {J. of Differential Equations},
+  year = 	 {1978},
+  volume = 	 {28},
+  pages = 	 {381-389}
+}
+%**<FF>******************************************************************
+@Article{Junkins:93,
+  author = 	 "Hyland, D.C. and Junkins, J.L. and Longman, R.W.",
+  title = 	 "Active Control Technology for Large Space Structures",
+  journal = 	 JGCD,
+  year = 	 "1993",
+  volume = 	 "16",
+  number = 	 "5",
+  pages = 	 "801-821",
+  OPTmonth = 	 "September-October",
+}		  
+%**<FF>******************************************************************  
+@Book{Joshi:96,
+  author = 	 "Kelkar, A. and Joshi, S.",
+  title = 	 "Control of Nonlinear Multibody Flexible Space
+		  Structures",
+  publisher = 	 SV,
+  year = 	 "1996",
+  OPTeditor = 	 "M. Thoma",
+  volume = 	 "221",
+  series = 	 "Lecture Notes in Control and Information Sciences",
+  address = 	 "Berlin",
+}
+%**<FF>******************************************************************	  
+@article{Jones:90,
+  author = 	 "Jones, D.I.G.",
+  title = 	 "Damping of Dynamic Systems",
+  volume = 	 "22",
+  number = 	 "4",
+  pages = 	 "3-10",
+  journal =       SVD,
+  year = 	 "1990",
+}
+%**<FF>******************************************************************	  
+@Book{Johnson:85,
+  author = 	 "Johnson, K.L.",
+  title = 	 "{C}ontact {M}echanics",
+  publisher = 	 "Cambridge University Press",
+  year = 	 "1985",
+  address = 	 "Cambridge etc."
+}
+%**<FF>******************************************************************	  
+		  
+%************************************************************************
+% <<K>>
+%************************************************************************
+%**<FF>******************************************************************
+@book{Kailath:80,
+      AUTHOR={Kailath, Th.}, 
+      TITLE={{L}inear {S}ystems}, 
+      YEAR=1980, 
+      PUBLISHER={Prentice-Hall}}
+%**<FF>******************************************************************
+@Book{Khalil:96,
+  author = 	 {Khalil, H.K.},
+  title = 	 {Nonlinear Systems},
+  publisher = 	 PH,
+  year = 	 {1996},
+  edition = 	 {2nd}
+}
+%**<FF>******************************************************************
+@Book{Kalker:90,
+  author = 	 "Kalker, J.J.",
+  title = 	 "Three dimensional elastic bodies in rolling contact",
+  publisher = 	 "Kluwer",
+  year = 	 "1990",
+  address = 	 "Dortrecht etc."
+}
+%**<FF>******************************************************************
+@Article{Kalman:60,
+  author = 	 {Kalman, R.E.},
+  title = 	 {A New Approach to Linear Filtering and Prediction Problems},
+  journal = 	 {Trans. AMSE J. of Basic Engineering},
+  year = 	 {1960},
+  pages = 	 {35-46},
+  volume=        {82},
+  series=        {D},
+  month = 	 {March}
+}
+%**<FF>******************************************************************
+@Article{KalmanBucy:61,
+  author = 	 {Kalman, R.E. and Bucy, R.},
+  title = 	 {New Results in Linear Filtering and Prediction},
+  journal = 	 {Trans. AMSE J. of Basic Engineering},
+  year = 	 {1961},
+  pages = 	 {95-108},
+  volume=        {83},
+  series=        {D},
+  month = 	 {March}
+}
+%**<FF>******************************************************************
+@Article{KannanUrasAktan:95,
+  author = 	 "Kannan, S. and Uras, H.M. and Aktan, H.M.",
+  title = 	 "Active Response of Building Seismic Response by Energy Dissipation",
+  journal = 	 "Earthquake Engineering and Structural Dynamics",
+  year = 	 "1995",
+  volume = 	 "24",
+  number =       "5",
+  pages = 	 "747-759"
+}
+%**<FF>******************************************************************
+@inproceedings{LevineKasinski:83,
+            AUTHOR ={Kasinski, A. and L\'evine, J.},
+            TITLE={A Fast Graph Theoretic Algorithm for the Feedback
+		  Decoupling Problem of Nonlinear Systems},
+            BOOKTITLE={Lect. Notes in Contr. Inform. Sci., Vol. 63, Part II},
+            EDITOR={Fuhrmann},
+            PUBLISHER=SV,
+            PAGES={550-563},
+            YEAR=1983}
+%**<FF>******************************************************************
+@Article{Karius:85,
+  author = 	 "Karius, D.",
+  title = 	 "A Contribution on Forced Periodic Oscillations with
+		  Piecewise Linear and Constant Damping",
+  journal = 	 JVASR,
+  year = 	 "1985",
+  volume = 	 "107",
+  number = 	 "4",
+  pages = 	 "383-391"
+}
+%**<FF>******************************************************************
+@Article{Karnopp:74,
+  author = 	 "Karnopp, D.C. and Crosby, M.J. and Harwood, R.A.",
+  title = 	 "Vibration Control Using Semi-Active Force Generators",
+  journal = 	 "ASME J. of Engineering for Industry",
+  year = 	 "1974",
+  volume = 	 "96",
+  number =       "2",
+  pages = 	 "619-626",
+  OPTnote =      "Kopiert"
+}		  
+%**<FF>******************************************************************
+@Article{KarnoppAllen:76,
+  author = 	 "Karnopp, D.C. and Allen, R.R",
+  title = 	 "Semiactive Control of Multimode Vibratory Systems
+		  Using the {I}{L}{S}{M} Concept",
+  journal = 	 "ASME J. of Engineering for Industry",
+  year = 	 "1976",
+  volume = 	 "98",
+  number =       "3",
+  pages = 	 "914-918",
+  OPTnote =      "Kopiert"
+}
+%**<FF>******************************************************************
+@Article{Karnopp:85,
+  author = 	 "Karnopp, D.C.",
+  title = 	 "Computer simulation of slip-stick friction in mechanical
+		  dynamic systems",
+  journal = 	 JDMC,
+  year = 	 "1985",
+  volume = 	 "107",
+  number =       "1",
+  pages = 	 "100-103"
+}		  
+%**<FF>******************************************************************
+@Article{Karnopp:87,
+  author = 	 "Karnopp, D.C.",
+  title = 	 "Force Generation in Semi-Active Suspensions Using
+		  Modulated Dissipative Elements",
+  journal = 	 "Vehicle System Dynamics",
+  year = 	 "1987",
+  volume = 	 "16",
+  OPTnumber =       "1",
+  pages = 	 "333-343",
+  OPTnote =      "Kopiert"
+}		  
+%**<FF>******************************************************************
+@Article{Karnopp:90,
+  author = 	 "Karnopp, D.C.",
+  title = 	 "Design Principles for Vibration Control Systems
+		  Using Semi-Active Dampers",
+  journal = 	 JDMC,
+  year = 	 "1990",
+  volume = 	 "112",
+  pages = 	 "448-455",
+  month = 	 "September",
+  OPTnote =      "Kopiert"
+}
+%**<FF>******************************************************************	  
+@Article{Karnopp:95,
+  author = 	 "Karnopp, D.C.",
+  title = 	 "Active and Semi-Active Vibration Isolation",
+  journal = 	 TASME,
+  year = 	 "1995",
+  volume = 	 "117",
+  pages = 	 "177-185",
+  OPTnote =      "Kopiert",
+}
+%**<FF>******************************************************************
+@Article{Kelly:86,
+  author = 	 "Kelly, J.M.",
+  title = 	 "Aseismic Base Isolation: Review and Bibliography",
+  journal = 	 "Soil Dynamics and Earthquake Engineering",
+  year = 	 "1986",
+  volume = 	 "5",
+  number = 	 "3",
+  pages = 	 "202-216"
+}
+%**<FF>******************************************************************
+@InProceedings{Kimbrough:84,
+  author = 	 {Kimbrough, S.},
+  title = 	 {Sub-Optimal Bilinear Regulation with Applications to the
+                  Stability Enhancement of Variable Structure Systems},
+  booktitle = 	 {American Control Conference},
+  pages = 	 {1641-1645},
+  year = 	 {1984},
+  address = 	 {Piscataway, NJ}
+}
+%**<FF>******************************************************************
+@Article{KimWang:93,
+  author = 	 {Kim, Y.S. and Wang, K.W.},
+  title = 	 {On the Sliding Mode Control of Structural Vibrations 
+                  via Variable Damping},
+  journal = 	 MSSP,
+  year = 	 {93},
+  volume = 	 {7},
+  number = 	 {3},
+  pages = 	 {335-347}
+}
+%**<FF>******************************************************************
+@article{Klepp:91,
+      AUTHOR = {Klepp, H.J.},
+      TITLE  = {Steady-State and Irregular Motions of a System with Friction  
+		under Harmonic Excitation},
+      JOURNAL = {Mechanics of Structures and Machines},
+      VOLUME  = {19},
+      number  = {3},
+      Editor  = {E.J. Haug},
+      PAGES   = {327-356},		  
+      YEAR    = 1991}
+%**<FF>******************************************************************
+@InProceedings {Kortuem95,
+author      = {Kort{\"u}m, W. and Sachau, D. and Schwertassek, R.} ,
+title       = "Analysis and Design of Flexible and Controlled
+		  Multibody Systems with {\Simpack}", 
+booktitle   = "46th Int. Astronautical Congress", 
+year        = "1995",
+address     = "Oslo, Norway",
+}
+%**<FF>******************************************************************
+@Article{KouElliotTarn:73,
+  author = 	 "Kou, S.R. and Elliot, D.L. and Tarn, T.J.",
+  title = 	 "Observability of nonlinear systems",
+  journal = 	 "Information and Control",
+  year = 	 "1973",
+  volume = 	 "22",
+  pages = 	 "89-99",
+  OPTannote = 	 "Signatur UBStgt: 2Za 1270 - 22"
+}
+%**<FF>******************************************************************
+@Article{Krasovski:71,
+  author = 	 "Krasovski, A.A.",
+  title = 	 "A new solution to the problem of a control system analytical 
+                  design ",
+  journal = 	 Aut,
+  year = 	 "1971",
+  volume = 	 "7",
+  pages = 	 "45-50"
+}
+%**<FF>******************************************************************
+@Book{Krebs:80,
+  author = 	 {Krebs, V.},
+  title = 	 {{N}ichtlineare {F}ilterung},
+  publisher = 	 OV,
+  year = 	 {1980},
+  OPTseries = 	 {Methoden der Regelungstechnik},
+  OPTaddress = 	 {M{\"u}nchen Wien}
+}
+%**<FF>******************************************************************
+@inproceedings{PhelpsKrener:88,
+      TITLE  = {Computation of observer normal form using {\sc Macsyma}},
+      AUTHOR = {Phelps, A. R. and Krener, A. J.},
+      EDITOR = {Byrnes, C. and Martin, C. and Seaks, R.},
+      BOOKTITLE = {Analysis and Control of Nonlinear Systems},
+      PUBLISHER = {North-Holland},
+      PAGES = {475-482},
+      YEAR    = 1988}
+%**<FF>******************************************************************
+@article{KrenerRespondek:85,
+      AUTHOR = {Krener, A.J. and Respondek, W.},
+      TITLE  = {{N}onlinear Observer with Linearizable Error Dynamics},
+      JOURNAL = siamCO,
+      PAGES   = {197-216},
+      VOLUME  = 23,
+      YEAR    = 1985}
+%**<FF>******************************************************************
+
+%************************************************************************
+% <<L>>
+%************************************************************************
+
+%**<FF>******************************************************************
+@InProceedings{LaneFerri:95,
+  author = 	 "Lane, J.S. and Ferri, A.A.",
+  title = 	 "Control of a Flexible Structure Using Combined
+		  Active and Semi-Active Elements",
+  pages = 	 "719-728",
+  booktitle = "Proc. of the 1995 Structures, Structural Dynamics,
+		  and Material Conference",
+  year = 	 "1995",
+  OPTorganization = "AIAA",
+  OPTpublisher = "",
+  address = 	 "New Orleans, LA",
+  month = 	 "April 10--12",
+}
+%**<FF>******************************************************************
+@InProceedings{LaneFerri:ACC92,
+  author = 	 "Lane, J.S. and Ferri, A.A.",
+  title = 	 "Optimal Control of a Semi-Active, Frictionally
+		  Damped Joint",
+  OPTvolume = 	 "1",
+  pages = 	 "2754-2759",
+  booktitle =    "Proc. of the 1992 American Control Conference",
+  year = 	 "1992",
+  address = 	 "Chicago, IL",
+  month = 	 "June",
+}
+%**<FF>******************************************************************
+@InProceedings{LaneFerriHeck:92,
+  author = 	 "Lane, J.S. and Ferri, A.A. and Heck, B.S.",
+  title = 	 "Vibration Control Using Semi-Active Friction Damping",
+  OPTvolume = 	 "49",
+  OPTnumber = 	 "",
+  OPTseries = 	 "DE", 
+  pages = 	 "165-171",
+  booktitle = "ASME-Publication DE-Vol 49",
+  year = 	 "1992", 
+  editor = "Ibrahim, R.A. and Soom, A.",
+  OPTnote = 	 "And presented at the ASME Winter Annual Meeting,
+		  Anaheim, CA, Nov. 1992",
+}
+%**<FF>******************************************************************
+@InProceedings{LaneDickerson:84,
+  author = 	 {Lane, J.S. and Dickerson, S.L.},
+  title = 	 {Contribution of Passive Damping to the Control of Flexible
+                  Manipulators},
+  booktitle = 	 {ASME Computers in Engineering},
+  year = 	 {1984},
+  OPTaddress = 	 {Las Vegas, NV}
+}
+%**<FF>******************************************************************
+@PhdThesis{Lane:93,
+  author = 	 "Lane, J.S.",
+  title = 	 "Control of Dynamic Systems Using Semi-Active
+		  Friction Damping",
+  school = 	 "School of Mechanical Engineering",
+  year = 	 "1993",
+  OPTcrossref =  "",
+  OPTkey = 	 "",
+  address = 	 "Georgia Institute of Technology",
+  month = 	 "March",
+  OPTtype = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@InProceedings{LaneFerriHeck1:93,
+  author = 	 "Lane, J.S. and Ferri, A.A. and Heck, B.S.",
+  title = 	 "Semi--Active Friction Damping for Suspension
+		  Control: Experimental Verification",
+  volume = 	 "2",
+  pages = 	 "65--68",
+  booktitle = "Proc. of the Int. Federation on
+		  Automatic Control World Congress",
+  year = 	 "1993",
+  address = 	 "Sydney, Australien",
+  month = 	 "July",
+}
+%**<FF>******************************************************************
+@InProceedings{LaneFerriHeck2:93,
+  author = 	 "Lane, J.S. and Ferri, A.A. and Heck, B.S.",
+  title = 	 "Analytical and Experimantal Investigation of a
+		  Semi-Active Dry Friction Shock Absorber",
+  volume = 	 "2",
+  pages = 	 "245-248",
+  booktitle = "Proc. of the Int. Federation on
+		  Automatic Control World Congress",
+  year = 	 "1993",
+  address = 	 "Sydney, Australien",
+  month = 	 "July",
+}
+%**<FF>******************************************************************
+@InProceedings{Lakeetal:99,
+  author = 	 "Lake, M.S. and Phelps, J.E. and Dyer, J.E. 
+                  and Caudle, D.A. and Tam, A. and Escobedo, J. and Kasl, E.P.",
+  title = 	 "A Deployable Primary Mirror for Space Telescopes",
+  number = 	 "3785-02",
+  series = 	 "SPIE Paper",
+  booktitle = "1999 SPIE Int. Symposium on Optical Science,
+		  Engineering, and Instrumentation",
+  year = 	 "1999",
+  organization = "SPIE",
+  address = 	 "Denver, CL",
+  month = 	 "July 18-23"
+}
+%**<FF>******************************************************************
+@InProceedings{LakeWarrenPeterson:96,
+  author = 	 "Lake, M.S. and Warren, P.A. and Peterson L.D.",
+  title = 	 "A Revolute Joint With Linear Load-Displacement
+		  Response for Precision Deployable Structures",
+  booktitle =    "37th AIAA/ASME/ASCE/AHS/ASC Structures, Structural
+		  Dynamics, and Materials Conference",
+  year = 	 "1996",
+  address = 	 "Salt Lake City, Utah",
+  month = 	 "April"
+}
+%**<FF>******************************************************************
+@InProceedings{LakeFungetal:97,
+  author = 	 "Lake, M.S. and Fung, J. and Gloss, K. and Liechty, D.S. ",
+  title = 	 "Experimental Characterization of Hysteresis in a Revolute 
+                  Joint for Precision Deployable Structures",
+  number = 	 "AIAA-97-1379",
+  year = 	 "1997",
+  booktitle = "The 38th AIAA/ASME/ASCE/AHS/ASC Structures, Structural
+		  Dynamics, and Materials Conference",
+  address = 	 "Kissimmee, FL",
+  month = 	 "April 7-10"
+}
+%**<FF>******************************************************************
+@Book{LaSalleLefschetz:61,
+  author = 	 {LaSalle, J. and Lefschetz, S.},
+  title = 	 {Stability by {L}yapunov's Direct Method with Applications},
+  publisher = 	 AP,
+  year = 	 {1961},
+  address = 	 {New York}
+}
+
+%**<FF>******************************************************************
+@Article{LaursenSimo:93,
+  author = 	 "Laursen, T.A. and Simo, J.C.",
+  title = 	 "Continuum-based finite element formulation for
+		  implicit solution of multibody, large deformation
+		  frictional contact problems",
+  journal = 	 "Int. J. for Numerical Methods in Engineering",
+  OPTjournal = 	 "Int. J. Num. Meth. Engg.",
+  year = 	 "1993",
+  volume = 	 "36",
+  pages = 	 "3451-3485"
+}
+%**<FF>******************************************************************
+@PhdThesis{Lenz:97,
+ author       = "Lenz, J.",
+ title        = {{Strukturdynamik unter dem Einflu{\ss} von Mikro- und 
+		  Makroschlupf in F{\"u}gestellen}}, 
+  school        = {Universit{\"a}t Stuttgart},
+  year         =  "1997",
+  address      = {Bericht aus dem Institut A f{\"u}r Mechanik 1/1997},
+  optnote         = {Notiz},
+  optstandort     = {ds}
+}
+%**<FF>******************************************************************
+@InProceedings{Lenz:95,
+  author = 	 "Gaul, L. and Lenz, J.",
+  title = 	 "xxx The Influence of Microslip on the  Dynamic Behaviour
+		  of Bolted Joints xxx",
+  pages = 	 "248--254",
+  booktitle =    "Verwende hierf{\"u}r:  LenzGaul:95",
+  year = 	 "1995",
+  address = 	 "Nashville, Tn",
+  OPTmonth = 	 "",
+}
+%**<FF>******************************************************************
+@InProceedings{LenzGaul:95,
+  author = 	 "Lenz, J. and Gaul, L.",
+  title = 	 "The influence of microslip on the dynamic behavior
+		  of bolted joints",
+  pages = 	 "248-254",
+  booktitle = "Proc. of the 13th Int. Modal Analysis Conference",
+  year = 	 "1995",
+  address = 	 "Nashville, Tn"
+}
+%**<FF>******************************************************************
+@InProceedings{LevineWhite:01,
+  author = 	 {Levine, M.B. and White, C.},
+  title = 	 {Microdynamic Analysis for Establishing Nanometric Stability
+                  Requierements of Jointed Precision Space Structures},
+  booktitle = 	 {Proc. 9th Int. Modal Analysis Conference},
+  pages = 	 {1395-1401},
+  year = 	 {2001},
+  address = 	 {Kissimmee, FL},
+  OPTmonth = 	 {February 5-8}
+}
+
+%**<FF>******************************************************************
+@inproceedings{LevineDandrea:86,
+      AUTHOR={D'Andrea, B.  and L\'evine, J.},
+      TITLE={{C}. {A}. {D}. for Nonlinear Systems Decoupling, Perturbations
+		  Rejection and Feedback Linearization with
+		  Applications to the Dynamic Control of a Robot Arm},
+      EDITOR = {Fliess, M. and Hazewinkel, M.},
+      BOOKTITLE={{A}lgebraic and {G}eometric {M}ethods in {N}onlinear
+		  {C}ontrol {T}heory}, 
+      PUBLISHER = {Reidel},
+      PAGES = {545-572},
+      YEAR = 1986}
+%**<FF>******************************************************************
+@Article{Levitan:60,
+  author = 	 "Levitan, E.S.",
+  title = 	 "Forced Oscillation of a Spring-Mass System Having
+		  Combined {C}oulomb and Viscous Damping",
+  journal = 	 "J. of the Acoustical Society of America",
+  year = 	 "1960",
+  volume = 	 "32",
+  number = 	 "10",
+  pages = 	 "1265-1269"
+}
+%**<FF>******************************************************************
+@Book{LozanoBrogliato:2000,
+  author = 	 {Lozano, F. and Brogliato, B. and Egeland, O. and Maschke, B.},
+  ALTeditor = 	 {Sontag, E.},
+  title = 	 {Dissipative Systems Analysis and Control},
+  publisher = 	 SV,
+  year = 	 {2000},
+  series = 	 {Communications and Control Engineering},
+  address = 	 {London}
+}
+
+%**<FF>******************************************************************
+@Article{Loetstedt:82,
+  author = 	 "L{\"o}tstedt, P.",
+  title = 	 "Mechanical systems of rigid bodies subjected to
+		  unilateral constraints",
+  journal = 	 siamAM,
+  year = 	 "1982",
+  volume = 	 "42",
+  OPTnumber = 	 "",
+  pages = 	 "281-296"
+}
+%**<FF>******************************************************************
+@article{Luenberger:71,
+      TITLE = {{A}n indroduction to observer},
+      AUTHOR = {Luenberger, D.G.},
+      JOURNAL = IeeeTAC,
+      VOLUME = {16},
+      PAGES  = {596-602},
+      YEAR = 1971}		  
+%**<FF>******************************************************************
+		  
+		  
+%************************************************************************
+% <<M>>
+%************************************************************************
+%**<FF>******************************************************************
+@InProceedings{MastersCrawlySchoor:94,
+  author = 	 "Masters, B.P. and Crawly, E.F. and van Schoor, M.C.",
+  title = 	 "Global Structure Modeling Using Force-State
+		  Component Identification",
+  number = 	 "AIAA-94-1519",
+  year = 	 "1994",
+  booktitle = "The 35th AIAA/ASME/ASCE/AHS/ASC Structures, Structural
+		  Dynamics, and Materials Conference",
+    month = 	 "April"
+}%**<FF>******************************************************************
+@Article{MajundarBhushan:91,
+  author = 	 {Majundar, A. and Bhushan, B.},
+  title = 	 {Fractal Model of elastic-plastic contact between
+		  rough surfaces},
+  journal = 	 "J. of Tribology",
+  year = 	 "1991",
+  volume = 	 "113",
+  OPTnumber = 	 "",
+  pages = 	 "1-11"
+}
+%**<FF>******************************************************************
+@Article{MajundarTien:90,
+  author = 	 {Majundar, A. and Tien, C.},
+  title = 	 {Fractal Characterization and Simulation of Rough Surfaces},
+  journal = 	 "Wear",
+  year = 	 "1990",
+  volume = 	 "136",
+  OPTnumber = 	 "",
+  pages = 	 "313-327"
+}
+%**<FF>******************************************************************
+@article{MakrisConstantinou:91,
+      AUTHOR = {Makris, N. and Constantinou, M.C.},
+      TITLE  = {Analysis of Motion Resisted by Friction. {I.}
+		  {C}onstant {C}oulomb and Linear/{C}oulomb Friction},
+      JOURNAL = MSM,
+      VOLUME  = {19},
+      NUMBER  = {4},
+      Editor  = EDITORMSM,
+      PAGES   = {477-500},		  
+      YEAR    = 1991}
+%**<FF>******************************************************************
+@Article{Martins:90,
+  author = 	 "Martins, J.A. and Oden, J.T. and Sim{\~o}es, F.M.F.",
+  title = 	 "A study of static and kinetic friction",
+  OPTcrossref =  "",
+  OPTkey = 	 "",
+  journal = 	 IJES,
+  year = 	 "1990",
+  volume = 	 "28",
+  OPTnumber = 	 "",
+  pages = 	 "29-92",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@TechReport{MarkHachowski:2000,
+  author = 	 "Mark, S.L. and Hachowski, M.R.",
+  title = 	 "Design of Mechanism for Deployable, Optical
+		  Instruments: Guidelines for Reducing Hysteresis",
+  institution =  "NASA",
+  year = 	 "2000",
+  number = 	 "TM-2000-210089",
+  OPTaddress = 	 "",
+  month = 	 "March"
+}
+%**<FF>******************************************************************
+@book{Mathematica,
+      AUTHOR={Wolfram, S.},
+      TITLE={{M}athematica -- {A} System for Doing Mathematics by Computer}, 
+      YEAR=1996, 
+      PUBLISHER={Addison Wesley}}
+%**<FF>******************************************************************
+@book{Matlab,
+      AUTHOR={{The Mathworks Inc.}},
+      TITLE={{{\sc matlab} user's guide}},
+      YEAR={1997}, 
+      PUBLISHER={}}
+%**<FF>******************************************************************
+@InProceedings{McClamrochGavin94,
+  author = 	 "McClamroch, H.H. and Gavin, H.P. and Oritz, D.S. and Hanson, R.D. ",
+  title = 	 "Electrorheological Dampers and Semi-Active Structural Control",
+  pages = 	 "97-102",
+  booktitle = "Proc. of the 33rd Conference on Decision and Control",
+  year = 	 1994,
+  address = 	 "Lake Buena Vista, FL",
+  month = 	 "December"
+}%**<FF>******************************************************************
+@Book{Meirovitch:67,
+  author = 	 "Meirovitch, L.",
+  title = 	 "Anlaytical Methods in Vibrations",
+  publisher = 	 "The MacMillian Company",
+  year = 	 "1967",
+  address = 	 "London",
+}
+%**<FF>******************************************************************
+@Book{Meirovitch:90,
+  author = 	 {Meirovitch, L.},
+  title = 	 {{D}ynamics and {C}ontrol of {S}tructures},
+  publisher = 	 JWS,
+  year = 	 1990
+}
+%**<FF>******************************************************************
+@Article{MenqBielakGriffin:86I,
+  author = 	 "Menq, C.H. and  Bielak, J. and Griffin, J.H.",
+  title = 	 "The Influence of Microslip on Vibratory Response,
+		  {P}art {I}: A New Microslip Model",
+  journal = 	 JSV,
+  year = 	 "1986",
+  volume = 	 "107",
+  number = 	 "2",
+  pages = 	 "279-293"
+}
+%**<FF>******************************************************************
+@Article{MenqBielakGriffin:86II,
+  author = 	 "Menq, C.H. and  Bielak, J. and Griffin, J.H.",
+  title = 	 "The Influence of Microslip on Vibratory Response,
+		  {P}art {II}: A Comparison with Experimental Results",
+  journal = 	 JSV,
+  year = 	 "1986",
+  volume = 	 "107",
+  number = 	 "2",
+  pages = 	 "295-307"
+}
+%**<FF>******************************************************************	  
+@Article{MenqGriffin:86,
+  author = 	 "Menq, C.-H. and Griffin, J.H. and Bielak, J.",
+  title = 	 "The Influence of a Variable Normal Load on the
+		  Forced Vibration of a Frictionally Damped System",
+  journal = 	 "ASME J. of Engineering for Gas Turbines and Power",
+  year = 	 "1986",
+  volume = 	 "102",
+  number = 	 "2",
+  pages = 	 "300--305",
+  month = 	 "April",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}		  
+%**<FF>******************************************************************
+@InProceedings{MoraalNieuwstadtKolmanovsky:99,
+  author = 	 {Moraal, P.E. and Nieuwstadt, M.J. and Kolmanovsky, I.V.},
+  title = 	 {Model Based Control of Diesel Engines},
+  booktitle = 	 {Steuerungssysteme für den Antriebsstrang von Kraftfahrzeugen,
+                  2. Symposium},
+  OPTcrossref =  {},
+  OPTkey = 	 {},
+  OPTpages = 	 {},
+  year = 	 {1999},
+  OPTeditor = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Berlin},
+  month = 	 {September},
+  OPTorganization = {},
+  OPTpublisher = {},
+  OPTnote = 	 {Band ist bei Dr. Hötzer FV/SLT2},
+  OPTannote = 	 {}
+}
+
+%**<FF>******************************************************************	  
+@Article{MetherellDiller:68,
+  author = 	 "Metherell, A.F. and Diller, S.V.",
+  title = 	 "Instantaneous Energy Dissipation in Rate in a Lap
+		  Joint --- Uniform Clamping Pressure",
+  journal = 	 "ASME J. of Applied Mechanics",
+  year = 	 "1968",
+  volume = 	 "35",
+  pages = 	 "123-128"
+}
+%**<FF>******************************************************************	  
+@InProceedings{Mikic:71,
+  author = 	 "Mikic, B.B.",
+  title = 	 "Analytical studies of contact of nominally flat
+		  surfaces; effect of previous loading",
+  volume = 	 4,
+  OPTnumber = 	 93,
+  pages = 	 "451-459",
+  booktitle = "J. Lub. Tech.",
+  year = 	 1971
+}
+
+%**<FF>******************************************************************	  
+@Article{Miller:78,
+  author = 	 "Miller, R.K.",
+  title = 	 "The steady state response of systems with hardening hysteresis",
+  journal = 	 "J. Mech. Design",
+  year = 	 "1978",
+  volume = 	 "100",
+  pages = 	 "193-198"
+}
+%**<FF>******************************************************************	  
+@Book{moreau:88,
+  author = 	 "Moreau, J.J.",
+  title = 	 "Nonsmooth mechanics and applications",
+  publisher = 	 SV,
+  year = 	 "1988",
+  series = 	 "CISM Courses and Lectures",
+  address = 	 "Wien u.a."
+}
+%**<FF>******************************************************************
+@inbook{Mueller:95,
+      AUTHOR = {M{\"u}ller, P.C.}, 
+      TITLE={{S}ch{\"a}tzung und {K}ompensation von {N}ichtlinearit{\"a}en 
+              mit {S}t{\"o}rgr{\"o}{\ss}enbeobachtern},
+      PUBLISHER={{I}n: {E}ngell, {S}. ({E}ditor): 
+               {{E}ntwurf nichtlinearer {R}egelungen}. Oldenbourg-Verlag},
+      PAGES = {241-250},
+      YEAR=1995}
+%**<FF>******************************************************************
+@Article{MuellerPC:00at,
+  author = 	 "M{\"u}ller, P.C.",
+  title = 	 "{R}obuste {P}ositionsregelung von {R}obotern mittels 
+                  {N}ichtlinearit{\"a}ten-{S}ch{\"a}tzung und {K}ompensation",
+  journal = 	 "at Automatisierungstechnik",
+  year = 	 "2000",
+  volume = 	 "48",
+  number =       "6",
+  pages = 	 "298-295",
+  month = 	 "June"
+}
+%**<FF>******************************************************************
+@PhdThesis{MuellerDiss:00,
+  author = 	 {M{\"u}ller, S.},
+  title = 	 {{Z}um {E}insatz von semi-aktiven {A}ktuatoren zur optimalen
+                   {S}chwingungsreduktion in {T}ragwerken},
+  school = 	 {Ruhr-Universit{\"a}t Bochum},
+  year = 	 {2000},
+  OPTmonth = 	 {February}
+}
+%**<FF>******************************************************************
+
+%************************************************************************
+% <<N>>
+%************************************************************************
+%**<FF>*****************************************************************
+@Book{NashiffJonesHenderson:84,
+  author = 	 {Nashiff, A.D. and Jones, D. and Henderson, J.P.},
+  title = 	 {Vibration Damping},
+  publisher = 	 JWS,
+  year = 	 {1984},
+  address = 	 {New York},
+}
+%**<FF>*****************************************************************
+@Book{Nijmeijer:90,
+  author = 	 "Nijmeijer, H. and van der Schaft, A.J.",
+  title = 	 "{N}onlinear {D}ynamical {C}ontrol {S}ystems",
+  publisher = 	 JWS,
+  year = 	 "1990",
+  OPTaddress = 	 "",
+}
+%**<FF>*********************************************************************
+@InCollection{NitscheGaul4Magnus:02,
+  author = 	 {Nitsche, R. and Gaul, L.},
+  title = 	 {Lyapunov Design of Damping Controllers},
+  booktitle = 	 {Festschrift zum 90sten Geburtstag von Prof. Magnus},
+  OPTcrossref =  {},
+  OPTkey = 	 {},
+  OPTpages = 	 {},
+  OPTpublisher = {},
+  year = 	 {2002},
+  OPTeditor = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  OPTtype = 	 {},
+  OPTchapter = 	 {},
+  OPTaddress = 	 {},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {to appear},
+  OPTannote = 	 {}
+}
+%**<FF>******************************************************************
+% ***********************************************************************
+@InCollection{NitscheGaul4Pre:02,
+  author = 	 {Nitsche, R. and Gaul, L.},
+  title = 	 {{D}amping Control in Systems Assembled by Semi-Active Joints},
+  booktitle = 	 {Responsive Systems for Active Vibration Control},
+  OPTcrossref =  {},
+  OPTkey = 	 {},
+  OPTpages = 	 {},
+  publisher = {Kluwer Academic Publisher},
+  year = 	 {2002},
+  editor = 	 {A. Preumont},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  OPTtype = 	 {},
+  OPTchapter = 	 {},
+  address = 	 {Dordrecht, The Netherlands},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {to appear},
+  OPTannote = 	 {}
+}
+
+%**<FF>******************************************************************
+@phdthesis{Nitsche:01,
+      AUTHOR = {Nitsche, R.},
+      TITLE  = {{S}emi-Active Control of Friction Damped Systems},
+      SCHOOL = {VDI-Fortschritt-Berichte Nr.8/907, VDI-Verlag},
+      YEAR = 2001}
+%**<FF>******************************************************************
+@InProceedings{NitscheGaul:Montr00,
+  author = 	 "Nitsche, R. and Gaul, L.",
+  title = 	 "Experimental Evaluation of an Active Friction Joint",
+  OPTcrossref =  "",
+  OPTkey = 	 "",
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTseries = 	 "",
+  OPTpages = 	 "",
+  booktitle = "Proc. of the 2nd Int. Symposium on
+		  Impact and Friction of Solids, Structures and Machines",
+  year = 	 "2000",
+  OPTorganization = "",
+  OPTpublisher = "",
+  address = 	 "Montreal",
+  month = 	 "August",
+  OPTnote = 	 "to appear, maybe it will never appear",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************	  
+@InProceedings{NitscheGaul:Udine00,
+  author = 	 "Nitsche, R. and Gaul, L.",
+  title = 	 "Controller Design for Friction Driven Systems",
+  editor = 	 "Afzal Suleman",
+  series = 	 "CISM Courses and Lectures No. 429",
+  booktitle = "Proc. of the CISM Course: Smart Structures:
+		  Theory and Applications",
+  year = 	 "2001",
+  ORTorganization = "International Centre for Mechanical Sciences",
+  publisher = SV,
+  address = 	 "Wien, New York",
+  month = 	 "June",
+  OPTannote = 	 "ISBN: 3-211-83681-0"
+}
+%**<FF>******************************************************************	  
+@InProceedings{NitscheGauletal:Udine00,
+  author = 	 "Gaul, L. and Albrecht, H. and Koegl, M. and Nitsche, R. and St{\"o}bener, U.",
+  title = 	 "Adaptive structures research at the University of Stuttgart",
+  OPTcrossref =  "",
+  OPTkey = 	 "",
+  editor = 	 "Afzal Suleman",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  series = 	 "CISM Courses and Lectures No. 429",
+  OPTpages = 	 "",
+  booktitle = "Proc. of the CISM Course: Smart Structures:
+		  Theory and Applications",
+  year = 	 "2001",
+  ORGorganization = "International Centre for Mechanical Sciences",
+  publisher = SV,
+  address = 	 "Wien, New York",
+  month = 	 "June",
+  OPTnote = 	 "never use this cite",
+  OPTannote = 	 "ISBN: 3-211-83681-0"
+}%**<FF>******************************************************************	  
+@InProceedings{NitscheGaul:Imac01,
+  author = 	 "Nitsche, R. and Gaul, L.",
+  title = 	 "Semi-Active Control of Friction Driven Systems",
+  pages = 	 "64-70",
+  booktitle = "Proc. 9th Int. Modal Analysis Conference",
+  year = 	 "2001",
+  OPTorganization = "SEM",
+  address = 	 "Kissimmee, FL",
+  OPTmonth = 	 "February 5-8"
+}
+%**<FF>******************************************************************
+@Article{Nitsche:95,
+  author = 	 "Kern, R. and Cao, C.T. and Nitsche, R.",
+  title = 	 "{R}eibkraftkompensation mittels {F}uzzy-{L}ogik",
+  journal = 	 "Automatisierungstechnische Praxis",
+  year = 	 "1995",
+  volume = 	 "5",
+  number = 	 "5",
+  pages = 	 "50-60",
+  OPTmonth = 	 ""
+}
+%**<FF>******************************************************************
+@Article{Nitsche:95atp,
+  author = 	 "Kern, R. and Cao, C.T. and Nitsche, R.",
+  title = 	 "{R}eibkraftkompensation mittels {F}uzzy-{L}ogik",
+  journal = 	 "Automatisierungstechnische Praxis",
+  year = 	 "1995",
+  volume = 	 "5",
+  OPTnumber =       "3",
+  pages = 	 "50-60",
+  OPTmonth = 	 "Mai",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@inproceedings{NitscheGaul:99,
+      AUTHOR = {Nitsche, R. and Gaul, L.},
+      TITLE = {{V}ibration Control Using Semi-Active Friction Damping},
+      OPTEDITOR = EDITORECC99,
+      NUMBER = {CM-4},  
+      BOOKTITLE = ECC99,
+      SERIES = 	 {CD-ROM Proc.},
+      YEAR = {1999}}
+}
+
+%**<FF>******************************************************************
+@inproceedings{NitBindelRothZeitz:99,
+      AUTHOR = {Bindel, R. and Nitsche, R. and Rothfu{\ss}, R. and Zeitz, M.},
+      TITLE = {{F}latness Based Control of a Two Valve Hydraulic
+		  Joint Actuator of a Large Manipulator},
+      OPTEDITOR = EDITORECC99,
+      BOOKTITLE = ECC99,
+      SERIES = 	 {CD-ROM Proc.},
+      NUMBER = {DA-14},
+      YEAR = {1999}}
+%**<FF>******************************************************************
+@Article{NguyenSelvadurai:98,
+  author = 	 "Nguyen, T.S. and Selvadurai, A.P.S.",
+  title = 	 "A Model for Coupled Mechanical and Hydraulic
+		  Behaviour of a Rock Joint",
+  journal = 	 "Int. J. for Numerical and Analytical Methods in 
+		  Geomechanics",
+  year = 	 "1998",
+  volume = 	 "22",
+  pages = 	 "29-48"
+}
+%**<FF>******************************************************************
+
+%************************************************************************
+% <<O>>
+%************************************************************************
+@PhdThesis{Olsson:96,
+  author = 	 "Olsson, H.",
+  title = 	 "Control Systems with Friction",
+  school = 	 "Departement of Automatic Control, Lund Institute of
+		  Techonology",
+  year = 	 "1996",
+  OPTaddress = 	 "",
+  month = 	 "April",
+}
+%**<FF>******************************************************************
+@Article{OlssonEtal:98,
+  author = 	 "Olsson, H. and {\AA}str{\"o}m, K.J. and Canudas de
+		  Wit, C. and G{\"a}fvert, M. and Lischinsky, P.",
+  title = 	 "Friction Models and Friction Compensation",
+  journal = 	 EJC,
+  year = 	 "1998",
+  OPTvolume = 	 "",
+  OPTnumber = 	 "",
+  OPTpages = 	 "",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@Article{OdenMartins:85,
+  author = 	 {Oden, J.T. and Martins, J.},
+  title = 	 {Models and Computational Methods for Dynamic Friction Phenomena},
+  journal = 	 {Computer Methods in Applied Mechanics and Engineering},
+  year = 	 {1985},
+  volume = 	 {52},
+  OPTnumber = 	 {},
+  pages = 	 {527-634}
+}
+%**<FF>******************************************************************
+@InProceedings{OnodaSanoMinesugi:93,
+  author = 	 "Onoda, J. and Sano, T. and Minesugi, K.",
+  title = 	 "Passive Vibration Suppression of Truss by Using Backlash",
+  number = 	 "AIAA-93-1549-CP",
+  year = 	 "1993",
+  booktitle = "The 34th AIAA/ASME/ASCE/AHS/ASC Structures, Structural
+		  Dynamics, and Materials Conference",
+  address = 	 "LaJolla Ca.",
+  month = 	 "April 19-22"
+}
+%**<FF>******************************************************************
+@Book{Ortegaetal:98,
+  author = 	 {Ortega, R. and Lorfa, A. and Nicklasson, P.J. and Sira-Ram{\'i}rez, H.},
+  ALTeditor = 	 {},
+  title = 	 {Passivity-based control of {E}uler-{L}agrange systems},
+  publisher = 	 SV,
+  year = 	 {1998},
+  series = 	 {Communications and Control Engineering},
+  address = 	 {London}
+}
+%**<FF>******************************************************************
+@InProceedings{OtterbachKiffmeier:96,
+  author = 	 {Otterbach, R. and Kiffmeier, U.},
+  title = 	 {{E}ine neue {G}eneration hochleistungsf{\"a}higer
+                  {E}chtzeitsimulatoren auf der {B}asis des {A}lpha
+                  {A}{X}{P}\raisebox{1.2mm}{{\footnotesize T}{\footnotesize M}}
+                  {P}rozessors},
+  booktitle = 	 {10. Symposium Simulationstechnik ASIM'96},
+  OPTpages = 	 {},
+  year = 	 {1996},
+  address = 	 {Dresden},
+  OPTmonth = 	 {16.-19. September}
+}
+%**<FF>******************************************************************
+@Book{OptiTB,
+  author = 	 {Branch, M.A. and Grace, A.},
+  ALTeditor = 	 {},
+  title = 	 {Optimization Toolbox},
+  publisher = 	 {The MathWorks Inc.},
+  year = 	 {1996}
+}
+%**<FF>******************************************************************
+@Book{Ottl:81,
+  author = 	 "Ottl, D.",
+  title = 	 "Schwingungen mechanischer {S}ysteme mit {S}trukturd{\"a}mpfung",
+  publisher = 	 VDI,
+  year = 	 "1981",
+  number = 	 "603",
+  address = 	 "D{\"u}sseldorf"
+}
+%**<FF>******************************************************************
+
+%************************************************************************
+% <<P>>
+%************************************************************************
+%**<FF>******************************************************************
+@InProceedings{PetersonLakeHardaway:1999,
+  author = 	 {Peterson, L.D. and Lake, M.S. and Hardaway, L.M.R.},
+  title = 	 {Micron Accuracy Deployment Experiments ({M}{A}{D}{E}):
+                  A Space Station Labarotory for Actively Controlled Precision
+                  Deployable Structures Technology},
+  booktitle = 	 {Proc. of the Space Technology and 
+                  Applications International Forum},
+  year = 	 {1999},
+  address = 	 {Albuquerque, NM},
+  OPTmonth = 	 {February}
+}
+%**<FF>******************************************************************
+@TechReport{Phelps:1999,
+  author = 	 "Phelps, J.E.",
+  title = 	 "Fabrication and Assembly of High-Precision Hinge and 
+		  Latch Joints for Deployable Optical Instruments",
+  institution =  "NASA",
+  year = 	 "1999",
+  number = 	 "CR-1999-209117",
+  OPTaddress = 	 "",
+  month = 	 "March"
+}
+%**<FF>******************************************************************
+@InProceedings{Pfeiffer:93,
+  author = 	 {Pfeiffer, F.},
+  title = 	 {Complementary Problems of Stick-Slip Vibration},
+  booktitle = 	 {Dynamics and Vibration of Time-Varying Systems and Structures},
+  pages = 	 {43-50},
+  year = 	 {1993},
+  editor = 	 {Sinha, S.C. and Evan-Iwanowski, R.M.},
+  volume = 	 {56},
+  OPTnumber = 	 {},
+  series = 	 {Proc. of the ASME 14th Biennial Conference on 
+                  Mechanical Vibration and Noise},
+  address = 	 {Albuquerque},
+  month = 	 {September 19-22},
+  OPTorganization = {},
+  OPTpublisher = {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+%**<FF>******************************************************************
+@Article{Pfeiffer:91,
+  author = 	 "Pfeiffer, F.",
+  title = 	 "Dynamical systems with time-varying or unsteady structure",
+  journal = 	 ZAMM,
+  year = 	 "1991",
+  volume = 	 "71",
+  pages = 	 "T6-T22"
+}
+%**<FF>******************************************************************
+@InProceedings{PfeifferGlocker:92,
+  author = 	 "Pfeiffer, F. and Glocker, C.",
+  title = 	 "Dynamical systems with unsteady processes",
+  pages = 	 "65-74",
+  booktitle = "\cite{Ibrahim:94a}",
+  year = 	 "1992"
+}
+%**<FF>******************************************************************
+@Book{Pfeiffer:92,
+  author = 	 "Bremer, H. and Pfeiffer, F.",
+  title = 	 "{Elastische Mehrk{\"o}rpersysteme}",
+  publisher = 	 "Teubner-Studienb{\"u}cher: Mechanik",
+  year = 	 "1992",
+  address = 	 "Stuttgart"
+}
+%**<FF>******************************************************************
+@Article{PfeifferHajek:92,
+  author = 	 {Pfeiffer, F. and Hajek, M.},
+  title = 	 {Stick-Slip Motion of Turbine Blade Dampers},
+  journal = 	 {Philosophical Transactions of the Royal Society of London, A},
+  year = 	 {1992},
+  volume = 	 {338},
+  pages = 	 {503-517}
+}
+%**<FF>******************************************************************
+@Article{Pian:57,
+  author = 	 "Pian, T.H.",
+  title = 	 "Structural Damping of a Simple Built-Up Beam with
+		  Riveted Joints in Bending",
+  journal = 	 "ASME J. of Applied Mechanics",
+  year = 	 "1957",
+  volume = 	 "24",
+  pages = 	 "35-38"
+}
+%**<FF>******************************************************************
+@InProceedings{Plunkett:80,
+  author = 	 "Plunkett, R.",
+  title = 	 "Friction Damping",
+  editor = 	 "P.J. Torvik",
+  volume = 	 "38",
+  OPTseries = 	 "AMD",
+  pages = 	 "65-74",
+  booktitle =    "Damping Applications for Vibration Control, {\em AMD}",
+  year = 	 "1980",
+  organization = "ASME",
+  OPTpublisher = "",
+  address = 	 "N.Y.",
+  month = 	 "November"
+}
+%**<FF>******************************************************************
+@Article{Popp:94,
+  author = 	 "Popp, K.",
+  title = 	 "{N}ichtlineare {S}chwingungen mechanischer {S}trukturen
+		  mit {F}{\"u}ge- und {K}ontaktstellen",
+  OPTjournal = 	 "Zeitschrift f{\"u}r angewandte Mathematik und
+		  Mechanik --- ZAMM",
+  journal =      ZAMM,
+  year = 	 "1994",
+  volume = 	 "74",
+  number = 	 "3",
+  pages = 	 "147--165",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}		  
+%**<FF>******************************************************************
+@Article{Popp:98,
+  author = 	 "Popp, K.",
+  title = 	 "{N}on-smooth mechanical systems --- an overview",
+  journal = 	 "Forschung im Ingenieurwesen",
+  year = 	 "1998",
+  volume = 	 "64",
+  pages = 	 "223--229",
+  OPTmonth = 	 "",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}		  
+%**<FF>******************************************************************	  
+		  
+%************************************************************************
+% <<Q>>
+%************************************************************************
+%**<FF>******************************************************************
+		  
+%**<FF>******************************************************************	  
+		  
+%************************************************************************
+% <<R>>
+%************************************************************************
+%**<FF>******************************************************************
+@Article{Rabinowicz:51,
+  author = 	 {Rabinowicz, E.},
+  title = 	 {The nature of the static and kinetic coefficients of friction},
+  journal = 	 {J. of Applied Physics},
+  year = 	 {1951},
+  volume = 	 {22},
+  number = 	 {11},
+  pages = 	 {1373-1379}
+}
+
+%**<FF>******************************************************************
+@Article{RiceTse:86,
+  author = 	 "Rice, J.R. and Tse, S.T.",
+  title = 	 "Dynamic motion of a single degree of freedom system
+		  following a rate and state dependent friction law",
+  journal = 	 "J. Geophysical Research",
+  year = 	 "1986",
+  volume = 	 "91",
+  OPTnumber = 	 "",
+  pages = 	 "521-530"
+}
+%**<FF>******************************************************************
+@Article{RichardsonNolle:77,
+  author = 	 {Richardson, R.S.H. and Nolle, H.},
+  title = 	 {Energy Dissipation in Rotary Structural Joints},
+  journal = 	 JSV,
+  year = 	 {1977},
+  volume = 	 {54},
+  number = 	 {4},
+  pages = 	 {577-588}
+}
+%**<FF>******************************************************************
+@phdthesis{Rothfuss:97,
+      AUTHOR = {Rothfu{\ss}, R.},
+      TITLE  = {Anwendung der flachheitsbasierten Analyse und Regelung
+		  nichtlinearer Mehrgr\"o{\ss}ensysteme},
+      SCHOOL = {VDI-Fortschritt-Berichte Nr.8/664, VDI-Verlag},
+      YEAR = 1997}
+%**<FF>******************************************************************
+@inproceedings{RothfussZeitz:96,
+      AUTHOR = {Rothfu{\ss}, R. and Zeitz, M.},
+      TITLE = {{A} Toolbox for Symbolic Nonlinear Feedback Design},
+      BOOKTITLE = IFACWC96,
+      PAGES = {283-288},
+      YEAR = {1996}}		  
+%**<FF>******************************************************************
+@InProceedings{Rhodes:86,
+  author = 	 {Rhodes, M.D.},
+  title = 	 {Design Considerations for Joints in Deployable Space Truss 
+                  Structures},
+  booktitle = 	 {First NASA/DOD CSI Technology Conference},
+  OPTpages = 	 {},
+  year = 	 {1986},
+  address = 	 {Norfolk, VG},
+  OPTmonth = 	 {November 18-21}
+}
+%**<FF>******************************************************************
+%************************************************************************
+% <<S>>
+%************************************************************************
+%**<FF>******************************************************************
+@PhdThesis{Sachau:Diss,
+  author = 	 "Sachau, D.",
+  title = 	 {{Ber{\"u}cksichtigung von flexiblen K{\"o}rpern und F{\"u}gestellen
+		  in {M}ehr\-k\"or\-per\-sy\-stemen zur {S}imulation aktiver
+		  {R}aumfahrtstrukturen}},
+  school = 	 {Universit\"at Stuttgart -- Institut A f\"ur Mechanik},
+  year = 	 "1996"
+}
+%**<FF>******************************************************************
+@PhdThesis{Sachau:DissEngl,
+  author = 	 "Sachau, D.",
+  title = 	 "Consideration of Flexible Bodies and Bolted Joint
+		  Connections in Multibody Systems for Simulation of
+		  Active Space Structures (in German)",
+  optnote = 	 "In German",
+  school = 	 {Universit\"at Stuttgart -- Institut A f\"ur Mechanik},
+  year = 	 "1996"
+}
+%**<FF>******************************************************************
+@InProceedings{SanliturkStanbridgeEwins:95,
+  author = 	 "Sanliturk, K.Y. and Stanbridge, A.B. and Ewins, D.J.",
+  title = 	 "Friciton Dampers: Measurement, Modelling, and Application to 
+                  Blade Vibration Control",
+  OPTeditor = 	 "",
+  OPTvolume = 	 "DE-Vol. 84-2",
+  pages = 	 "1377-1382",
+  booktitle =    "ASME 15th  Biennial Conference  on Mechanical Vibration and 
+                  Noise",
+  year = 	 "1995",
+  organization = "ASME"
+}
+%**<FF>******************************************************************
+@Article{SchlaechterEldred:84,
+  author = 	 {Schlaechter, D.B. and Eldred, D.B.},
+  title = 	 {Experimental Demonstration of the Control of Flexible Structures},
+  journal = 	 JGCD,
+  year = 	 "1984",
+  volume = 	 "21",
+  number = 	 "5",
+  pages = 	 "448-455"
+}
+%**<FF>******************************************************************
+@phdthesis{Schaefer:66,
+      AUTHOR = {Schaefer, G.},
+      TITLE  = {{E}in {B}eitrag zum {S}chwingungs- und
+		  {D}{\"a}mpfungsverhalten von {W}erkstoffmodellen},
+      SCHOOL = {Technische Universi{\"a}t Hannover},
+      YEAR = 1966}
+%**<FF>******************************************************************
+@InProceedings{SchaffnerZeitz:99,
+  author = 	 {Schaffner, J. and Zeitz, M.},
+  title = 	 {Variants of Nonlinear Normal Form Observer Design},
+  booktitle = 	 {New Directions in Nonlinear Observer Design},
+  pages = 	 {162-180},
+  year = 	 {1999},
+  editor = 	 {H. Nijmeijer and T.I. Fossen},
+  volume = 	 {244},
+  series = 	 {Lecture Notes in Control and Information Sciences},
+  address = 	 {London},
+  publisher =    SV
+}
+%**<FF>******************************************************************
+@InProceedings{SegalmanVIB:99,
+  author = 	 "Segalman, D.",
+  title = 	 "Observation on Simulation of Joint Friction",
+  OPTeditor = 	 "",
+  OPTvolume = 	 "",
+  number = 	 "DETC99/VIB-8188",
+  OPTseries = 	 "",
+  pages = 	 "1-7",
+  booktitle = "CDROM-Proc. of the 1999 ASME Design Engineering
+		  Technical Conferences",
+  year = 	 "1999",
+  organization = "ASME",
+  OPTpublisher = "",
+  address = 	 "Las Vegas, Nevada",
+  month = 	 "September 12-16"
+}
+%**<FF>******************************************************************
+@Book{SelvaduraiBoulon:95,
+  OPTauthor = 	 "Selvadurai, A.P.S and Boulon, M.J.",
+  title = 	 "Mechanics of Geomaterial Interfaces",
+  publisher = 	 "Elsevier Scientific Publishers",
+  year = 	 "1995",
+  editor = 	 "Selvadurai, A.P.S and Boulon, M.J.",
+  volume = 	 "42",
+  series = 	 "Studies in Applied Mechanics",
+  address = 	 "The Netherlands"
+}
+%**<FF>******************************************************************
+@Book{SelvaduraiVoyiadjis:86,
+  OPTauthor = 	 "Selvadurai, A.P.S and Voyiadjis, G.Z.",
+  title = 	 "Mechanics of Material Interfaces",
+  publisher = 	 "Elsevier Scientific Publisher Co.",
+  year = 	 "1986",
+  editor = 	 "Selvadurai, A.P.S and Voyiadjis, G.Z",
+  volume = 	 "11",
+  series = 	 "Studies in Applied Mechanics",
+  address = 	 "Amsterdam"
+}
+%**<FF>******************************************************************
+@Book{Kokotivicetal:97,
+  author = 	 {Sepulchre, R. and Jankovi{\'c}, M. and Kokotivi{\'c} P.V.},
+  ALTeditor = 	 {},
+  title = 	 {Constructive Nonlinear Control},
+  publisher = 	 SV,
+  year = 	 {1997},
+  series = 	 {Communications and Control Engineering},
+  address = 	 {London}
+}
+
+%**<FF>******************************************************************
+@Article{Shaw:86,
+  author = 	 "Shaw, S.W.",
+  title = 	 "On the Dynamic Response of a System with Dry Friction",
+  journal = 	 JSV,
+  year = 	 "1986",
+  volume = 	 "108",
+  number =       "2",
+  pages = 	 "305-325"
+}
+%**<FF>******************************************************************
+@Book{Siljak:78,
+  author = 	 {Siljak, D.D.},
+  ALTeditor = 	 {},
+  title = 	 {Large Scale Dynamic Systems},
+  publisher = 	 {North-Holland},
+  year = 	 {1978},
+  address = 	 {New-York}
+}
+%**<FF>******************************************************************
+@PhdThesis{Siegl:81,
+  author = 	 {Siegl, G.},
+  title = 	 {{D}as {B}iegeschwingungsverhalten von {R}otoren,
+                 die mit {B}lechpaketen besetzt sind},
+  school = 	 {TU Berlin,  
+		  Fachbereich der Physikalischen Ingenieurwissenschaften},
+  year = 	 {1981}
+}
+%**<FF>******************************************************************
+@Article{SinhaGriffin:83,
+  author = 	 "Sinha, A. and Griffin, J.H.",
+  title = 	 "Friction Damping of Flutter in Gas Turbine Engine Airfoils",
+  journal = 	 "AIAA J. of Aircraft",
+  year = 	 1983,
+  volume = 	 20,
+  number = 	 4,
+  pages = 	 "372-376"
+}
+%**<FF>******************************************************************
+@Article{SinghMalushte:90,
+  author = 	 {Singh, M.P. and Malushte, S.R.},
+  title = 	 {Seismic Response of Simple Structures using Spring-Assisted Sliding 
+                  Slabs with Coulomb Damping},
+  journal = 	 {Earthquake Engineering and Structural Dynamics},
+  year = 	 1990,
+  volume = 	 19,
+  pages = 	 {189-203}
+}
+%**<FF>******************************************************************
+@Article{SinhaGriffin:84,
+  author = 	 {Sinha, A. and Griffin, J.H.},
+  title = 	 {Effects of Static Friction on the Forced Response of Frictionally
+                  Damped Turbine Blades},
+  journal = 	 {ASME J. of Engineering for Gas Turbines and Power},
+  year = 	 1984,
+  volume = 	 106,
+  pages = 	 {65-69}
+}
+%**<FF>******************************************************************
+@Article{SinhaGriffinKielb:86,
+  author = 	 "Sinha, A. and Griffin, J.H. and Kielb, R.E.",
+  title = 	 "Influence of Friction Dampers on Torsional Blade Flutter",
+  journal = 	 "ASME J. of Engineering for Gas Turbines and Power",
+  year = 	 1986,
+  volume = 	 108,
+  month = 	 "April",
+  pages = 	 "313-318"
+}
+%**<FF>******************************************************************
+@Book{Siouris:96,
+  author =       {Siouris, G.M.},
+  title = 	 {An engineering approach to optimal control and estimation 
+                  theory},
+  publisher = 	 JWS,
+  year = 	 {1996},
+  address = 	 {New York, Chichester, Brisbane, Toronto, Singapore}
+}
+%**<FF>******************************************************************
+@book{SlotineLi:91,
+      AUTHOR={Slotine, J. J. and Li, W.}, 
+      TITLE={{A}pplied {N}onlinear {C}ontrol}, 
+      YEAR=1991, 
+      PUBLISHER=PH}
+%**<FF>******************************************************************
+@Book{SontagBook:98,
+  author = 	 "Sontag, E.D.",
+  title = 	 "Mathematical Control Theory: Deterministic Finite
+		  Dimensional Systems",
+  publisher = 	 SV,
+  year = 	 "1998",
+  number = 	 "6",
+  series = 	 "Texts in Applied Mathematics",
+  edition = 	 "2nd"
+}
+%**<FF>******************************************************************
+@article{Sontag:89,
+      AUTHOR = {Sontag, E.D.},
+      TITLE  = {A universal construction of {A}rtstein's theorem on nonlinear
+                stabilization},
+      JOURNAL = SCL,
+      PAGES   = {117-123},
+      VOLUME  = 24,
+      YEAR    = 1989}
+%**<FF>******************************************************************
+@Article{Stribeck:02,
+  author = 	 "Stribeck, R.",
+  title = 	 "Die wesentlichen {E}igenschaften der {G}leit- und
+		  {R}ollenlager -- The key qualities of sliding and
+		  roller bearings",
+  journal = 	 "Zeitschrift des Vereins deutscher Ingenieure",
+  year = 	 "1902",
+  volume = 	 "46",
+  number = 	 "38,39",
+  pages = 	 "1342-48,1432-37"
+}
+%**<FF>******************************************************************
+@manual{SimulinkManual,
+      TITLE = {{Simulink, Dynamic System Simulation for Matlab}},
+      AUTHOR = {{Using Simulink}},
+      ORGANIZATION = {{The Mathworks}},
+      YEAR = 1997}
+%**<FF>******************************************************************	  
+@Book{SingerPollock:92,
+  OPTauthor = 	 "Singer, I.L. and Pollock, H.M.",
+  title = 	 "Fundamentals of friction: macroscopic and
+		  microscopic prcesses",
+  publisher = 	 "Kluwer, Dortrecht etc.",
+  year = 	 "1992",
+  OPTcrossref =  "",
+  editor = 	 "Singer, I.L. and Pollock, H.M.",
+  volume = 	 "220",
+  series = 	 "NATO ASI series E"
+}
+%**<FF>******************************************************************
+@InProceedings{ShepperdErasmus:88,
+  author = 	 {Shepperd, R. and Erasmus, L.A.},
+  title = 	 {},
+  volume = 	 "V",
+  pages = 	 "V-767-772",
+  booktitle =    "Proc. Ninth World Conference on Earthquake Engineering",
+  year = 	 "1988"
+}
+%**<FF>******************************************************************	  
+@article{SpencerSain:98,
+  author = 	 "Spencer Jr., B.F. and Sain, M.K.",
+  title = 	 "Controlling Buildings: A New Frontier in Feedback",
+  volume = 	 "30",
+  number = 	 "4",
+  pages = 	 "267-281",
+  journal =       SVD,
+  year = 	 "1998",
+}
+%**<FF>******************************************************************
+@Article{SrinivasanCutts:84,
+  author = 	 "Srinivasan, A. and Cutts, D.",
+  title = 	 "Measurement of relative vibratory motion at the shroud
+                  interfaces of a fan",
+  journal = 	 JVASR,
+  year = 	 "1984",
+  volume = 	 "106",
+  pages = 	 "189-197"
+} 
+%**<FF>******************************************************************
+@Article{Stefanides:88,
+  author = 	 {Stefanides, E.J.},
+  title = 	 {Frictional Damping Smooths Automatic Washer Spin Cycles},
+  journal = 	 {Design News},
+  year = 	 {1988},
+  volume = 	 {44},
+  pages = 	 {226-227},
+  OPTmonth = 	 {15. Feb}
+}
+%**<FF>******************************************************************
+@Article{SuhSin:81,
+  author = 	 {Suh, N.P. and Sin, H.C.},
+  title = 	 {The Genesis of Friction},
+  journal = 	 "Wear",
+  year = 	 "1981",
+  volume = 	 "69",
+  pages = 	 "91-114"
+}
+%**<FF>******************************************************************	  
+@InProceedings{Suetal:87,
+  author = 	 "Su, L. and Ahmadi, G. and Tadjbakhsh, I.G.",
+  title = 	 "A Comperative Study of Different Base Isolators",
+  editor = 	 "J.M. Rosset",
+  pages = 	 "15-26",
+  booktitle = "Dynamics of Structures, Proc. of the Structures
+		  Congress '87",
+  year = 	 "1987",
+  address = 	 "Orlando, FL",
+  month = 	 "August 17-20"
+}
+%**<FF>******************************************************************	  
+@Article{Suetal:89,
+  author = 	 "Su, L. and Ahmadi, G. and Tadjbakhsh, I.G.",
+  title = 	 "A Comperative Study of Different Base Isolation
+		  Systems, {P}art {I}: Shear Beam Structures",
+  journal = 	 "Earthquake Engineering and Structural Dynamics",
+  year = 	 "1989",
+  volume = 	 "18",
+  pages = 	 "11-32"
+}
+%**<FF>******************************************************************	  
+@Article{Suetal:90,
+  author = 	 "Su, L. and Ahmadi, G. and Tadjbakhsh, I.G.",
+  title = 	 "A Comperative Study of Different Base Isolation
+		  Systems, {P}art {II}: Sensitivity Analysis",
+  journal = 	 "Earthquake Engineering and Structural Dynamics",
+  year = 	 "1990",
+  volume = 	 "19",
+  pages = 	 "21-33"
+}		  
+
+%************************************************************************
+% <<T>>
+%************************************************************************
+%**<FF>******************************************************************
+@Article{TadjbakhshLin:87,
+  author = 	 "Tadjbakhsh, I.G. and Lin, B.C.",
+  title = 	 "Displacement-Proportional Friction (DPF) in Base Isolation",
+  journal = 	 "Earthquake Engineering and Structural Dynamics",
+  year = 	 "1987",
+  volume = 	 "125",
+  pages = 	 "799-813"
+}
+%**<FF>******************************************************************
+@Article{TangDowell:86a,
+  author = 	 "Tang, D.M. and Dowell, E.H.",
+  title = 	 "Damping in Beams and Plates Due to Slipping at the
+		  Support Boundaries, {P}art 2: Numerical and
+		  Experimental Study",
+  journal = 	 JSV,
+  year = 	 "1986",
+  volume = 	 "108",
+  number  =        "3",
+  pages = 	 "509-522"
+}
+%**<FF>******************************************************************
+@Article{TangDowell:86b,
+  author = 	 "Tang, D.M. and Dowell, E.H.",
+  title = 	 "Random Response of Beams and Plates with Slipping at 
+		  the Support Boundaries",
+  journal = 	 {AIAA J.},
+  year = 	 "1986",
+  volume = 	 "24",
+  number  =      "8",
+  pages = 	 "1354-1361"
+}		  
+%**<FF>******************************************************************
+@Article{TurnerChun:84,
+  author = 	 "Turner, J.D. and Chun, H.M.",
+  title = 	 "Optimal Distributed Control of a Flexible Spacecraft during
+                  a Large-Angle Maneuver",
+  journal = 	 JGCD,
+  year = 	 "1984",
+  volume = 	 "7",
+  number = 	 "3",
+  pages = 	 "257-264"
+}
+%**<FF>******************************************************************
+		  
+%************************************************************************
+% <<U>>
+%************************************************************************
+%**<FF>******************************************************************
+@TechReport{Ungar:64,
+  author = 	 "Ungar, E.E.",
+  title = 	 "Energy dissipation at structural joints; mechanisms
+		  and magnitudes",
+  institution =  "Air Force Flight Dynamics Laboratory,
+		  Wright-Patterson Airforce Base",
+  year = 	 "1964",
+  number = 	 "FDL-TDR-64-98",
+  address = 	 "Ohio"
+}
+%**<FF>******************************************************************
+@Article{Ungar:73,
+  author = 	 "Ungar, E.E.",
+  title = 	 "The Status of Engineering knowledge concerning the
+		  damping of built-up structures",
+  journal = 	 JSV,
+  year = 	 "1973",
+  volume = 	 "26",
+  number = 	 "1",
+  pages = 	 "141-154"
+}
+%**<FF>******************************************************************
+@book{Utkin:92,
+      AUTHOR={Utkin, V.I.},
+      TITLE={{S}liding Modes in Control and Optimization},
+      YEAR=1992, 
+      ADDRESS={Berlin},
+      PUBLISHER=SV}
+%**<FF>******************************************************************
+@Article{Utkin:77,
+  author = 	 "Utkin, V.I.",
+  title = 	 "Variable Structure Systems with Sliding Mode",
+  journal = 	 IeeeTAC,
+  year = 	 "1977",
+  volume = 	 "AC-22",
+  OPTnumber = 	 "",
+  pages = 	 "212--222",
+  month = 	 "April",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************	  
+		  
+%************************************************************************
+% <<V>>
+%************************************************************************
+%**<FF>******************************************************************
+@Article{Valanis:71,
+  author = 	 "Valanis, K.C.",
+  title = 	 "A Theory of Viscoplasticity without a Yield Surface",
+  journal = 	 "Archive of Mechanics",
+  year = 	 "1971",
+  volume = 	 "23",
+  number = 	 "4",
+  pages = 	 "517-551",
+}		  
+%**<FF>******************************************************************
+@Article{Valanis:80,
+  author = 	 "Valanis, K.C.",
+  title = 	 "Fundamental consequences of a new intrinsic time
+		  measure. Plasticity as a limit of the endochcronic theory",
+  journal = 	 "Archive of Mechanics",
+  year = 	 "1980",
+  volume = 	 "32",
+  OPTnumber = 	 "4",
+  pages = 	 "171-191",
+}		  
+%**<FF>******************************************************************	  
+@InProceedings{VakakisEwins:92,
+  author = 	 "Vakakis, A.F. and Ewins, D.J. ",
+  title = 	 "Effects of Weak Nonlinearities on Modal Analysis",
+  pages = 	 "72-78",
+  booktitle = "Proc. of the 10th Int. Modal Analysis Conference",
+  year = 	 "1992",
+  address = 	 "San Diego, CA"
+}
+%**<FF>******************************************************************
+@Article{VenneriMulville:89,
+  author = 	 {Venneri, S.L. and Mulville, D.R.},
+  title = 	 {Control of Flexible Structures},
+  journal = 	 {Aerospace America},
+  year = 	 {1989},
+  OPTkey = 	 {},
+  volume = 	 {27},
+  OPTnumber = 	 {},
+  pages = 	 {36-37},
+  OPTmonth = 	 {Jan.},
+  OPTnote = 	 {von Lane}
+}
+%**<FF>******************************************************************
+
+%************************************************************************
+% <<W>>
+%************************************************************************
+%**<FF>******************************************************************
+@Article{Wallrapp:94,
+  author = 	 "Wallrapp, O.",
+  title = 	 "Standardization of Flexible Body Modelling in
+		  Multibody System Codes -- Part~{I}: Definition of
+		  Standard Input Data",
+  journal = 	 "Mechanics of Structures and Machines",
+  year = 	 "1994",
+  volume = 	 "22",
+  number = 	 "3",
+  pages = 	 "283--304",
+}
+%**<FF>******************************************************************
+@Article{WangKimShea:94,
+  author = 	 "Wang, K.W. and Kim, Y.S. and Shea, D.B.",
+  title = 	 "Structural Vibration Control via
+		  Electrorheological-Fluid-Based Actuators with
+		  Adaptive Viscous and Frictional Damping",
+  journal = 	 JSV,
+  year = 	 "1994",
+  volume = 	 "177",
+  number = 	 "2",
+  pages = 	 "227-237"
+}
+
+%**<FF>******************************************************************	  
+@InCollection{WangLaiYu:94,
+  author = 	 {Wang, K.W. and Lai, J.S. and Yu, W.K.},
+  title = 	 {Structural Vibration Control via Piezoelectric Materials 
+                   with Real-Time Semi-Active Electrical Networks},
+  booktitle = 	 {Adaptive Structures and Composite materials: Analysis and Application},
+  pages = 	 {219-226},
+  publisher =    {ASME},
+  year = 	 {1994},
+  volume = 	 {AD-45}
+}
+%**<FF>******************************************************************  
+@Book{Werner:97,
+  author = 	 {Werner, D.},
+  ALTeditor = 	 {},
+  title = 	 {Funktionalanalysis},
+  publisher = 	 SV,
+  year = 	 {1997},
+  edition = 	 {2nd},
+  address = 	 {Berlin}
+}
+%**<FF>******************************************************************
+@Article{WestermoUdwadia:83,
+  author = 	 "Westermo, B. and  Udwadia, F.",
+  title = 	 "Periodic Response of a Sliding Oscillator System
+		  with Harmonic Excitation",
+  journal = 	 "Earthquake Engineering and Structural Dynamics",
+  year = 	 "1983",
+  volume = 	 "11",
+  pages = 	 "135-146"
+}
+%**<FF>******************************************************************
+@Article{WillnerZAMM:00,
+  author = 	 {Willner, K.},
+  title = 	 "Contact Laws for Rough Surfaces",
+  journal = 	 ZAMM,
+  year = 	 "2000",
+  note = 	 "to appear",
+}
+%**<FF>******************************************************************	  
+@InProceedings{WillnerGaul:95,
+  author =       {Willner, K. and Gaul, L.},
+  title =        {A penalty approach for contact description by {F}{E}{M}
+                  based on interface physics},
+  editor =       {Aliabadi, M.H. and Alessandri, C.},
+  pages =        {257-264},
+  booktitle =    {Proc. of Contact Mechanics II, Ferrara, Italy},
+  year =         {1995},
+  publisher =    {Comp. Mech. Publ.},
+  address =      {Southampton}
+}		  
+%**<FF>******************************************************************	  
+@Article{WhitemanFerri:96,
+  author = 	 "Witheman, W.E. and Ferri, A.A.",
+  title = 	 "Displacement-Dependent Dry Friction Damping of a
+		  Beam-Like Structure",
+  journal = 	 "ASME J. of Sound and Vibration",
+  year = 	 "1996",
+  volume = 	 "198",
+  number = 	 "3",
+  pages = 	 "313--329",
+  OPTmonth = 	 "December",
+}		  
+%**<FF>******************************************************************	  
+@Book{Wolfram:91,
+  author = 	 "Wolfram, S.",
+  title = 	 "{M}athematica -- {A} System for Doing Mathematics by Computer",
+  publisher = 	 "Addison Wesley",
+  year = 	 "1991",
+}
+
+%************************************************************************
+% <<X>>
+%************************************************************************
+%**<FF>******************************************************************
+		  
+%**<FF>******************************************************************	  
+		  
+%************************************************************************
+% <<Y>>
+%************************************************************************
+%**<FF>******************************************************************
+@Article{Yeh:66,
+  author = 	 "Yeh, G.C.K.",
+  title = 	 "Forced Vibrations of a Two-Degree-of-Freedom System
+		  with Combined {C}oulomb and Viscous Damping",
+  journal = 	 "J. of the Acoustical Society of America",
+  year = 	 "1966",
+  volume = 	 "39",
+  pages = 	 "14-24"
+}%**<FF>******************************************************************
+		  
+%**<FF>******************************************************************
+		  
+%************************************************************************
+% <<Z>>
+%************************************************************************
+%**<FF>******************************************************************
+@Book{Zastrau:90,
+  author = 	 "Zastrau, B.",
+  title = 	 "{S}chwingungen von {B}auteilen mit {R}issen und ihre 
+		  {W}echselwirkung mit {E}inbauten",
+  publisher = 	 "University of the Federal Armed Forces, Institute of 
+		  Mechanics, Hamburg, Germany",
+  year = 	 "1990"
+}
+%**<FF>******************************************************************
+@article{Zeitz:87,
+      TITLE  = {{T}he extended {L}uenberger observer for nonlinear systems},
+      AUTHOR = {Zeitz, M.},
+      JOURNAL = SCL,
+      VOLUME = {19},
+      PAGES  = {149-156},
+      YEAR = 1987}
+%**<FF>******************************************************************
+
+%Eof

@@ -1,0 +1,131 @@
+\begin{thebibliography}{10}
+
+\bibitem{NitscheGaul:aam03}
+R.~Nitsche and L.~Gaul.
+\newblock Lyapunov design of damping controllers.
+\newblock {\em Archive of Applied Mechanics}, 73(11-12):865--874, 2003.
+
+\bibitem{Nitsche:01}
+R.~Nitsche.
+\newblock {\em {S}emi-Active Control of Friction Damped Systems}.
+\newblock PhD thesis, VDI-Fortschritt-Berichte Nr.8/907, VDI-Verlag, 2001.
+
+\bibitem{BindelNitscheRothfussZeitz:00at}
+R.~Bindel, R.~Nitsche, R.~Rothfu{\ss}, and M.~Zeitz.
+\newblock {F}lachheitsbasierte {R}egelung eines hydraulischen {A}ntriebs mit
+  zwei {V}entilen f{\"u}r einen {G}ro{\ss}manipulator.
+\newblock {\em at Automatisierungstechnik}, 48(3):124--131, March 2000.
+
+\bibitem{GaulNitsche:sd2000}
+L.~Gaul and R.~Nitsche.
+\newblock {D}ynamics of structures with joint connections.
+\newblock In D.J. Ewins and D.J. Inman, editors, {\em Structural Dynamics @
+  2000: Current Status and Future Directions}, pages 29--48. Research Studies
+  Press Ltd., Baldock, Hertfordshire, England, 2001.
+
+\bibitem{GaulNitsche:amr2000}
+L.~Gaul and R.~Nitsche.
+\newblock The role of friction in mechanical joints.
+\newblock {\em Applied Mechanics Reviews}, 54(2):93--105, March 2001.
+
+\bibitem{GaulNitscheMSSP:00}
+L.~Gaul and R.~Nitsche.
+\newblock Friction control for vibration suppression.
+\newblock {\em Mechanical Systems and Signal Processing}, 14(2):139--150, March
+  2000.
+
+\bibitem{Nitsche:95atp}
+R.~Kern, C.T. Cao, and R.~Nitsche.
+\newblock {R}eibkraftkompensation mittels {F}uzzy-{L}ogik.
+\newblock {\em Automatisierungstechnische Praxis}, 5:50--60, 1995.
+
+\bibitem{Nitsche:04}
+R.~Nitsche.
+\newblock {Systems Engineering beim Entwurf mechatronischer Systeme}.
+\newblock In {\em {Mechatronischer Systementwurf}}, VDI-Berichte Nr. 1842,
+  pages 119--129, D{\"u}sseldorf, 2004. VDI-Verlag.
+
+\bibitem{NitscheBleileBirkDieterleRothfuss:04}
+R.~Nitsche, T.~Bleile, M.~Birk, W.~Dieterle, and R.~Rothfu{\ss}.
+\newblock {Modellbasierte Ladedruckregelung eines PKW-Dieselmotors}.
+\newblock In {\em {Steuerung und Regelung von Fahrzeugen und Motoren - AUTOREG
+  2004}}, VDI-Berichte Nr. 1828, pages 119--129, D{\"u}sseldorf, 2004.
+  VDI-Verlag.
+
+\bibitem{NitscheGaul4Magnus:02}
+R.~Nitsche and L.~Gaul.
+\newblock Lyapunov design of damping controllers.
+\newblock In {\em Festschrift zum 90sten Geburtstag von Prof. Magnus}. 2002.
+
+\bibitem{NitscheGaul4Pre:02}
+R.~Nitsche and L.~Gaul.
+\newblock {Damping Control in Systems Assembled by Semi-Active Joints}.
+\newblock In A.~Preumont, editor, {\em Responsive Systems for Active Vibration
+  Control}. Kluwer Academic Publisher, Dordrecht, Boston, London, 2002.
+
+\bibitem{GaulNitsche:Cost01}
+L.~Gaul and R.~Nitsche.
+\newblock {D}amping control in systems assembled by joint connections.
+\newblock In {\em International Conference on Structural System
+  Identification}, volume~1, pages 37--48, Kassel Germany, 5.-7. September
+  2001.
+
+\bibitem{GaulNitsche:Queb01}
+L.~Gaul and R.~Nitsche.
+\newblock {D}amping control by smart joints.
+\newblock In {\em International Conference Engineered Adapive Structures III},
+  Quebec City, Canada, July, 2001 2001.
+
+\bibitem{NitscheGaul:Imac01}
+R.~Nitsche and L.~Gaul.
+\newblock Semi-active control of friction driven systems.
+\newblock In {\em Proc. 9th Int. Modal Analysis Conference}, pages 64--70,
+  Kissimmee, FL, 2001.
+
+\bibitem{GaulNitscheZAMM:00}
+L.~Gaul and R.~Nitsche.
+\newblock Vibration control by interface dissipation in semi-active joints.
+\newblock {\em Zeitschrift f{\"u}r angewandte Mathematik und Mechanik},
+  80:S45--S48, 2000.
+
+\bibitem{NitscheGaul:Udine00}
+R.~Nitsche and L.~Gaul.
+\newblock Controller design for friction driven systems.
+\newblock In Afzal Suleman, editor, {\em Proc. of the CISM Course: Smart
+  Structures: Theory and Applications}, CISM Courses and Lectures No. 429,
+  Wien, New York, June 2001. Springer-Verlag.
+
+\bibitem{GaulNitscheVIB:99}
+L.~Gaul and R.~Nitsche.
+\newblock Friction control for vibration suppression.
+\newblock In {\em CDROM-Proc. of the 1999 ASME Design Engineering Technical
+  Conferences}, number DETC99/VIB-8191, pages 1--8, Las Vegas, Nevada,
+  September 12-16 1999. ASME.
+
+\bibitem{GaulNitscheCon:99}
+L.~Gaul and R.~Nitsche.
+\newblock Contact pressure control in bolted joint connections.
+\newblock In L.~Gaul and C.A. Brebbia, editors, {\em Computational Methods in
+  Contact Mechanics IV}, pages 369--378, Southampton, Boston, 1999. WIT Press.
+
+\bibitem{NitscheGaul:99}
+R.~Nitsche and L.~Gaul.
+\newblock {V}ibration control using semi-active friction damping.
+\newblock In {\em 5th European Control Conference ECC '99, Karlsruhe/Germany},
+  number CM-4 in CD-ROM Proc., 1999.
+
+\bibitem{NitBindelRothZeitz:99}
+R.~Bindel, R.~Nitsche, R.~Rothfu{\ss}, and M.~Zeitz.
+\newblock {F}latness based control of a two valve hydraulic joint actuator of a
+  large manipulator.
+\newblock In {\em 5th European Control Conference ECC '99, Karlsruhe/Germany},
+  number DA-14 in CD-ROM Proc., 1999.
+
+\bibitem{GaulNitsche:98}
+L.~Gaul, R.~Nitsche, and D.~Sachau.
+\newblock Semi-active vibration control of flexible structures.
+\newblock In U.~Gabbert, editor, {\em Modelling and Control of Adaptive
+  Mechanical Structures}, number 268 in VDI-Fortschritt-Berichte Reihe 11,
+  pages 277--286, D{\"u}sseldorf, 1998. VDI-Fortschritt-Berichte.
+
+\end{thebibliography}

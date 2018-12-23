@@ -1,0 +1,59 @@
+%%%
+%%% SFB 412 Poster-Style - benutzt poster2.sty und setzt Überschriften
+%%%                        und Titel
+%%%
+%%% Flynn Marquardt, 24. August 1998
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{sfbposter}[1998/08/26 v. 0.3]
+\RequirePackage{poster2}
+\RequirePackage{caption2}
+
+%%%
+%%% Bildunterscrfiten klein und fette Titel
+%%%
+\renewcommand{\captionlabelfont}{\bfseries}
+\renewcommand{\captionfont}{\small\hbadness=10000}
+
+%%%
+%%% Poster-Environment
+%%% Argumente: 1 Teilprojektkennziffer mit Punkt getrennt, z.B. A.1
+%%%            2 Leiter
+%%%            3 Titel
+%%%            4 Spaltenanzahl
+%%%
+\spaltensep=2em
+\definecolor{SFBViolet}{cmyk}{1,1,0,0.1}  
+\newenvironment{myposter}[4]{%
+  \setbox\@tempboxa=\hbox{\vbox{\hsize=19.1cm\renewcommand{\baselinestretch}{0.75}\centering\huge\sc#3}}
+  \@tempdima=45pt
+  \advance\@tempdima by -\ht\@tempboxa
+  \divide\@tempdima by 2
+  \begin{poster}
+%    {\vskip4mm\centerline{\LARGE\strut\ Projekt #1}\centerline{\Large#2}}
+    {\vskip2mm\centerline{\LARGE\strut\  #1} } %\centerline{\Large#2}}
+    {\vskip\@tempdima\color{SFBViolet}\box\@tempboxa}
+    {\huge\strut\hfill\lower 1.75em\hbox{%
+        \smash{\includegraphics[height=1.5em,width=5em]{instlogocol10.ps}}}\hfill\strut\vskip3.25em}
+    {#4}}
+  {\end{poster}}
+
+%%%
+%%% Überschriften
+%%%
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-1.5ex plus -.75ex minus -.2ex}%
+                                   {1ex plus.2ex}%
+                                   {\normalfont\large\sc}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                     {-1.3ex plus -1.25ex minus -.2ex}%
+                                     {.75ex plus .2ex}%
+                                     {\normalfont\normalsize\sc}}
+\def\Ueberschrift#1{\section*{\textcolor{SFBViolet}{#1}}}
+\def\ueberschrift#1{\subsection*{\textcolor{SFBViolet}{#1}}}
+
+%%%
+%%% Für gerahmte Kästen mit \fbox und \fcolorbox
+%%%
+\fboxrule=0.1em
+\fboxsep=0.5em

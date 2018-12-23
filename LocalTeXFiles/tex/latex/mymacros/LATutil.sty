@@ -1,0 +1,50 @@
+\newcommand{\mat}[1]{\underline{#1}}
+
+\newcommand{\MyColVec}{}
+\def\MyColVec #1{
+                 \left[
+                 \begin{array}{c}
+                  #1
+                 \end{array}
+                 \right]
+                }
+
+\newcommand{\MyRowVec}{}
+\def\MyRowVec[#1]#2{
+                    \left[
+                    \begin{array}{*{#1}c}
+                     #2
+                    \end{array}
+                    \right]
+                   }
+
+\newcommand{\MyMatrix}{}
+\def\MyMatrix[#1]#2{
+                    \left(
+                    \begin{array}{*{#1}c}
+                     #2
+                    \end{array}
+                    \right)
+                   }
+\newcommand{\MyFirstDeriv}{}
+\def\MyFirstDeriv #1(#2){
+                         #1' \left( #2 \right)
+                        }
+
+\newcommand{\MySecondDeriv}{}
+\def\MySecondDeriv #1(#2){
+                          #1'' \left( #2 \right)
+                         }
+
+\newcommand{\MyDeriv}{}
+\def\MyDeriv #1(#2)(#3){
+                        #1^{\left( #2 \right)} \left( #3 \right)
+                       }
+
+\newcommand{\MyPartDeriv}{}
+\def\MyPartDeriv #1(#2)(#3)(#4){
+                                \frac{\partial^{#2} #1 \left( #3 \right)}{#4}
+                               }
+
+
+

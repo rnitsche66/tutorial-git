@@ -1,0 +1,730 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0044)http://www.lri.fr/~filliatr/bibtex2html/doc/ -->
+<HTML><HEAD><TITLE>BibTeX2HTML A translator of BibTeX bibliographies into HTML</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META content="MSHTML 6.00.2800.1544" name=GENERATOR>
+<STYLE type=text/css>.toc {
+	LIST-STYLE-TYPE: none
+}
+.title {
+	MARGIN: auto; TEXT-ALIGN: center
+}
+.center {
+	MARGIN-LEFT: auto; MARGIN-RIGHT: auto; TEXT-ALIGN: center
+}
+.flushleft {
+	MARGIN-LEFT: 0ex; MARGIN-RIGHT: auto; TEXT-ALIGN: left
+}
+.flushright {
+	MARGIN-LEFT: auto; MARGIN-RIGHT: 0ex; TEXT-ALIGN: right
+}
+DIV TABLE {
+	
+}
+PRE {
+	MARGIN-LEFT: 0ex; MARGIN-RIGHT: auto; TEXT-ALIGN: left
+}
+BLOCKQUOTE {
+	MARGIN-LEFT: 4ex; MARGIN-RIGHT: 4ex; TEXT-ALIGN: left
+}
+.part {
+	MARGIN: auto; TEXT-ALIGN: center
+}
+</STYLE>
+</HEAD>
+<BODY><!--HEVEA command line is: /usr/bin/hevea -fix manual.tex --><!--HTMLHEAD--><!--ENDHTML--><!--PREFIX <ARG ></ARG>--><!--CUT DEF section 1 --><BR>
+<TABLE class=title>
+  <TBODY>
+  <TR>
+    <TD>
+      <H1 class=titlemain>BibTeX2HTML<BR>A translator of BibTeX bibliographies 
+      into HTML</H1>
+      <H3 class=titlerest>Jean-Christophe Filliⴲe and Claude March鼂R&gt; <A 
+      href="http://www.lri.fr/~filliatr/bibtex2html"><TT>http://www.lri.fr/~filliatr/bibtex2html</TT></A></H3>
+      <H3 class=titlerest></H3></TD></TR></TBODY></TABLE><BR><!--TOC section Contents-->
+<H2 class=section>Contents</H2><!--SEC END -->
+<UL class=toc>
+  <LI class=li-toc><A 
+  href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc1">1&nbsp;&nbsp;Introduction</A> 
+
+  <LI class=li-toc><A 
+  href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc2">2&nbsp;&nbsp;The 
+  <TT>bibtex2html</TT> command tool</A> 
+  <UL class=toc>
+    <LI class=li-toc><A 
+    href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc3">2.1&nbsp;&nbsp;Additional 
+    fields and automatic web links</A> 
+    <UL class=toc>
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc4">2.1.1&nbsp;&nbsp;Abstracts</A> 
+
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc5">2.1.2&nbsp;&nbsp;Keywords</A> 
+      </LI></UL>
+    <LI class=li-toc><A 
+    href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc6">2.2&nbsp;&nbsp;Command 
+    line options</A> 
+    <UL class=toc>
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc7">2.2.1&nbsp;&nbsp;General 
+      aspect of the HTML document</A> 
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc8">2.2.2&nbsp;&nbsp;Controlling 
+      the translation</A> 
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc9">2.2.3&nbsp;&nbsp;Selecting 
+      the entries</A> 
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc10">2.2.4&nbsp;&nbsp;Sorting 
+      the entries</A> 
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc11">2.2.5&nbsp;&nbsp;Miscellaneous 
+      options</A> </LI></UL></LI></UL>
+  <LI class=li-toc><A 
+  href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc12">3&nbsp;&nbsp;The 
+  <TT>bib2bib</TT> command line tool</A> 
+  <UL class=toc>
+    <LI class=li-toc><A 
+    href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc13">3.1&nbsp;&nbsp;Command 
+    line options</A> 
+    <LI class=li-toc><A 
+    href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc14">3.2&nbsp;&nbsp;Filter 
+    conditions</A> 
+    <LI class=li-toc><A 
+    href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc15">3.3&nbsp;&nbsp;Examples</A> 
+
+    <UL class=toc>
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc16">3.3.1&nbsp;&nbsp;Selecting 
+      entries of a given year</A> 
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc17">3.3.2&nbsp;&nbsp;Selecting 
+      references of a given author</A> 
+      <LI class=li-toc><A 
+      href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc18">3.3.3&nbsp;&nbsp;Other 
+      examples</A> </LI></UL>
+    <LI class=li-toc><A 
+    href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc19">3.4&nbsp;&nbsp;Note 
+    on duplicates entries</A> </LI></UL>
+  <LI class=li-toc><A 
+  href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc20">4&nbsp;&nbsp;The 
+  <TT>aux2bib</TT> command line tool</A> 
+  <LI class=li-toc><A 
+  href="http://www.lri.fr/~filliatr/bibtex2html/doc/#htoc21">5&nbsp;&nbsp;Frequently 
+  Asked Questions</A> </LI></UL><!--TOC section Introduction-->
+<H2 class=section><A name=htoc1>1</A>&nbsp;&nbsp;Introduction</H2><!--SEC END -->BibTeX2HTML is a 
+collection of tools for producing automatically HTML documents from 
+bibliographies written in the BibTeX format. It consists in three command line 
+tools: 
+<UL class=itemize>
+  <LI class=li-itemize><TT>bib2bib</TT> is a filter tool that reads one or 
+  several bibliography files, filters the entries with respect to a given 
+  criterion, and outputs the list of selected keys together with a new 
+  bibliography file containing only the selected entries; 
+  <LI class=li-itemize><TT>bibtex2html</TT> is a translator that reads a 
+  bibliography file and outputs two HTML documents that contains respectively 
+  the cited bibliography in a nice presentation, and the original BibTeX file 
+  augmented with several transparent HTML links to allow easy navigation. 
+  <TT>bibtex2html</TT> can handle <EM>any</EM> BibTeX style file, including 
+  those producing multiple bibliographies. 
+  <LI class=li-itemize><TT>aux2bib</TT> reads a <TT>.aux</TT> file as produced 
+  by L<SUP>A</SUP>T<SUB>E</SUB>X and writes to standard output a BibTeX file 
+  containing exactly the BibTeX entries refereed in the <TT>.aux</TT> file. 
+</LI></UL><!--TOC section The <TT>bibtex2html</TT> command tool-->
+<H2 class=section><A name=htoc2>2</A>&nbsp;&nbsp;The <TT>bibtex2html</TT> 
+command tool</H2><!--SEC END -->bibtex2html is a BibTeX to HTML translator. It 
+is invocated as 
+<BLOCKQUOTE class=quote><TT>bibtex2html</TT> [options] [<I>file.bib</I>] 
+</BLOCKQUOTE>where the possible <A 
+href="http://www.lri.fr/~filliatr/bibtex2html/doc/#options">options</A> are 
+described below and where <I>file.bib</I> is the name of the BibTeX file, which 
+must have a <I>.bib</I> suffix. If this file is not given, then entries are 
+input from standard input.<BR><BR>Then two HTML documents are created (unless 
+option <CODE>-nobibsource</CODE> is selected or input is standard input, see 
+below) : 
+<UL class=itemize>
+  <LI class=li-itemize><I>file.html</I> which is the bibliography in HTML format 
+  , like <A 
+  href="http://www.lri.fr/~filliatr/bibtex2html/doc/examples/biblio-these.html">this</A> 
+  ; 
+  <LI class=li-itemize><I>file_bib.html</I> which contains all the entries in 
+  ASCII format. ,like <A 
+  href="http://www.lri.fr/~filliatr/bibtex2html/doc/examples/biblio-these_bib.html">this</A> 
+  </LI></UL><TT>bibtex</TT> is called on <I>file.bib</I> in order to produce the a 
+LaTeX document, and then this LaTeX document is translated into an HTML 
+document. The BibTeX file <I>file.bib</I> is also parsed in order to collect 
+additional fields (abstract, url, ps, http, etc.) that will be used in the 
+translation.<BR><BR>If input is standard input and option <CODE>--output</CODE> 
+is not given, the first file is output to standard output, and the second is not 
+created.<BR><BR><A name=fields><BR><BR><!--TOC subsection Additional fields and automatic web links-->
+<H3 class=subsection><A name=htoc3>2.1</A>&nbsp;&nbsp;Additional fields and 
+automatic web links</H3><!--SEC END -->The main interest of <TT>bibtex2html</TT> 
+with respect to a traditional LaTeX to HTML translator is the use of additional 
+fields in the BibTeX database and the automatic insertion of web links.<BR><BR>A 
+link is inserted: 
+<UL class=itemize>
+  <LI class=li-itemize>at each cross-reference inside the bibliography entries; 
+  <BR><BR>
+  <LI class=li-itemize>when the <CODE>\url</CODE> LaTeX macro is used in the 
+  text; <BR><BR>
+  <LI class=li-itemize>for each BibTeX field whose name is "ftp", "http", "url", 
+  "ps" ,"dvi", "rtf", "pdf", "documenturl", "urlps" or "urldvi". The name of 
+  this link depends on the nature of the link: 
+  <UL class=itemize>
+    <LI class=li-itemize>it is the file suffix, whenever this suffix is 
+    <TT>.dvi</TT>, <TT>.ps</TT>, <TT>.pdf</TT>, <TT>.rtf</TT>, <TT>.txt</TT> or 
+    <TT>.html</TT>, possibly followed by a compression sufix, <TT>.gz</TT>, 
+    <TT>.Z</TT> or <TT>.zip</TT>; 
+    <LI class=li-itemize>otherwise the name of the link is either <TT>http</TT> 
+    or <TT>ftp</TT> depending on the protocol. </LI></UL><BR>You can insert web 
+  link for other fields and/or specify alternative names for the links using the 
+  options <TT>-f</TT> and <TT>-nf</TT> (see below).</LI></UL>See the result on <A 
+href="http://www.lri.fr/~filliatr/bibtex2html/doc/examples/biblio-these.html">this 
+example</A>.<BR><BR><!--TOC subsubsection Abstracts-->
+<H4 class=subsubsection><A name=htoc4>2.1.1</A>&nbsp;&nbsp;Abstracts</H4><!--SEC END -->If a BibTeX entry 
+contains a field <TT>abstract</TT> then its contents is quoted right after the 
+bibliography entry , like <A 
+href="http://www.lri.fr/~filliatr/bibtex2html/doc/examples/publis-abstracts.html">this</A> 
+. <BR><BR>This behavior may be suppressed with the option 
+<TT>--no-abstract</TT>.<BR><BR>If you want both versions with and without 
+abstracts, use the option <TT>--both</TT>. In that case, links named "Abstract" 
+will be inserted from the page without abstracts to the page with abstracts, 
+like <A 
+href="http://www.lri.fr/~filliatr/bibtex2html/doc/examples/publis.html">this</A>.<BR><BR><!--TOC subsubsection Keywords-->
+<H4 class=subsubsection><A name=htoc5>2.1.2</A>&nbsp;&nbsp;Keywords</H4><!--SEC END -->If a BibTeX entry 
+contains a field <TT>keywords</TT> then its contents is displayed after the 
+bibliography entry (and after the abstract if any).<BR><BR>This behavior may be 
+suppressed with the option <TT>--no-keywords</TT>.<BR><BR><A 
+name=options><BR><BR><!--TOC subsection Command line options-->
+<H3 class=subsection><A name=htoc6>2.2</A>&nbsp;&nbsp;Command line options</H3><!--SEC END -->Most of the command line options have a short version 
+of one character (e.g. <TT>-r</TT>) and an easy-to-remember/understand long 
+version (e.g. <TT>--reverse-sort</TT>).<BR><BR><!--TOC subsubsection General aspect of the HTML document-->
+<H4 class=subsubsection><A name=htoc7>2.2.1</A>&nbsp;&nbsp;General aspect of the 
+HTML document</H4><!--SEC END -->
+<DL class=description compact>
+  <DT class=dt-description><B><TT>-t</TT></B><B> <I>string</I></B><B>, 
+  <TT>--title</TT></B><B> <I>string</I></B>
+  <DD class=dd-description><BR><BR>specify the title of the HTML file (default 
+  is the file name).<BR><BR>
+  <DT class=dt-description><B><TT>--footer</TT></B><B> <I>string</I></B>
+  <DD class=dd-description><BR><BR>give an additional footer for the HTML 
+  document.<BR><BR>
+  <DT class=dt-description><B><TT>-s</TT></B><B> <I>string</I></B><B>, 
+  <TT>--style</TT></B><B> <I>string</I></B>
+  <DD class=dd-description><BR><BR>use BibTeX style <I>string</I> (plain, alpha, 
+  etc.). Default style is plain.<BR><BR>
+  <DT class=dt-description><B><TT>-noabstract</TT></B><B>, 
+  <TT>--no-abstract</TT></B>
+  <DD class=dd-description><BR><BR>do not print the abstracts (if any).<BR><BR>
+  <DT class=dt-description><B><TT>-nokeywords</TT></B><B>, 
+  <TT>--no-keywords</TT></B>
+  <DD class=dd-description><BR><BR>do not print the keywords (if any).<BR><BR>
+  <DT class=dt-description><B><TT>-both</TT></B><B>, <TT>--both</TT></B>
+  <DD class=dd-description><BR><BR>produce both pages with and without 
+  abstracts. If the BibTeX file is foo.bib then the two pages will be 
+  respectively foo.html and foo_abstracts.html (The suffix may be different, see 
+  option <TT>--suffix</TT>). Links are inserted from the page without abstracts 
+  to the page with abstracts.<BR><BR>
+  <DT class=dt-description><B><TT>-nokeys</TT></B><B>, <TT>--no-keys</TT></B>
+  <DD class=dd-description><BR><BR>do not print the cite keys.<BR><BR>
+  <DT class=dt-description><B><TT>-use-keys</TT></B><B>, <TT>--use-keys</TT></B>
+  <DD class=dd-description><BR><BR>use the cite keys from the BibTeX input file 
+  (and not the ones generated by the BibTeX style file).<BR><BR>
+  <DT class=dt-description><B><TT>-rawurl</TT></B><B>, <TT>--raw-url</TT></B>
+  <DD class=dd-description><BR><BR>print URLs instead of files' types.<BR><BR>
+  <DT class=dt-description><B><TT>-heveaurl</TT></B><B>, 
+<TT>--hevea-url</TT></B>
+  <DD class=dd-description><BR><BR>interpret the macro <CODE>\url</CODE> as 
+  HeVeA's one, i.e. with two arguments, the first one being the url and the 
+  second one the text to print. The default behavior is to interpret the macro 
+  <CODE>\url</CODE> as the one from the package <TT>url</TT>, which has only one 
+  argument (the url itself).<BR><BR>
+  <DT class=dt-description><B><TT>-f</TT></B><B> <I>field</I></B><B>, 
+  <TT>--field</TT></B><B> <I>field</I></B>
+  <DD class=dd-description><BR><BR>add a web link for that BibTeX field.<BR><BR>
+  <DT class=dt-description><B><TT>-nf</TT></B><B> <I>field</I></B><B> 
+  <I>string</I></B><B>, <TT>--named-field</TT></B><B> <I>field</I></B><B> 
+  <I>string</I></B>
+  <DD class=dd-description><BR><BR>similar to <TT>-f</TT> but specifies the way 
+  to display the link (e.g. <TT>-nf springer "At Springer's"</TT>).<BR><BR>
+  <DT class=dt-description><B><TT>-note</TT></B><B> <I>field</I></B><B>, 
+  <TT>--note</TT></B><B> <I>field</I></B>
+  <DD class=dd-description><BR><BR>declare that a field must be treated like the 
+  <TT>abstract</TT> field, i.e. is an annotation to be displayed as a text 
+  paragraph below the entry.<BR><BR>
+  <DT class=dt-description><B><TT>-multiple</TT></B><B>, <TT>--multiple</TT></B>
+  <DD class=dd-description><BR><BR>make a separate web page for each entry. 
+  <I>Beware: this option produces as many HTML files as BibTeX 
+  entries!</I><BR><BR>
+  <DT class=dt-description><B><TT>-single</TT></B><B>, <TT>--single</TT></B>
+  <DD class=dd-description><BR><BR>produce a single document, inserting each 
+  BibTeX entry (the input) right after its BibTeX output<BR><BR>
+  <DT class=dt-description><B><TT>-bg</TT></B><B> <I>color</I></B><B>, 
+  <TT>--background</TT></B><B> <I>color</I></B>
+  <DD class=dd-description><BR><BR>set the background color of the HTML file 
+  (default is none).<BR><BR>
+  <DT class=dt-description><B><TT>-css</TT></B><B> <I>file</I></B><B>, 
+  <TT>--style-sheet</TT></B><B> <I>file</I></B>
+  <DD class=dd-description><BR><BR>set a style sheet file for the HTML document 
+  (default is none).<BR><BR>
+  <DT class=dt-description><B><TT>-dl</TT></B><B>, <TT>--dl</TT></B>
+  <DD class=dd-description><BR><BR>use HTML <TT>DL</TT> lists instead of HTML 
+  tables to format entries.</DD></DL><!--TOC subsubsection Controlling the translation-->
+<H4 class=subsubsection><A name=htoc8>2.2.2</A>&nbsp;&nbsp;Controlling the 
+translation</H4><!--SEC END -->
+<DL class=description compact>
+  <DT class=dt-description><B><TT>-m</TT></B><B> <I>file</I></B><B>, 
+  <TT>--macros-from</TT></B><B> <I>file</I></B>
+  <DD class=dd-description><BR><BR>read the L<SUP>A</SUP>T<SUB>E</SUB>X macros 
+  in the given file. Note: <TT>bibtex2html</TT> does not handle macros 
+  arguments; arguments are simply discarded.<BR><BR>
+  <DT class=dt-description><B><TT>-noexpand</TT></B><B> <TT>--no-expand</TT></B>
+  <DD class=dd-description><BR><BR>do not expand the abbreviation strings, leave 
+  them in the output file.</DD></DL><!--TOC subsubsection Selecting the entries-->
+<H4 class=subsubsection><A name=htoc9>2.2.3</A>&nbsp;&nbsp;Selecting the 
+entries</H4><!--SEC END -->
+<DL class=description compact>
+  <DT class=dt-description><B><TT>-citefile</TT></B><B> <I>filename</I></B><B>, 
+  <TT>--citefile</TT></B><B> <I>filename</I></B>
+  <DD class=dd-description><BR><BR>Select only keys appearing in 
+  <I>filename</I>. To be used manually or in conjonction with 
+  <CODE>bib2bib</CODE>. <BR><BR>
+  <DT class=dt-description><B><TT>-e</TT></B><B> <I>key</I></B><B>, 
+  <TT>--exclude</TT></B><B> <I>key</I></B>
+  <DD class=dd-description><BR><BR>exclude an particular entry. </DD></DL><!--TOC subsubsection Sorting the entries-->
+<H4 class=subsubsection><A name=htoc10>2.2.4</A>&nbsp;&nbsp;Sorting the 
+entries</H4><!--SEC END -->
+<DL class=description compact>
+  <DT class=dt-description><B><TT>-d</TT></B><B>, <TT>--sort-by-date</TT></B>
+  <DD class=dd-description><BR><BR>sort by date.<BR><BR>
+  <DT class=dt-description><B><TT>-a</TT></B><B>, <TT>--sort-as-bibtex</TT></B>
+  <DD class=dd-description><BR><BR>sort as BibTeX (usually by author).<BR><BR>
+  <DT class=dt-description><B><TT>-u</TT></B><B>, <TT>--unsorted</TT></B>
+  <DD class=dd-description><BR><BR>unsorted i.e. same order as in .bib file 
+  (default).<BR><BR>
+  <DT class=dt-description><B><TT>-r</TT></B><B>, <TT>--reverse-sort</TT></B>
+  <DD class=dd-description><BR><BR>reverse the sort.</DD></DL><!--TOC subsubsection Miscellaneous options-->
+<H4 class=subsubsection><A name=htoc11>2.2.5</A>&nbsp;&nbsp;Miscellaneous 
+options</H4><!--SEC END -->
+<DL class=description compact>
+  <DT class=dt-description><B><TT>-nodoc</TT></B><B>, <TT>--nodoc</TT></B>
+  <DD class=dd-description><BR><BR>do not produce a full HTML document but only 
+  its body (useful to merge the HTML bibliography in a bigger HTML 
+  document).<BR><BR>
+  <DT class=dt-description><B><TT>-nobibsource</TT></B><B>, 
+  <TT>--nobibsource</TT></B>
+  <DD class=dd-description><BR><BR>do not produce the <CODE>_bib.html</CODE> 
+  file. In that case, no “BibTeX entry” link are inserted in the HTML 
+  file.<BR><BR>
+  <DT class=dt-description><B><TT>-suffix</TT></B><B> <I>string</I></B><B>, 
+  <TT>--suffix</TT></B><B> <I>string</I></B>
+  <DD class=dd-description><BR><BR>give an alternate suffix <I>string</I> for 
+  both HTML files and links (default is <TT>.html</TT>).<BR><BR>
+  <DT class=dt-description><B><TT>-fsuffix</TT></B><B> <I>string</I></B><B>, 
+  <TT>--file-suffix</TT></B><B> <I>string</I></B>
+  <DD class=dd-description><BR><BR>give an alternate suffix <I>string</I> for 
+  HTML files (default is <TT>.html</TT>).<BR><BR>
+  <DT class=dt-description><B><TT>-lsuffix</TT></B><B> <I>string</I></B><B>, 
+  <TT>--link-suffix</TT></B><B> <I>string</I></B>
+  <DD class=dd-description><BR><BR>give an alternate suffix <I>string</I> for 
+  HTML links (default is <TT>.html</TT>).<BR><BR>
+  <DT class=dt-description><B><TT>-o</TT></B><B> <I>file</I></B><B>, 
+  <TT>--output</TT></B><B> <I>file</I></B>
+  <DD class=dd-description><BR><BR>specifies the output file. If <I>file</I> is 
+  <CODE>-</CODE>, then the standard output is selected.<BR><BR>
+  <DT class=dt-description><B><TT>-c</TT></B><B> <I>command</I></B><B>, 
+  <TT>--command</TT></B><B> <I>command</I></B>
+  <DD class=dd-description><BR><BR>specify the BibTeX command (default is 
+  <TT>bibtex -min-crossrefs=1000</TT>). May be useful for example if you need to 
+  specify the full path of the <TT>bibtex</TT> command. <BR><BR>
+  <DT class=dt-description><B><TT>--print-keys</TT></B>
+  <DD class=dd-description><BR><BR>print the BibTeX entries on the standard 
+  output (one per line), as selected and sorted by <TT>bibtex2html</TT>. This is 
+  useful if you want to use the selection and sorting facilities of 
+  <TT>bibtex2html</TT> in another program. Note: you may need to set also the 
+  <TT>-q</TT> option (quiet) to suppress the usual output.<BR><BR>
+  <DT class=dt-description><B><TT>-i</TT></B><B>, <TT>--ignore-errors</TT></B>
+  <DD class=dd-description><BR><BR>ignore BibTeX errors.<BR><BR>
+  <DT class=dt-description><B><TT>-q</TT></B><B>, <TT>--quiet</TT></B>
+  <DD class=dd-description><BR><BR>be quiet.<BR><BR>
+  <DT class=dt-description><B><TT>-w</TT></B><B>, <TT>--warn-error</TT></B>
+  <DD class=dd-description><BR><BR>stop at the first warning<BR><BR>
+  <DT class=dt-description><B><TT>-h</TT></B><B>, <TT>--help</TT></B>
+  <DD class=dd-description><BR><BR>print a short usage and exit.<BR><BR>
+  <DT class=dt-description><B><TT>-v</TT></B><B>, <TT>--version</TT></B>
+  <DD class=dd-description><BR><BR>print the version and exit.<BR><BR>
+  <DT class=dt-description><B><TT>-noheader</TT></B><B>, 
+<TT>--no-header</TT></B>
+  <DD class=dd-description><BR><BR>do not insert the <TT>bibtex2html</TT> 
+  command in the HTML document (default is to insert it as a comment at the 
+  beginning).</DD></DL><!--TOC section The <TT>bib2bib</TT> command line tool-->
+<H2 class=section><A name=htoc12>3</A>&nbsp;&nbsp;The <TT>bib2bib</TT> command 
+line tool</H2><!--SEC END --><TT>bib2bib</TT> is a tool for extracting some 
+entries from a list of bibliography files. It is invocated as 
+<BLOCKQUOTE class=quote><TT>bib2bib</TT> [options] <I>file1.bib</I> ⋯ 
+  <I>filen.bib</I> </BLOCKQUOTE>where the possible options are described below and 
+where <I>file1.bib</I> ⋯ <I>filen.bib</I> are the names of the BibTeX files, 
+which must have a <I>.bib</I> suffix. If no files at all are given on the 
+command line, then input is taken from standard input. <BR><BR>The options allow 
+to specify a filter condition to test against each references read from bib 
+files. The result will be a new BibTeX file containing all the entries of the 
+input files that satisfy the condition. Notice that this output file contains 
+all the necessary informations: each string and each cross-reference needed will 
+be also in that file.<BR><BR>Additionally, <I>bib2bib</I> may output a file 
+containing all the keys of entries that satisfy the condition. This second file 
+is suitable for input as option <CODE>-citefile</CODE> to 
+<CODE>bibtex2html</CODE>.<BR><BR><!--TOC subsection Command line options-->
+<H3 class=subsection><A name=htoc13>3.1</A>&nbsp;&nbsp;Command line options</H3><!--SEC END -->
+<DL class=description compact>
+  <DT class=dt-description><B><TT>-ob</TT></B><B> <I>filename</I></B>
+  <DD class=dd-description><BR><BR>specify the filename where the selected 
+  entries are output. If not given, it defaults to standard output. <BR><BR>
+  <DT class=dt-description><B><TT>-oc</TT></B><B> <I>filename</I></B>
+  <DD class=dd-description><BR><BR>specify the filename where the list of 
+  selected keys is output. If not given, this file is not created.<BR><BR>
+  <DT class=dt-description><B><TT>-c</TT></B><B> <I>condition</I></B>
+  <DD class=dd-description><BR><BR>specify a condition for selecting the 
+  entries. The output will retain only the entries that satisfy this condition. 
+  If several such condition are given, then only the entries that satisfy all 
+  the conditions are selected. The syntax of conditions is given below, notice 
+  that it is better to escape shell expansions in that conditions, in other 
+  words, you should write conditions between quotes. <BR><BR>
+  <DT class=dt-description><B><TT>–expand</TT></B>
+  <DD class=dd-description><BR><BR>expand all abbreviations in the output file. 
+  Notice that there is no way to ask for expansion of cross-references, since 
+  the meaning of such an expansion is unclear: it's better to let bibtex (via 
+  bibtex2html) handle the cross-references himself, depending on the style 
+  considered.<BR><BR>
+  <DT class=dt-description><B><TT>-s</TT></B><B> <I>field</I></B>
+  <DD class=dd-description><BR><BR>sorts the entries of the bibliography with 
+  respect to the given <I>field</I>, which may be <TT>$key</TT> or 
+  <TT>$type</TT> to refer to the key or to the entry type, as for filter 
+  conditions. This options may be used several times to specifiy a lexicographic 
+  order, such as by year, then by keys.<BR><BR>When sorting, the resulting 
+  bibliography will always contains the comments first, then the preambles, then 
+  the abbreviations, and finally the regular entries. Be warned that such a sort 
+  may put cross-references before entries that refer to them, so be 
+  cautious.<BR><BR>
+  <DT class=dt-description><B><TT>-r</TT></B>
+  <DD class=dd-description><BR><BR>reverses the sort<BR><BR>
+  <DT class=dt-description><B><TT>-q</TT></B><B>, <TT>--quiet</TT></B>
+  <DD class=dd-description><BR><BR>be quiet.<BR><BR>
+  <DT class=dt-description><B><TT>-w</TT></B><B>, <TT>--warn-error</TT></B>
+  <DD class=dd-description><BR><BR>stop at the first warning</DD></DL>Notice that 
+the two output files are suitable for use with bibtex2html. A typical use would 
+be 
+<BLOCKQUOTE class=quote><TT>bib2bib -oc <I>citefile</I> -ob 
+  <I>bibfile</I>.<I>bib</I> -c <I>condition</I> file1.bib file2.bib ... 
+  </TT><BR><TT>bibtex2html -citefile <I>citefile</I> bibfile.bib</TT> 
+</BLOCKQUOTE>which will produce exactly the HTML file for the selected 
+references. Notice finally that bibtex2html will expand the strings (by default, 
+unless you specify the <CODE>-noexpand</CODE> option) but not the 
+cross-references.<BR><BR><!--TOC subsection Filter conditions-->
+<H3 class=subsection><A name=htoc14>3.2</A>&nbsp;&nbsp;Filter conditions</H3><!--SEC END --><A name=sec:conditions></A>A filter condition is a 
+boolean expression that is evaluated against a BibTeX entry to decide whether 
+this entry should be selected. A condition is either: 
+<UL class=itemize>
+  <LI class=li-itemize>a <EM>comparison</EM> between two <EM>expressions</EM>, 
+  written as <I>e</I><SUB>1</SUB>&nbsp;<I>op</I>&nbsp;<I>e</I><SUB>2</SUB> ; 
+  <LI class=li-itemize>a matching of a field name with respect to a <EM>regular 
+  expression</EM>, written as <I>field</I> : <I>regexp</I> ; 
+  <LI class=li-itemize>a conjunction of two conditions, written as 
+  <I>c</I><SUB>1</SUB> <CODE>and </CODE><I>c</I><SUB>2</SUB> (or 
+  <I>c</I><SUB>1</SUB> <CODE>&amp; </CODE><I>c</I><SUB>2</SUB>) ; 
+  <LI class=li-itemize>a disjunction of two conditions, written as 
+  <I>c</I><SUB>1</SUB> <CODE>or </CODE><I>c</I><SUB>2</SUB> (or 
+  <I>c</I><SUB>1</SUB> <CODE>| </CODE><I>c</I><SUB>2</SUB>); 
+  <LI class=li-itemize>a negation of a condition, written as <CODE>not 
+  </CODE><I>c</I> (or <CODE>! </CODE><I>c</I>) ; 
+  <LI class=li-itemize>a test of existence of a field, written as <CODE>exists 
+  </CODE><I>f</I> (or <CODE>? </CODE><I>f</I>) where <I>f</I> is a field name ; 
+  </LI></UL>where an expression is either: 
+<UL class=itemize>
+  <LI class=li-itemize>a string constant, written either between double quotes 
+  or single quotes ; 
+  <LI class=li-itemize>an integer constant ; 
+  <LI class=li-itemize>a field name ; 
+  <LI class=li-itemize>the special ident <CODE>$key</CODE> which corresponds to 
+  the key of an entry. 
+  <LI class=li-itemize>the special ident <CODE>$type</CODE> which corresponds to 
+  the type of an entry (ARTICLE, INPROCEEDINGS, etc.). Notice that an entry type 
+  is always written in uppercase letters. </LI></UL>Comparison operators are the 
+usual ones: <TT>=</TT>, <TT>&lt;</TT>, <TT>&gt;</TT>, <TT>&lt;=</TT>, 
+<TT>&gt;=</TT> and <TT>&lt;&gt;</TT>. <BR><BR>The field names are any sequences 
+of lowercase or uppercase letters (but no distinction is made between lowercase 
+and uppercase letters).<BR><BR>Be careful when writing conditions in a shell 
+command: the shell must not interpret anything in a condition, such as 
+<CODE>$key</CODE>. So usually you need to put conditions inside quote characters 
+that forbid shell interpretation: single quotes under Unix shell, or double 
+quotes under Microsoft Windows shell. This is why strings in conditions may be 
+put indifferently between single or double quotes: you will use the ones which 
+are not the ones you use to forbid shell interpretation. In examples below, we 
+will use Unix convention, so under Windows you have to permute the use of single 
+and double quotes.<BR><BR>Regular expressions must be put between single or 
+double quotes, and must follow the GNU syntax of regular expressions, as for 
+example in GNU Emacs. Any character other than <CODE>$^.*+?[]</CODE> matches 
+itself, see Table&nbsp;<A 
+href="http://www.lri.fr/~filliatr/bibtex2html/doc/#table:regexp">1</A> for the 
+meaning of the special characters. 
+<BLOCKQUOTE class=table>
+  <DIV class=center>
+  <HR width="80%" SIZE=2>
+  </DIV>
+  <DIV class=center>
+  <TABLE cellSpacing=0 cellPadding=1 border=1>
+    <TBODY>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>.</CODE></TD>
+      <TD vAlign=top align=left>matches any character except newline</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>[..]</CODE></TD>
+      <TD vAlign=top align=left>character set; ranges are denoted with 
+        <CODE>-</CODE>, as in <CODE>[a-z]</CODE>; an initial <CODE>^</CODE>, as 
+        in <CODE>[^0-9]</CODE>, complements the set</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>^</CODE></TD>
+      <TD vAlign=top align=left>matches the beginning of the string 
+    matched</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>$</CODE></TD>
+      <TD vAlign=top align=left>matches the end of the string matched</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>\r</CODE></TD>
+      <TD vAlign=top align=left>matches a carriage return</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>\n</CODE></TD>
+      <TD vAlign=top align=left>matches a linefeed</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>\t</CODE></TD>
+      <TD vAlign=top align=left>matches a tabulation</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>\b</CODE></TD>
+      <TD vAlign=top align=left>matches word boundaries</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>\</CODE><I><FONT 
+        color=maroon>ddd</FONT></I></TD>
+      <TD vAlign=top align=left>matches character with ASCII code <I><FONT 
+        color=maroon>ddd</FONT></I> in decimal</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>\</CODE><I><FONT 
+        color=maroon>char</FONT></I></TD>
+      <TD vAlign=top align=left>quotes special character <I><FONT 
+        color=maroon>char</FONT></I> among <CODE>$^.*+?[]\</CODE></TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><I><FONT 
+        color=maroon>regexp</FONT></I><CODE>*</CODE></TD>
+      <TD vAlign=top align=left>matches <I><FONT 
+        color=maroon>regexp</FONT></I> zero, one or several times</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><I><FONT 
+        color=maroon>regexp</FONT></I><CODE>+</CODE></TD>
+      <TD vAlign=top align=left>matches <I><FONT 
+        color=maroon>regexp</FONT></I> one or several times</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><I><FONT 
+        color=maroon>regexp</FONT></I><CODE>?</CODE></TD>
+      <TD vAlign=top align=left>matches <I><FONT 
+        color=maroon>regexp</FONT></I> once or not at all</TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><I><FONT 
+        color=maroon>regexp1</FONT></I> <CODE>\|</CODE> <I><FONT 
+        color=maroon>regexp2</FONT></I></TD>
+      <TD vAlign=top align=left>alternative between two regular expressions, 
+        this operator has low priority against <CODE>*</CODE>, <CODE>+</CODE> 
+        and <CODE>?</CODE></TD></TR>
+    <TR>
+      <TD vAlign=top noWrap align=left><CODE>\(</CODE> <I><FONT 
+        color=maroon>regexp</FONT></I> <CODE>\)</CODE></TD>
+      <TD vAlign=top align=left>grouping regular 
+  expression</TD></TR></TBODY></TABLE></DIV><BR><BR>
+  <DIV class=center>Table 1: Syntax of regular expressions</DIV><BR><BR><A 
+  name=table:regexp></A>
+  <DIV class=center>
+  <HR width="80%" SIZE=2>
+  </DIV></BLOCKQUOTE>Notice that if several conditions are given with option 
+<CODE>-c</CODE> on the command line, then they are understood as the conjunction 
+of them, in other words 
+<BLOCKQUOTE class=quote><TT>bib2bib -c 
+  '<I>c</I></TT><SUB><TT>1</TT></SUB><TT>' ⋯ -c 
+  '<I>c</I></TT><SUB><TT><I>n</I></TT></SUB><TT>'</TT> </BLOCKQUOTE>is equivalent 
+to 
+<BLOCKQUOTE class=quote><TT>bib2bib -c '<I>c</I></TT><SUB><TT>1</TT></SUB><TT> 
+  and ⋯ and <I>c</I></TT><SUB><TT><I>n</I></TT></SUB><TT>'</TT> 
+</BLOCKQUOTE>Table&nbsp;<A 
+href="http://www.lri.fr/~filliatr/bibtex2html/doc/#table:syntax">2</A> shows a 
+formal grammar for conditions. 
+<BLOCKQUOTE class=table>
+  <DIV class=center>
+  <HR width="80%" SIZE=2>
+  </DIV>
+  <DIV class=center>
+  <TABLE cellSpacing=2 cellPadding=0>
+    <TBODY>
+    <TR>
+      <TD noWrap align=right><I>Cond</I></TD>
+      <TD noWrap align=middle>→</TD>
+      <TD noWrap align=left><I>Cond</I> <CODE>and </CODE><I>Cond</I> ∣ 
+        <I>Cond</I> <CODE>or </CODE><I>Cond</I> ∣ <CODE>not </CODE><I>Cond</I> ∣ 
+        <CODE>exists </CODE><I>Id</I></TD></TR>
+    <TR>
+      <TD noWrap align=right><I>Cond</I></TD>
+      <TD noWrap align=middle>→</TD>
+      <TD noWrap align=left><I>Cond</I> <CODE>&amp; </CODE><I>Cond</I> ∣ 
+        <I>Cond</I> <CODE>| </CODE><I>Cond</I> ∣ <CODE>! </CODE><I>Cond</I> ∣ 
+        <CODE>? </CODE><I>Id</I></TD></TR>
+    <TR>
+      <TD noWrap align=right>&nbsp;</TD>
+      <TD noWrap align=middle>&nbsp;</TD>
+      <TD noWrap align=left>∣ <I>Expr</I> &nbsp; <I>Comp</I> &nbsp; 
+        <I>Expr</I> ∣ <I>Expr</I> <CODE>:</CODE> <I>String</I> ∣ <CODE>( 
+        </CODE><I>Cond</I> <CODE>)</CODE></TD></TR>
+    <TR>
+      <TD noWrap align=right><I>Comp</I></TD>
+      <TD noWrap align=middle>→</TD>
+      <TD noWrap align=left><CODE>=</CODE> ∣ <CODE>&gt;</CODE> ∣ 
+        <CODE>&lt;</CODE> ∣ <CODE>&gt;=</CODE> ∣ <CODE>&lt;=</CODE> ∣ 
+        <CODE>&lt;&gt;</CODE></TD></TR>
+    <TR>
+      <TD noWrap align=right><I>Expr</I></TD>
+      <TD noWrap align=middle>→</TD>
+      <TD noWrap align=left><I>Id</I> ∣ <I>String</I> ∣ <I>Int</I> ∣ 
+        <CODE>$key</CODE> ∣ <CODE>$type</CODE></TD></TR>
+    <TR>
+      <TD noWrap align=right><I>Id</I></TD>
+      <TD noWrap align=middle>→</TD>
+      <TD noWrap 
+        align=left>[<CODE>a</CODE>−<CODE>z</CODE><CODE>A</CODE>−<CODE>Z</CODE>]<SUP>+</SUP></TD></TR>
+    <TR>
+      <TD noWrap align=right><I>String</I></TD>
+      <TD noWrap align=middle>→</TD>
+      <TD noWrap align=left><CODE>"</CODE> ([<CODE>^"\</CODE>] ∣ 
+        <CODE>\"</CODE> ∣ <CODE>\\</CODE> )<SUP>*</SUP> <CODE>"</CODE> ∣ 
+        <CODE>'</CODE> ([<CODE>^'\</CODE>] ∣ <CODE>\'</CODE> ∣ <CODE>\\</CODE> 
+        )<SUP>*</SUP> <CODE>'</CODE></TD></TR>
+    <TR>
+      <TD noWrap align=right><I>Integer</I></TD>
+      <TD noWrap align=middle>→</TD>
+      <TD noWrap 
+    align=left>[<CODE>0</CODE>−<CODE>9</CODE>]<SUP>+</SUP></TD></TR></TBODY></TABLE></DIV><BR><BR>
+  <DIV class=center>Table 2: Syntax of conditions</DIV><BR><BR><A 
+  name=table:syntax></A>
+  <DIV class=center>
+  <HR width="80%" SIZE=2>
+  </DIV></BLOCKQUOTE><!--TOC subsubsection Remarks on evaluation of conditions-->
+<H4 class=subsubsection>Remarks on evaluation of conditions</H4><!--SEC END -->
+<UL class=itemize>
+  <LI class=li-itemize>According to BibTeX conventions, entry types, keys and 
+  field names have to be considered case insensitive, that is no distinction is 
+  made between uppercase and lowercase letters. Inside <CODE>bib2bib</CODE>, 
+  these are always converted to uppercase, so you may take this into account 
+  when writting conditions (see below). 
+  <LI class=li-itemize>On the other hand, case matters when comparing strings, 
+  or matching them against regular expressions. For example, <CODE>title : 
+  "Computer"</CODE> may return <CODE>true</CODE> if the title contains the word 
+  <CODE>Computer</CODE> with a capital letter, whereas <CODE>title : 
+  "computer"</CODE> would return <CODE>false</CODE>. 
+  <LI class=li-itemize>A consequence of the two previous remarks, is that if you 
+  want for example to check equality of the entry type and a string value, put 
+  the value in uppercase, as for example <CODE>$type = "INPROCEEDINGS"</CODE>, 
+  otherwise the condition would be always false. 
+  <LI class=li-itemize>When performing a comparison with an non-existent field, 
+  the result is always false ; beware that this means that for example <CODE>not 
+  (f = "value")</CODE> and <CODE>f &lt;&gt; "value"</CODE> are not equivalent: 
+  for an entry that does not have a field <CODE>f</CODE>, the first condition is 
+  true whereas the second is false. 
+  <LI class=li-itemize>As usual, <CODE>not</CODE> has higher priority than 
+  <CODE>and</CODE>, which itself has higher priority than <CODE>or</CODE>. 
+  <CODE>and</CODE> and <CODE>or</CODE> associate to the left. 
+  <LI class=li-itemize>Comparison using <CODE>&gt;</CODE>, <CODE>&lt;</CODE>, 
+  <CODE>&gt;=</CODE> and <CODE>&lt;=</CODE> may only be used between integer 
+  values. In any other case, a warning is displayed and the result is false. 
+  <LI class=li-itemize>There is a special handling for strings containing LaTeX 
+  accented letters: each variant of writing such letters are considered the 
+  same, and equivalent to their ISO-Latin1 form (if it exists), for example 
+  strings <CODE>"Filli\^atre"</CODE>, <CODE>"Filli{\^a}tre"</CODE>, 
+  <CODE>"Filli\^{a}tre"</CODE> and <CODE>"Filliⴲe"</CODE> are considered 
+  identical. Note that when using such a string as a regular expression, there 
+  is no need to escape the backslash, since interpretation of LaTeX accenting 
+  commands is made before interpretation into a regexp. </LI></UL><!--TOC subsection Examples-->
+<H3 class=subsection><A name=htoc15>3.3</A>&nbsp;&nbsp;Examples</H3><!--SEC END -->Here are some 
+examples to help you writing the filter conditions you are interested 
+in.<BR><BR><!--TOC subsubsection Selecting entries of a given year-->
+<H4 class=subsubsection><A name=htoc16>3.3.1</A>&nbsp;&nbsp;Selecting entries of 
+a given year</H4><!--SEC END -->The following command reads input files 
+<CODE>biblio1.bib</CODE> and <CODE>biblio2.bib</CODE>, and select only entries 
+that appeared in 1999 : <PRE class=verbatim>bib2bib -oc cite1999 -ob 1999.bib -c 'year=1999' biblio1.bib biblio2.bib 
+</PRE>The resulting file <CODE>cite1999</CODE> contains the list of keys 
+selected. You can then produce the HTML file by <PRE class=verbatim>bibtex2html -citefile cite1999 1999.bib
+</PRE>You may also select references appeared after and/or before a given year. 
+For example, references after 1997: <PRE class=verbatim>bib2bib -oc citeaft1997 -ob aft1997.bib -c 'year&gt;1997' biblio.bib 
+</PRE>or between 1990 and 1995: <PRE class=verbatim>bib2bib -oc cite90-95 -ob 90-95.bib -c 'year&gt;=1990 and year&lt;=1995' biblio.bib 
+</PRE><!--TOC subsubsection Selecting references of a given author-->
+<H4 class=subsubsection><A name=htoc17>3.3.2</A>&nbsp;&nbsp;Selecting references 
+of a given author</H4><!--SEC END -->The following command reads input files 
+<CODE>biblio.bib</CODE> and select only entries whose (co)author is Donald 
+Knuth: <PRE class=verbatim>bib2bib -oc knuth-citations -ob knuth.bib -c 'author : "Knuth"' biblio.bib
+</PRE>More complicated, if you would like to have only the references whose 
+author is Knuth only, you may try <PRE class=verbatim>bib2bib -oc knuth-citations -ob knuth.bib \
+ -c 'author : "^\(Donald \(E. \)?Knuth\|Knuth, Donald \(E.\)?\)$"' biblio.bib
+</PRE>or equivalently but missing the possible “<CODE>E.</CODE>”: <PRE class=verbatim>bib2bib -oc knuth-citations -ob knuth.bib -c 'author = "Donald Knuth"
+or author = "Knuth, Donald"' biblio.bib
+</PRE><!--TOC subsubsection Other examples-->
+<H4 class=subsubsection><A name=htoc18>3.3.3</A>&nbsp;&nbsp;Other examples</H4><!--SEC END -->Any boolean combination of comparison and/or 
+matching are possible. For example, the following command extract the references 
+that appeared since 1995 and have lambda-calculus in their title, with anything 
+between “lambda” and “calculus”: <PRE class=verbatim>bib2bib -oc lambda -c 'year &gt;= 1995 and title : "lambda.*calculus"' biblio.bib
+</PRE>for example, it will select a title containing 
+<CODE>$\lambda$-calculus</CODE>. <BR><BR><!--TOC subsection Note on duplicates entries-->
+<H3 class=subsection><A name=htoc19>3.4</A>&nbsp;&nbsp;Note on duplicates 
+entries</H3><!--SEC END --><BR><BR><CODE>bib2bib</CODE> as the effect of merging 
+several bib files into a single one. This process may result in duplicate 
+entries in the resulting files, which is considered as erroneous by 
+<CODE>bibtex</CODE>. Of course, this is not really a bug of <CODE>bib2bib</CODE> 
+since it is of your own to take care not having entries with the same key. 
+<BR><BR>However, there are two particular cases when this occurs naturally: when 
+two bib files share common abbreviations, or when they share common 
+cross-references. <BR><BR>In order to make <CODE>bib2bib</CODE> behaves 
+correctly in such a case, it is designed as follows: for repeated abbrevs, the 
+first abbrev is kept and the others are ignored, and for repeated regular 
+entries, the last entry is kept and the others are ignored. With this behaviour, 
+everything works well as soon as repeated abbrevs are really duplicate abbrevs 
+of the same sentence, and repeated keys are really duplicate entries. <BR><BR><!--TOC section The <TT>aux2bib</TT> command line tool-->
+<H2 class=section><A name=htoc20>4</A>&nbsp;&nbsp;The <TT>aux2bib</TT> command 
+line tool</H2><!--SEC END --><TT>aux2bib</TT> is a tool extracting the BibTeX 
+references from a <TT>.aux</TT> file (as produced by 
+L<SUP>A</SUP>T<SUB>E</SUB>X) and building the corresponding BibTeX file. It is 
+invocated as 
+<BLOCKQUOTE class=quote><TT>aux2bib</TT> <I>file.aux</I> </BLOCKQUOTE>The BibTeX 
+file is written on the standard output.<BR><BR><!--TOC section Frequently Asked Questions-->
+<H2 class=section><A name=htoc21>5</A>&nbsp;&nbsp;Frequently Asked 
+Questions</H2><!--SEC END -->
+<OL class=enumerate type=1>
+  <LI class=li-enumerate><B>How may I tell bibtex2html to expand 
+  cross-references?</B> &nbsp;<BR><BR>By default, all entries of the input 
+  BibTeX file are translated into HTML, including cross-references. Since the 
+  latter are there, bibtex will never expand them. If you want them to be 
+  expanded, you have to tell bibtex2html that crossref entries need not be in 
+  the resulting file. To do that you have to use the option 
+  <CODE>-citefile</CODE> to give the exact list of entries you want to see. If a 
+  cross-reference is not in that list, then its fields will be expanded into all 
+  entries that cross-refers to it. (Technically, this work because bibtex2html 
+  calls bibtex with option <CODE>-min-crossrefs=1000</CODE> by default.)<BR><BR>
+  <LI class=li-enumerate><B>When running</B> <PRE class=verbatim>bib2bib -oc knuth-citations -ob knuth.bib -c 'author : "Knuth"' biblio.bib
+</PRE><B>I get "Lexical error in condition: Unterminated string". What's going 
+  wrong?</B><BR><BR>You are probably running <CODE>bib2bib</CODE> under 
+  Microsoft Windows, hence you should permute the use of single quotes and 
+  double quotes, as explained in Section&nbsp;<A 
+  href="http://www.lri.fr/~filliatr/bibtex2html/doc/#sec:conditions">3.2</A>: <PRE class=verbatim>bib2bib -oc knuth-citations -ob knuth.bib -c "author : 'Knuth'" biblio.bib
+</PRE></LI></OL>
+<HR>
+<IMG src="bibtex2html_Dokumentation_Optionsliste-Dateien/mail.gif" 
+align=middle><EM><A 
+href="mailto:Jean-Christophe.Filliatre[at]lri.fr,%20Claude.Marche[at]lri.fr">mail 
+to authors</A> , Fri Feb 12 17:46:23 1999<BR><BR><!--HTMLFOOT--><!--ENDHTML--><!--FOOTER-->
+<HR SIZE=2>
+
+<BLOCKQUOTE class=quote><EM>This document was translated from 
+  L<SUP>A</SUP>T<SUB>E</SUB>X by </EM><A 
+  href="http://pauillac.inria.fr/~maranget/hevea/index.html"><EM>H<FONT 
+  size=2><SUP>E</SUP></FONT>V<FONT 
+size=2><SUP>E</SUP></FONT>A</EM></A><EM>.</EM></BLOCKQUOTE></EM></BODY></HTML>

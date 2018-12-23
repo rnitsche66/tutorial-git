@@ -1,0 +1,483 @@
+% ****************************************************
+\message{Diss Style vom 06. October 2000 - R.Nitsche}
+% ****************************************************
+%***********************************************
+% Neue Befehle:
+%***********************************************
+%***********************************************
+% Abkuerzung fuer lange Woerter
+%***********************************************
+\def\Abb[#1]{Abbildung~\ref{#1}}
+\newcommand{\abln}{ab\-lei\-tung\-en}
+\newcommand{\Dgl}{Dgl}
+\newcommand{\CAS}{Com\-pu\-ter-Al\-ge\-bra-Sy\-stem}
+\newcommand{\cas}{com\-pu\-ter-al\-ge\-bra sy\-stem}
+\newcommand{\EAL}{Eingangs-/Aus\-gangs\-li\-nea\-ri\-sie\-rung }
+\newcommand{\ZL}{Zu\-stands\-li\-nea\-ri\-sie\-rung }
+\newcommand{\ZR}{Zu\-stands\-r"uck\-f"uh\-rung }
+\newcommand{\ZRb}{Zu\-stands\-r"uck\-f"uh\-rung}
+\newcommand{\ZT}{Zu\-stands--Trans\-for\-ma\-ti\-on }
+\newcommand{\ZTb}{Zu\-stands--Trans\-for\-ma\-ti\-on}
+\newcommand{\Mma}{{\sc ma\-the\-ma\-ti\-ca}}
+\newcommand{\Maple}{{\sc maple}}
+\newcommand{\Macsyma}{{\sc macsyma}}
+\newcommand{\dspace}{{\sc dSpace}}
+\newcommand{\dSpace}{\dspace}
+\newcommand{\Matlab}{{\sc mat\-lab}}
+\newcommand{\Simulink}{{\sc simu\-link}}
+\newcommand{\ACSL}{{\sc ACSL}}
+\newcommand{\lie}{{\sc Lie}}
+\newcommand{\qs}{quasi-static}
+%\newcommand{\ie}{{\em i.e.}}
+\newcommand{\ie}{{i.\,e}}
+\newcommand{\eg}{{e.\,g}}
+\newcommand{\cf}{{cf}} % heisst confer [abbr.: cf.] <-> vergleiche [Abk.: vgl.] 
+\newcommand{\soca}{so-called}
+\newcommand{\lugre}{LuGre} %{{\em LuGre}}
+%\newcommand{\lugre}{{\em LuGre}}
+%\newcommand{\sth}{\enspace\mbox{s.th.}\enspace}
+%\newcommand{\sth}{s.th.}
+\newcommand{\Simpack}{{\sc Sim\-pack}}
+\newcommand{\viz}{viz.\ }
+\newcommand{\lpn}{Lyapunov}
+\newcommand{\lpv}{\lpn}% diese Abkürzung ist eigentlich sinnvoller
+
+\def\m{m}
+\def\pq{q}
+%%%
+% Fuer Diss: (29.08.00)
+\newcommand{\lqq}{``} % left double qoute
+\newcommand{\rqq}{''} % right double qoute
+% mal gelegentlich nach richtigen TeX Commandos schauen
+% <<FF>> *******************************************
+\newcommand{\unit}[1]{\, \mbox{#1}}
+%\newcommand{\sth}{such that}
+\newcommand{\Mf}{\tau_{\mathrm f}}
+\newcommand{\dMf}{\dot{\tau}_{\mathrm f}}
+\newcommand{\hMf}{\hat\tau_{\mathrm f}}
+\newcommand{\Mfss}{\tau_{{\mathrm f},ss}}
+\newcommand{\FN}{F_{\mathrm N}}
+\newcommand{\hFN}{\hat F_{\mathrm N}}
+\newcommand{\FNi}[1]{F_{\mathrm N,#1}}
+%\newcommand{\FNi}{F_{\mathrm N,i}}
+\newcommand{\FNmin}{\FN^{\min}}
+\newcommand{\FNmax}{\FN^{\max}}
+\newcommand{\FNs}{\FN^{s}}
+\newcommand{\Ft}{F_{\mathrm t}} % Tangential Force
+\newcommand{\Ff}{F_{\mathrm f}} % Friction Force
+\newcommand{\Fc}{F_{\mathrm c}} % Coulomb friction level
+\newcommand{\Fd}{F_{\Delta}} % gibts eigentlich nicht in Diss.
+\newcommand{\Fv}{F_v}
+\newcommand{\Fs}{F_{\mathrm s}} % Stribeck friction
+\newcommand{\vs}{v_{\mathrm s}} % Stribeck velocity
+\newcommand{\Up}{U_{\mathrm p}} % Applied Voltage am Piezoe
+\newcommand{\Upi}{U_{\mathrm p,i}} % Applied Voltage am Piezoe
+\newcommand{\vphi}{\varphi} % varphi abkürzen
+\newcommand{\dvphi}{\dot\varphi} % varphi abkürzen
+%\newcommand{\sig0}{\sigma_0}
+\newcommand{\vr}{v_{\mathrm{rel}}}
+\newcommand{\dtheta}{\dot\theta}
+%\newcommand{\dthetas}{\dot\theta_s} % Stribeck volicity rev.joint 
+\newcommand{\dthetas}{\dot\theta_{\mathrm s}} % Stribeck volicity rev.joint
+\newcommand{\hdthetas}{\dot{\hat\theta}_{\mathrm s}} % Stribeck volicity rev.joint
+\newcommand{\fex}{f_{\mathrm{ext}}}
+\newcommand{\Fext}{F_{ \mathrm{ext}}}
+\newcommand{\Fextamp}{F_{\mathrm{ext}}^{\mathrm{a}}}
+\newcommand{\fvext}{\f_{ \mathrm{ext}}}
+\newcommand{\Md}{M_{\Delta}}
+\newcommand{\Mc}{M_{\mathrm c}}
+\newcommand{\Mvext}{\btau_{\mathrm{ext}}} %\vek{m}_{ \mathrm{ext}}}
+\newcommand{\Mext}{\tau_{\mathrm{ext}}} %\vek{m}_{ \mathrm{ext}}}
+\newcommand{\hMext}{\hat{\tau}_{\mathrm{ext}}} %\vek{m}_{ \mathrm{ext}}}
+\newcommand{\Mvf}{\btau_{\mathrm f}}
+\newcommand{\Wd}{W_{\mathrm d}}
+\newcommand{\zoL}{z_1^{\mathrm{o}}}
+\newcommand{\zoR}{z_2^{\mathrm{o}}}
+%%% Neues Environment: note (aus Kopka, Seite 167)
+%%%
+\newenvironment{note}[1]%
+{\begin{list}{}{\settowidth{\labelwidth}{ #1}
+\setlength{\leftmargin}{\labelwidth} \addtolength{\leftmargin}{\labelsep}
+\parsep0.5ex plus0.2ex minus0.2ex \itemsep0.3ex
+\renewcommand{\makelabel}[1]{##1\hfill}}}%
+{\end{list}}
+% Neue Liste:
+% Defining a new List needs the calc Package (aus Bernh. S.64)
+\newenvironment{Ventry}[1]%
+{\begin{list}{}{\renewcommand{\makelabel}[1]{\textrm{##1}\hfil}%
+   \settowidth{\labelwidth}{\textrm{#1}}%
+   \setlength{\leftmargin}{\labelwidth+\labelsep}}}%
+{\end{list}}
+%%<<ff>>******************************************
+%% Blocknummern 
+%%************************************************
+% Nummern fuer die Bloecke definieren in Kapitel 5 Blockdiagramm
+\newcommand{\nrjointID}{1} % Joint Identification
+\newcommand{\nrsysID}{2}   % System Identification
+\newcommand{\nrctrl}{3}    % Controller Block
+\newcommand{\nrobs}{4}     % Observer Block
+% Buchstaben fuer die Bloecke in der Skizze fuer den exp. Aufbau
+\newcommand{\IDloadcell}{{\tt a}}
+\newcommand{\IDampl}{{\tt b}}
+\newcommand{\IDFNsens}{{\tt c}}
+\newcommand{\IDinner}{{\tt T}} % Tang
+\newcommand{\IDouter}{{\tt C}} % Clevis 
+% und jetzt die eigentlichen Blocknummern
+%% fuer den Text
+\def\Blocklabel#1{\hphantom{x}{\small #1}
+       \hspace*{-0.60em}\raisebox{1.2mm}{\circle{4}}\hspace*{-0.3em}}
+% fuers putten im Bild
+\def\Blocknummer(#1,#2)(#3,#4)#5{\put(#1,#2){\makebox(5,5){\small$#5$}}
+                          \put(#3,#4){\circle{4}}}
+% Beispiel:
+% \Blocknummer(100,90)(102.5,92.5){1}
+% fuer Diss besser folgende Abkuerzung verwenden, da der Abstand bei
+% DissSchrftgr. immer 2.5mm
+\newcommand{\Blocknr}[1]{\Blocknummer(0,0)(2.5,2.5){#1}}
+% Dashed arrows im Text:
+\newcommand{\dasharrow}{\hspace*{0.5mm}
+  %\makebox(3,1)
+               {\multiput(0,1.2)(4,0){2}{\line(1,0){2}}
+                     \put(8,1.2){\vector(1,0){3}}
+                } \hspace*{10mm}}
+% Um die Moden in die Tabelle einzufügen:
+\newcommand{\ineps}[1]{
+\begin{picture}(30,12)
+\put(0,0){\makebox(30,12){
+\epsfxsize30mm\leavevmode\epsffile{./bilderK7/bildmod/#1}
+}}
+\end{picture}
+}% Ende Kommando
+%***********************************************
+% Neue Umgebungen
+%***********************************************
+\@ifundefined{chapter}{
+\newtheorem{Satz}{Satz}[section]
+\newtheorem{Definition}{Definition}[section]
+\newtheorem{Algorithmus}{Algorithmus}[section]
+\newtheorem{Bemerkung}{Bemerkung}[section]
+\newtheorem{Remark}{Remark}[section]
+\newtheorem{Proof}{Proof}[section]
+\newtheorem{Example}{Example}[section]
+}{%
+\newtheorem{Satz}{Satz}[chapter]
+\newtheorem{Definition}{Definition}[chapter]
+\newtheorem{Algorithmus}{Algorithmus}[chapter]
+\newtheorem{Bemerkung}{Bemerkung}[chapter]
+\newtheorem{Remark}{Remark}[chapter]
+\newtheorem{Proof}{Proof}[chapter]
+\newtheorem{Example}{Example}[chapter]
+}
+\newtheorem{Beispiel}[Definition]{Beispiel}
+\newtheorem{Theorem}[Definition]{Theorem}
+\newtheorem{Lemma}[Definition]{Lemma}
+\newtheorem{Proposition}[Definition]{Proposition}
+\newtheorem{Corollary}[Definition]{Corollary}
+%\newtheorem{Remark}[Definition]{Remark}
+\newtheorem{Property}[Definition]{Property}
+\newcounter{myremark}[section]
+\setcounter{myremark}{1}
+%\def\themyremark{\thesection.\arabic{myremark}}
+%\newenvironment{Remark}{\stepcounter{myremark}} %
+%\vspace*{1ex}\noindent{\bf Remark \themyremark:} }{\hfill $\diamond$\par\vspace*{1ex}}
+%\newenvironment{Remark}{\stepcounter{myremark}%
+%\paragraph{Remark \themyremark:} }{\hspace*{\fill} $\diamond$\par\vspace*{1ex}}
+%\newenvironment{Proof}{\noindent{\em Proof:\/}}{\hfill $\diamond$\par}
+%\newtheorem{Proof}[Definition]{Proof}
+\newenvironment{Sketch}{\noindent{\em Sketch of the proof:\/}}{\hfill $\Box$\par}
+% Für die enumerate Umgebung
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\roman{enumi})}
+% Achtung dies wird in K5-Methodolgy umdefiniert
+%***********************************************
+% Abkuerzung fuer Formelteile
+%***********************************************
+\newcommand{\diag}{\mbox{diag}\,} \newcommand{\From}[2]{} \def\From(#1,#2){#1,
+  \ldots, #2} \newcommand{\dr}[2]{}
+\def\dr#1[#2]{\stackrel{\langle#2\rangle}{#1}} \newcommand{\Dr}[2]{}
+\def\Dr#1[#2]{\stackrel{\langle\langle#2\rangle\rangle}{#1}}
+\newcommand{\inprod}[2]{} \def\inprod<#1,#2>{\langle #1, #2\rangle}
+\newcommand{\RR}{I\!\!R} \newcommand{\ZZ}{Z\!\!\!Z}
+%       Binomial coefficient
+\newcommand{\bin}[2]{\mbox{$\left(\!\!\begin{array}{c}#1 \\ #2 \end{array}
+\!\!\right)$}}
+\newcommand{\fxu}[0]{{\bf f}({\bf x}, {\bf u})}
+\newcommand{\hxu}[0]{{\bf h}({\bf x}, {\bf u})}
+\newcommand{\dfdx}[0]{\partial {\bf f}/\partial {\bf x}}
+\newcommand{\dhdx}[0]{\partial {\bf h}/\partial {\bf x}}
+\font\bm=cmmib10 scaled 1200
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\bgamma}{\boldsymbol{\gamma}}
+\newcommand{\bzeta}{\boldsymbol{\zeta}}
+\newcommand{\bfeta}{\boldsymbol{\eta}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+\newcommand{\bkappa}{\boldsymbol{\kappa}}
+\newcommand{\blambda}{\boldsymbol{\lambda}}
+\newcommand{\bxi}{\boldsymbol{\xi}}
+\newcommand{\bchi}{\boldsymbol{\chi}}
+\newcommand{\bpi}{\boldsymbol{\pi}}
+\newcommand{\brho}{\boldsymbol{\rho}}
+\newcommand{\bsigma}{\boldsymbol{\sigma}}
+\newcommand{\btau}{\boldsymbol{\tau}}
+\newcommand{\bupsilon}{\boldsymbol{\upsilon}}
+\newcommand{\bvarphi}{\boldsymbol{\varphi}}
+\newcommand{\bphi}{\boldsymbol{\phi}}
+\newcommand{\bPhi}{\boldsymbol{\Phi}}
+\newcommand{\bpsi}{\boldsymbol{\psi}}
+%\newcommand{\sgn}[1]{\mbox{sgn}\left(#1\right)\,}
+\newcommand{\sgn}{\mathop{\rm \csname operator@font\endcsname sgn}\nolimits}
+\newcommand{\sat}{\mathop{\rm \csname operator@font\endcsname sat}\nolimits}
+\newcommand{\Real}{\mathop{\rm \csname operator@font\endcsname Re}\nolimits}
+\newcommand{\eig}{\mathop{\rm \csname operator@font\endcsname eig}\nolimits}
+\renewcommand{\diag}{\mathop{\rm \csname operator@font\endcsname
+    diag}\nolimits} % wird nochmal erneuert damit in RemarkEnv. nicht kursiv
+%**************************************************************************
+\newcommand{\MyTeXDraw}[1]{%
+\btexdraw
+    \drawdim mm
+    \textref h:C v:C
+    % Pfeile 
+    \arrowheadsize l:2 w:1
+    \arrowheadtype t:F
+    #1
+\etexdraw
+
+}
+\newcommand{\MyCenterTeXDraw}[1]{%
+\centertexdraw{
+    \drawdim mm
+    \textref h:C v:C
+    % Pfeile 
+    \arrowheadsize l:2 w:1
+    \arrowheadtype t:F
+    #1}}
+%**************************************************************************
+%**************************************************************************
+\newcounter{modifcount}
+\setcounter{modifcount}{0}
+\newcommand{\modif}[1]{\stepcounter{modifcount}\vadjust{\smash{\llap{$\mbox{M}_{\arabic{modifcount}}$\,\vrule\strut\kern1cm}}}{\sf #1}}
+\newcommand{\ajout}[1]{\stepcounter{modifcount}\vadjust{\smash{\llap{$\mbox{A}_{\arabic{modifcount}}$\,\vrule\strut\kern1cm}}}{\sf #1}}
+\newcommand{\suppres}[1]{\stepcounter{modifcount}\vadjust{\smash{\llap{$\mbox{S}_{\arabic{modifcount}}$\,\vrule\strut\kern1cm}}}{{\sf *}}}
+\newcommand{\mysuppres}[1]{\stepcounter{modifcount}\vadjust{\smash{\llap{$\mbox{S}_{\arabic{modifcount}}$\,\vrule\strut\kern1cm}}}{{\sf}}}
+%\newcommand{\Achtung}[1]{\marginpar{\rule[-5mm]{1mm}{10mm} #1}}
+\newcommand{\Achtung}[1]{\vadjust{\smash{\llap{\begin{minipage}{12mm}\footnotesize\hfill#1\end{minipage}\,\vrule\strut\kern1cm}}}}
+%**************************************************************************
+%***********************************************
+\newcommand{\Matrix}[2]{#1}
+\def\Matrix[#1]#2{\left(\begin{array}{#1}
+                    #2
+                  \end{array}\right)}
+\newcommand{\Vektor}[2]{#1}
+\def\Vektor[#1]#2{\left[\begin{array}{#1}
+                    #2
+                  \end{array}\right]}
+%***********************************************
+%\font\mymath=cmmi10 scaled 1200
+%\newcommand{\bphi}{\mbox{\bm\char'36}}
+%***********************************************
+\newcommand{\hd}{\hat{h}}
+\newcommand{\hq}{\overline{h}}
+\newcommand{\lambdaq}{\overline{\lambda}}
+\newcommand{\wq}{\overline{w}}
+\newcommand{\zq}{\overline{z}}
+\newcommand{\psiq}{\overline{\psi}}
+\newcommand{\psiw}{\psi_w}
+\newcommand{\psiwq}{\psi_{\wq}}
+%***********************************************
+\newcommand{\D}{\displaystyle}
+\newcommand{\un}[1]{\underline{#1}}
+\newcommand{\ov}[1]{\overline{#1}}
+\newcommand{\jw}{j \omega}
+\newcommand{\at}[2]{\left. #1 \right|_{#2}}
+\newcommand{\Lie}[2]{[#1,#2]}
+\def\Lie[#1,#2]{[#1,#2]}
+%***********************************************
+\renewcommand{\dh}{d.\,h}  %ex. schon in Latex2e
+\newcommand{\zB}{z.\,B}
+\newcommand{\Mit}{\mbox{mit}}
+\newcommand{\wrt}{w.\,r.\,t}
+%***********************************************
+% Vektorr"aume
+%***********************************************
+\newcommand{\CV}{{\cal C}}
+\newcommand{\DV}{{\cal D}}
+\newcommand{\EV}{{\cal E}}
+\newcommand{\FV}{{\cal F}}
+\newcommand{\GV}{{\cal G}}
+\newcommand{\HV}{{\cal H}}
+\newcommand{\JV}{{\cal J}}
+\newcommand{\MV}{{\cal M}}
+\newcommand{\NV}{{\cal N}}
+\newcommand{\SV}{{\cal S}}
+\newcommand{\UV}{{\cal U}}
+\newcommand{\XV}{{\cal X}}
+\newcommand{\LV}{{\cal L}}
+\newcommand{\RV}{{\cal R}}
+\newcommand{\VV}{{\cal V}}
+\newcommand{\ZV}{{\cal Z}}
+\newcommand{\Lop}{{\cal L}}
+\newcommand{\Bild}{\mbox{Im}\;}
+\newcommand{\Dim}{\mbox{dim}\;}
+\newcommand{\Rang}{\mbox{Rang}\;}
+\newcommand{\Span}[1]{\mathop{\rm \csname operator@font\endcsname span}\nolimits \left\{#1\right\}}
+\newcommand{\ad}{\mathop{\rm \csname operator@font\endcsname ad}\nolimits}
+\newcommand{\Rank}{\mathop{\rm \csname operator@font\endcsname rank}\nolimits}
+% Bruch mit großem Zähler und Nenner definieren, brauch man gelegentlich in
+% Matrizen (19.Jan.01)
+\newcommand{\Dfrac}[2]{\frac{\displaystyle{#1}}{\displaystyle{#2}}} 
+
+%***********************************************
+% Ableitungen
+%***********************************************
+\newcommand{\ableins}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+\newcommand{\diff}[2]{#1}
+\def\diff#1(#2){\stackrel{(#2)}{#1}}
+%\def\diff#1(#2){#1^{(#2)}}
+\newcommand{\ubar}[1]{\diff{u}(#1)}
+\newcommand{\uvbar}[1]{#1}
+\def\uvbar[#1]{\stackrel{[#1]}{\vek{u}}}
+%***********************************************
+% Vektoren
+%***********************************************
+%\newcommand{\Tr}{\rm T}    %Transponieren von Vektoren u. Matr.
+%\newcommand{\Tr}{\mbox{T}} 
+\newcommand{\Tr}{\top} 
+\newcommand{\grad}[1]{^{[#1]}}
+%\newcommand{\vek}[1]{{\bf #1}}
+\newcommand{\vek}[1]{{\mbox{\boldmath $#1$}}}
+%\newcommand{\vek}[1]{{\mbox{$#1$}}}
+%\newcommand{\vek}[1]{#1}
+%Fuer DMS mechanische Vektoren verwenden
+%\newcommand{\vek}[1]{\vec{ #1}}
+% spezielle Vektoren
+\newcommand{\0}{{\vek{0}}}
+\newcommand{\av}{\vek{a}}
+\newcommand{\bv}{\vek{b}}
+\newcommand{\cv}{\vek{c}}
+\newcommand{\e}{\vek{e}}
+\newcommand{\f}{\vek{f}}
+\newcommand{\g}{\vek{g}}
+\newcommand{\h}{\vek{h}}
+\newcommand{\kv}{\vek{k}}
+\newcommand{\lv}{\vek{l}}
+\newcommand{\n}{\vek{n}}
+\newcommand{\p}{\vek{p}}
+\newcommand{\q}{\vek{q}}
+\newcommand{\rv}{\vek{r}}
+\newcommand{\s}{\vek{s}}
+\newcommand{\uv}{\vek{u}}
+\newcommand{\vv}{\vek{v}}
+\newcommand{\w}{\vek{w}}
+\newcommand{\x}{\vek{x}}
+\newcommand{\y}{\vek{y}}
+\newcommand{\z}{\vek{z}}
+\newcommand{\Ord}{\vek{O}}
+\newcommand{\Ox}{\vek{O}(\x)^3}
+\newcommand{\Oxu}{\vek{O}(\x,\uv)^3}
+\newcommand{\fx}{\f\grad{2}(\x)}
+\newcommand{\gx}{\g\grad{1}(\x)}
+\newcommand{\hx}{\h\grad{2}(\x)}
+\newcommand{\qx}{\q\grad{2}(\x)}
+\newcommand{\xs}{\x_s} % Gleichgewicht bzw. stationaere Loesung
+\newcommand{\xe}{\x^e} % Extended state
+\newcommand{\hxe}{\hat{\x}^e} % Extended state
+\newcommand{\xes}{\x^{e}_{s}} % Gleichgewicht des extended state
+\newcommand{\us}{u_s} % Gleichgewicht bzw. stationaere Loesung
+\newcommand{\uvs}{\uv_s} % Gleichgewicht bzw. stationaere Loesung
+%***********************************************
+% Matrizen
+%***********************************************
+%\newcommand{\mat}[1]{{\mbox{\boldmath $#1$}}}
+\newcommand{\mat}[1]{{\mbox{$#1$}}}
+%auf Wunsch von Delf fuer Magdeburg-Paper
+%\newcommand{\mat}[1]{{\bf #1}}
+\newcommand{\NullMat}{\mat{0}}
+\newcommand{\A}{\mat{A}}
+\newcommand{\B}{\mat{B}}
+\newcommand{\C}{\mat{C}}
+\newcommand{\Dm}{\mat{D}}
+\newcommand{\F}{\mat{F}}
+\newcommand{\FF}{{\cal F}}
+\newcommand{\G}{\mat{G}}
+\newcommand{\Hm}{\mat{H}}
+\newcommand{\I}{\mat{I}}
+\newcommand{\J}{\mat{J}}
+\newcommand{\K}{\mat{K}}
+\newcommand{\Lm}{\mat{L}}
+\newcommand{\M}{\mat{M}}
+\newcommand{\N}{\mat{N}}
+\newcommand{\Om}{\mat{O}}
+\newcommand{\Pm}{\mat{P}}
+\newcommand{\Q}{\mat{Q}}
+\newcommand{\R}{\mat{R}}
+\newcommand{\T}{\mat{T}}
+\newcommand{\U}{\mat{U}}
+\newcommand{\V}{\mat{V}}
+\newcommand{\W}{\mat{W}}
+\newcommand{\Gx}{\G\grad{1}(\x)}
+%\newcommand{\ZZ}{{\cal Z}}
+%
+\newcommand{\partabl}[1]{\frac{\partial #1}{\partial \x}}
+\newcommand{\partab}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\partzwei}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\partzwgm}[3]{\frac{\partial^2 #1}{\partial #2\partial #3}}
+%***********************************
+% 2x2-Matrix
+\newcommand{\matricks}[4]{
+  \left(
+  \begin{array}{cc}
+    #1 & #2 \\
+    #3 & #4 \\
+  \end{array}
+  \right)
+}
+%***********************************
+% 3x3-Matrix
+\newcommand{\dreimatricks}[9]{
+  \left(
+  \begin{array}{ccc}
+      #1 & #2 & #3 \\
+      #4 & #5 & #6 \\
+      #7 & #8 & #9 \\
+  \end{array}
+  \right)
+}
+%***********************************
+% Spaltenvektor
+\newcommand{\vektor}[2]{
+  \left[
+  \begin{array}{c}
+     #1 \\
+     #2 \\
+  \end{array}
+  \right]
+}
+%***********************************
+% Spaltenvektor 3 Komponenten
+\newcommand{\dreivektor}[3]{
+  \left[
+  \begin{array}{c}
+     #1 \\
+     #2 \\
+     #3 \\
+  \end{array}
+  \right]
+}
+%***********************************
+% Zeilenvektor
+\newcommand{\zvektor}[2]{\left[ #1 \;  #2  \right]}
+%***********************************
+% Zeilenvektor 3 Komponenten
+\newcommand{\dreizvektor}[3]{\left[ #1 \;  #2  \; #3 \right]}
+
+%Fuer Diplomarbeit DB
+%F"ur das folgende Roatationskommando ist das Package STY/rotate.sty notwendig
+%*****************************************************************************
+\newcommand{\myrotate}[1]{\rotate{\hsize=\textheight\vsize=\textwidth%
+\topmargin0pt%\addtolength{\oddsidemargin}{20mm}%
+\parbox{185mm}{#1}}%
+}
+
+
+

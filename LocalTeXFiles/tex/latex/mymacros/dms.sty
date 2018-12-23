@@ -1,0 +1,386 @@
+
+\message{DMS Style vom 28. Oktober 1998}
+
+\def\@makechapterhead#1{ \vspace*{50pt} { \parindent 0pt \raggedright
+ \ifnum \c@secnumdepth >\m@ne \huge\bf \thechapter . \fi
+ \huge \bf #1\par
+ \nobreak \vskip 40pt } }
+
+\frenchspacing
+\parindent 1em
+\parskip 0pt plus 0pt minus0pt
+
+\textwidth 420pt
+\textheight 685pt
+
+\topmargin -45pt % mit Kopfzeile -10pt verwenden
+\if@twoside \oddsidemargin 10pt \evensidemargin 40pt % bei linken Randnotizen
+ \else \oddsidemargin 23pt \evensidemargin 23pt     % eventuell erh"ohen
+\fi
+
+% Liste mit gleichem Einzug in jeder Zeile (Mustermarke)
+\newcommand{\deflabel}[1]{\bf #1\hfill}
+\newenvironment{deflist}[1]
+ {\begin{list}{}
+   {\settowidth{\labelwidth}{\bf #1}
+    \setlength{\leftmargin}{\labelwidth}
+    \addtolength{\leftmargin}{\labelsep}
+    \renewcommand{\makelabel}{\deflabel}
+   }
+ }{\end{list}} % mu"s in einer Zeile stehen! 
+
+\def\boxit#1#2#3{% Setzt #3 zentriert in Kasten der Breite #1 und der H"ohe #2
+ \vbox
+  {\hsize #1
+   \vrule
+   \vbox to #2
+    {\hrule
+     \vfill
+     \centering #3
+     \vfill
+     \hrule
+    }\vrule
+  }}
+%%%
+%%% Neue Register
+%%%
+\newcounter{aufgabe}
+\newcounter{uebung}
+\setcounter{uebung}{1}
+\newcounter{loesung}
+\setcounter{loesung}{1}
+\newlength{\addresse}
+\def\theequation{\theaufgabe.\arabic{equation}}
+\def\Institutskopf{
+\begin{flushleft}
+  Universit\"at Stuttgart \hspace{2mm}%\\
+  Institut A f\"ur Mechanik \hspace{2mm}%\\
+  o. Prof. L. Gaul \\
+%  "Ubung \glqq Dynamik mechanischer Systeme \grqq\
+%
+  \"Ubung  \glqq Dynamik mechanischer Systeme \grqq\
+\end{flushleft} \vspace*{-4mm}
+\hbox to \hsize{\hss\hrulefill\hss}
+\vspace*{1em}
+}
+%\def\Institutskopf{
+%\begin{flushleft}
+%  Universit"at Gesamthochschule Siegen\\
+%  Institut f"ur Mechanik und Regelungstechnik\\
+%  Prof. Dr.--Ing. R. King\\
+%  "Ubung und Praktikum \glqq Simulationstechnik\grqq\
+%\end{flushleft}
+%\hbox to \hsize{\hss\hrulefill\hss}
+%\vspace*{1em}
+%}
+\def\noskip{\strut\vskip -3.5em\strut}
+%%%
+%%% Neues Environment: Aufgabe
+%%%
+\newcounter{Uebung}
+\newenvironment{Aufgabe}[1]%
+  {\setcounter{equation}{0}\addtocounter{aufgabe}{1}\noindent
+  \underline{\bf Aufgabe \theUebung.\theaufgabe} #1\\[0em]}%
+  {\vskip 1em}
+%%%
+\newif\ifg@@darg\g@@dargtrue
+\newcount\minonly\minonly=1
+\newcount\maxonly\maxonly=7
+\def\@nly(#1-#2)#3{\@tempcnta=#1\@tempcntb=#2
+                   \ifnum\@tempcnta>\@tempcntb \g@@dargfalse
+                     \else\ifnum \@tempcnta<\minonly \g@@dargfalse
+                       \else\ifnum \@tempcntb>\maxonly \g@@dargfalse
+                            \fi
+                          \fi
+                   \fi
+                   \advance\@tempcntb by 1
+                   \ifg@@darg{\loop
+                      \setcounter{uebung}{\@tempcnta}
+                      \input{#3\number\@tempcnta}
+                      \advance\@tempcnta by 1
+                      \ifnum\@tempcnta<\@tempcntb\repeat}%
+                   \else\@badarg{#3}
+                   \fi}
+\def\@badarg#1{\@latexerr{Bad \string\only#1\space argument}\@ehb}
+%%%
+%%% Neues Environment: loesung
+%%%
+\newenvironment{loesung}%
+  { %\institut
+  \setcounter{aufgabe}{0}
+  \begin{center}
+   %\Large %\bf
+   L{\"o}sungen der {\"U}bungen in  \glqq Dynamik mechanischer Systeme \grqq\ --- %\\[1em]
+    \theloesung. {\"U}bung
+  \end{center} \vspace*{-4mm}
+\hbox to \hsize{\hss\hrulefill\hss}
+\vspace*{1em}
+  \vspace{1em}
+  \setcounter{page}{1}
+  \def\thepage{L \theloesung.\arabic{page}}}%
+  {\clearpage\addtocounter{loesung}{1}}
+%%%
+\def\onlyloesung#1{\def\mytemp{#1}
+                     \phantom{\hbox to 0pt{\hss
+                     \global\expandafter\@tempcnta=\mytemp}}
+                     \edef\tempone{\number\@tempcnta}
+                     \ifx\tempone\mytemp 
+                       \@nly(\@tempcnta-\@tempcnta){loesung}
+                     \else\edef\myarg{(\mytemp)} 
+                       \expandafter\@nly\myarg{loesung}
+                     \fi}
+%%%
+%%% Neues Environment: Uebung
+%%%
+\newenvironment{Uebung}%
+  {\Institutskopf
+  \setcounter{aufgabe}{0}
+  \begin{center}
+    \Large\bf
+    \theUebung. \"Ubung\\[1em]
+  \end{center}
+  \setcounter{page}{1}
+  \def\thepage{"U \theUebung.\arabic{page}}}%
+  {\clearpage\addtocounter{Uebung}{1}}
+%%%
+\def\onlyuebung#1{\def\mytemp{#1}
+                     \phantom{\hbox to 0pt{\hss
+                     \global\expandafter\@tempcnta=\mytemp}}
+                     \edef\tempone{\number\@tempcnta}
+                     \ifx\tempone\mytemp 
+                       \@nly(\@tempcnta-\@tempcnta){uebung}
+                     \else\edef\myarg{(\mytemp)} 
+                       \expandafter\@nly\myarg{uebung}
+                     \fi}
+%%%
+%%% Neues Environment "Ubungsblatt
+%%%
+\newenvironment{Hilfsblatt}{%
+\hbox to 145mm{\footnotesize Universit\"at Stuttgart --
+ Institut A f\"ur Mechanik -- o.\,Prof.~Gaul $\;$ \newline
+                \glqq Dynamik mech. Systeme\grqq\ \hss}
+\vspace*{-3mm}
+\hbox to 145mm{\hss\hrulefill\hss}
+\vspace*{1em}
+\def\theequation{\arabic{equation}}
+}{}
+%%%
+%%% Neues Environment: note (aus Kopka, Seite 167)
+%%%
+\newenvironment{note}[1]%
+{\begin{list}{}{\settowidth{\labelwidth}{ #1}
+\setlength{\leftmargin}{\labelwidth} \addtolength{\leftmargin}{\labelsep}
+\parsep0.5ex plus0.2ex minus0.2ex \itemsep0.3ex
+\renewcommand{\makelabel}[1]{##1\hfill}}}%
+{\end{list}}
+%%%
+\newcommand{\ergebnis}[1]{\begin{equation}\fbox{$\displaystyle #1$}\end{equation}}
+\def\register{\input uebung.reg\clearpage}
+%%%
+%%% Voreinstellungen und Umbennungen
+%%%
+%\tracingonline=1
+%\tracingstats=2
+\unitlength 1mm
+\fboxsep 3mm
+\thicklines
+\overfullrule=5pt
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{\arabic{enumii}. }
+\renewcommand{\pm}{\;\hbox{\lower0.25em\vbox{\offinterlineskip\hbox{$+$}\vskip-0.2em\hbox{$-$}}}\;}
+%%%
+%%% Makros
+%%%
+\def\D{\displaystyle}
+\newcommand{\un}[1]{\underline{#1}}
+\newcommand{\ov}[1]{\overline{#1}}
+\newcommand{\jw}{j \omega}
+%
+\newcommand{\partabl}[1]{\frac{\partial #1}{\partial \x}}
+\newcommand{\partab}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\partzwei}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\partzwgm}[3]{\frac{\partial^2 #1}{\partial #2\partial #3}}
+\newcommand{\at}[2]{\left. #1 \right|_{#2}}
+%%%
+%%%   Bl"ocke
+%%%
+\newcommand{\PGlied}[1]{
+  \unitlength1mm
+  \begin{picture}(30,20)
+    \put(2,4){\vector(1,0){26}}
+    \put(6,2){\vector(0,1){16}}
+    \thicklines
+    \put(2,4){\line(1,0){4}} \put(6,13){\line(1,0){20}}
+    \thinlines
+    \put(4,13){\line(1,0){4}}
+    \put(0,10){\makebox(4,6){#1}}
+  \end{picture}
+}
+\newcommand{\PTup}[1]{
+  \unitlength1mm
+  \begin{picture}(30,20)
+    \put(2,4){\vector(1,0){26}}
+    \put(6,2){\vector(0,1){16}}
+    \thicklines
+    \put(2,4){\line(1,0){4}} 
+    \put(6,4){\regel{44}}
+    \thinlines
+    \put(4,13){\line(1,0){22}}
+    \put(6, 4){\line(3,4){7.5}}
+    \put(1, 9){\makebox(4,6){#1}}
+    \put(12,14){\makebox(0,5){$T_1$}}
+  \end{picture}
+}
+\newcommand{\PTdown}[1]{
+  \unitlength1mm
+  \begin{picture}(30,20)
+    \put(2,14){\vector(1,0){26}}
+    \put(8,2){\vector(0,1){16}}
+    \thicklines
+    \put(2,14){\line(1,0){6}} 
+    \put(8,5){\regel{45}}
+    \thinlines
+    \put(6, 5){\line(1, 0){22}}
+    \put(8,14){\line(3,-4){7.5}}
+    \put(0, 5){\makebox(8,4){#1}}
+    \put(12,0){\makebox(0,5){$T_1$}}
+  \end{picture}
+}
+\newcommand{\PTdownzwei}[1]{
+  \unitlength1mm
+  \begin{picture}(30,20)
+    \put(2,4){\vector(1,0){26}}
+    \put(6,2){\vector(0,1){16}}
+    \thicklines
+    \put(2,4){\line(1,0){4}} 
+    \put(6,4){\regel{45}}
+    \thinlines
+    \put(12,0){\makebox(0,4){\small $T_1$}}
+    \put(6,13){\line(3,-4){7.5}}
+    \put(4,13){\line(1,0){4}}
+    \put(0,10){\makebox(4,6){#1}}
+  \end{picture}
+}
+\def\myunderbrace#1#2#3{\def\tempone{#1}
+\newbox\temp\setbox\temp=\hbox{\hphantom{$\displaystyle%
+\left.\tempone\right#2$}}_{\hskip-\wd\temp\underbrace{\hphantom{\tempone}
+\hphantom{\left.\vphantom{\tempone}\right#2}}_{#3}}}
+%%%
+%%% Trennliste   
+%%%
+%\hyphenation{Sprung-funk-tion asymp-to-tisch Ny-quist ge-gen Ein-gangs-sig-nals
+%             Pha-sen-dre-hung Schnitt-punk-te Ebe-ne}
+%******************************************************************************
+% Neue Boxen fuer TeXDraw
+\newcommand{\mybox}[4]{\move(#1 #2)
+                       \bsegment
+                          \lvec (#3 0) \lvec(#3 #4) \lvec(0 #4) \lvec(0 0)
+                        \esegment}
+\newcommand{\myfbox}[6]{\move(#1 #2)
+                        \bsegment     
+                          \lvec (#3 0) \lvec(#3 #4) \lvec(0 #4) \lvec(0 0)
+                          \move(#5 0) \textref h:C v:T \htext (0 0){#6}
+                        \esegment}
+%******************************************************************************
+%*************************************************************************
+% Neuer Befehl fuer Bilder, die mit TeXDraw erstellt werden
+% Aufruf:
+%        \MyTeXDraw{TeXDraw--Anweisungen}
+%
+\newcommand{\MyTeXDraw}[1]{%
+  \centertexdraw{
+    \drawdim mm
+    \textref h:C v:C
+    % Pfeile 
+    \arrowheadsize l:2 w:1
+    \arrowheadtype t:F
+    #1
+               }
+}
+%*************************************************************************
+%\newcommand{\vek}[1]{\underline{#1}}
+\newcommand{\vek}[1]{\vec{#1}}
+\newcommand{\e}{\vek{e}}
+\newcommand{\A}{{\bf A}}
+\newcommand{\B}{{\bf B}}
+\newcommand{\C}{{\bf C}}
+\newcommand{\I}{{\bf I}}
+\newcommand{\bv}{\vek{b}}
+\newcommand{\cv}{\vek{c}}
+\newcommand{\x}{\vek{x}}
+\newcommand{\f}{\vek{f}}
+%*************************************************************************
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{\arabic{enumii}. }
+%*************************************************************
+\newcommand{\Block}[3]{\put(#1,#2){\framebox(17,10){\large #3}}}
+\newcommand{\INT}[7]{\Block{#1}{#2}{INT}
+                     \put(#3,#4){\line(1,-1){5}}
+                     \put(#3,#5){\line(1, 1){5}}
+                     \thinlines
+                       \put(#6,#4){\line(0,1){5}}
+                       \put(#6,#4){\makebox(10,5){#7}}
+                     \thicklines
+}
+\newcommand{\GAI}[5]{\Block{#1}{#2}{GAI}
+                     \thinlines
+                       \put(#3,#4){\line(0,1){5}}
+                       \put(#3,#4){\makebox(10,5){#5}}
+                     \thicklines
+}
+
+%***********************************
+% 2x2-Matrix
+\newcommand{\matricks}[4]{
+  \left[
+  \begin{array}{cc}
+    #1 & #2 \\
+    #3 & #4 \\
+  \end{array}
+  \right]
+}
+%***********************************
+% 3x3-Matrix
+\newcommand{\dreimatricks}[9]{
+  \left[
+  \begin{array}{ccc}
+      #1 & #2 & #3 \\
+      #4 & #5 & #6 \\
+      #7 & #8 & #9 \\
+  \end{array}
+  \right]
+}
+%***********************************
+% Spaltenvektor
+\newcommand{\vektor}[2]{
+  \left[
+  \begin{array}{c}
+     #1 \\
+     #2 \\
+  \end{array}
+  \right]
+}
+%***********************************
+% Spaltenvektor 3 Komponenten
+\newcommand{\dreivektor}[3]{
+  \left[
+  \begin{array}{c}
+     #1 \\
+     #2 \\
+     #3 \\
+  \end{array}
+  \right]
+}
+%***********************************
+% Zeilenvektor
+\newcommand{\zvektor}[2]{\left[ #1 \;  #2  \right]}
+%***********************************
+% Zeilenvektor 3 Komponenten
+\newcommand{\dreizvektor}[3]{\left[ #1 \;  #2  \; #3 \right]}
+
+
+
+%***********************************************
+% Ableitungen
+%***********************************************
+%\newcommand{\ableins}[2]{\frac{\mbox{d} #1}{\mbox{d} #2}}

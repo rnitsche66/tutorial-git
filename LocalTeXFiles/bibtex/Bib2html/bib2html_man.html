@@ -1,0 +1,183 @@
+<HTML>
+<HEAD>
+<TITLE>bib2html</TITLE>
+</HEAD>
+<BODY>
+<H1>bib2html</H1>
+<HR>
+<PRE>
+
+</PRE>
+<H2>NAME</H2><PRE>
+     bib2html - BibTeX bibliography to HTML converter
+
+
+</PRE>
+<H2>SYNOPSIS</H2><PRE>
+     <STRONG>bib2html</STRONG> [ <STRONG>-a</STRONG> ] [ <STRONG>-c</STRONG> ] [ <STRONG>-d</STRONG> <EM>delimiter</EM> ] [ <STRONG>-h</STRONG> <EM>heading</EM> ] [ <STRONG>-</STRONG> <STRONG>r</STRONG>
+     ] <STRONG>-s</STRONG> <EM>style</EM> ] [ <STRONG>-t</STRONG> ] [ <STRONG>-v</STRONG> ] [ <STRONG>-3</STRONG> ] <EM>sourcefile</EM> [ <EM>htmlfile</EM> ]
+
+
+</PRE>
+<H2>DESCRIPTION</H2><PRE>
+     <STRONG>bib2html</STRONG> converts a bibtex-format bibliography file to HTML.
+     <EM>sourcefile</EM> may be either a BibTeX-format bibliography (<STRONG>.bib</STRONG>)
+     file or a LaTeX-format (<STRONG>.aux</STRONG>) file.
+
+     Since the HTML-formatted bibliography  will  often  be  just
+     part  of a larger HTML file, <STRONG>bib2html</STRONG> attempts to update the
+     HTML file in place.  It does this by searching <EM>htmlfile</EM>  for
+     two  special strings, which delimit the bibliography part of
+     the file.  These strings are the HTML comments
+
+          &lt;!-- BEGIN BIBLIOGRAPHY <EM>delimiter</EM> --&gt;
+
+          &lt;!-- END BIBLIOGRAPHY <EM>delimiter</EM> --&gt;
+
+     If these delimiters are found, the old bibliography  between
+     them  is  replaced with the new bibliography.  Otherwise the
+     new  bibliography,  with  the  appropriate  delimiters,   is
+     appended to the end of <EM>htmlfile</EM>, and it will be necessary to
+     move it to the proper location by hand.   Note  that  it  is
+     possible  for  <EM>htmlfile</EM>  to contain any number of bibliogra-
+     phies,  and  they  may  be  updated  independently.   If  no
+     <EM>htmlfile</EM>  is specified, the bibliography is written to stan-
+     dard output.
+
+     The tag of each BibTeX bibliography entry is converted  into
+     a  name anchor (&lt;A NAME="tag"&gt;) in <EM>htmlfile</EM>, and may be used
+     to construct a link to this particular entry.
+
+  <STRONG>Special</STRONG> <STRONG>Field</STRONG> <STRONG>Processing</STRONG>
+     Several BibTeX fields are treated specially.  The  filenames
+     specified  in  the <STRONG>postscript</STRONG>, <STRONG>pdf</STRONG>, and <STRONG>dvi</STRONG> fields are rela-
+     tive to  the  <EM>htmlfile</EM>  directory.   In  addition,  <STRONG>bib2html</STRONG>
+     recognizes compressed or gzipped files (those with filenames
+     ending in <STRONG>.Z</STRONG>, <STRONG>.gz</STRONG>, or <STRONG>.z</STRONG>).
+
+     <STRONG>url</STRONG>  If the <STRONG>url</STRONG> field exists, a link (``A'' tag) is created.
+          The  destination  of  the  link is the <STRONG>url</STRONG> tag's value.
+          The bibliography entry's title is  the  source  of  the
+          link.  This can be used to create a link to a HTML ver-
+          sion of the paper, or to a version that is available by
+          ftp.
+
+     <STRONG>postscript</STRONG>
+          If the <STRONG>postscript</STRONG> field exists, its value  is  used  as
+          the name of a PostScript file.  <STRONG>bib2html</STRONG> creates a link
+          to the file.  , and updates <EM>htmlfile</EM> with the number of
+          pages and size of the PostScript file.
+
+     <STRONG>pdf</STRONG>  If the <STRONG>pdf</STRONG> field exists, its value is used as the  name
+          of  a  PDF  (portable  document format) file.  <STRONG>bib2html</STRONG>
+          creates a link to the file and  updates  <EM>htmlfile</EM>  with
+          the size of the PDF file.
+
+     <STRONG>dvi</STRONG>  If the <STRONG>dvi</STRONG> field exists, its value is used as the  name
+          of a TeX DVI file.  <STRONG>bib2html</STRONG> creates a link to the file
+          and updates <EM>htmlfile</EM> with the number of pages and  size
+          of the DVI file.
+
+     <STRONG>author</STRONG>, <STRONG>keywords</STRONG>
+          The full <STRONG>author</STRONG> and  <STRONG>keywords</STRONG>  fields  of  each  BibTeX
+          entry  are  included  in <EM>htmlfile</EM> as HTML comments, and
+          may be used by CGI scripts (such as <STRONG>bibsearch</STRONG>, which is
+          supplied) to select only certain entries.
+
+  <STRONG>Hints</STRONG>
+     <STRONG>bib2html</STRONG>'s LaTeX to HTML conversion is not very  smart.   If
+     something isn't being converted correctly, try doing it in a
+     different way.
+
+     <STRONG>bib2html</STRONG> does not currently  understand  \<EM>verb</EM>.   To  get  a
+     tilde into a filename or URL, use \~{}.
+
+
+</PRE>
+<H2>OPTIONS</H2><PRE>
+     <STRONG>-a</STRONG>    Include  the  BibTeX  file's  abstract  field  in  the
+          bibliography.
+
+     <STRONG>-c</STRONG>    Sort chronologically.  Normally, the  bibliography  is
+          ordered  first  by  author and then by year.  With this
+          option, the bibliography is ordered by  year  and  then
+          author.
+
+     <STRONG>-d</STRONG> <EM>delimiter</EM>
+          Specify the delimiter that sets  the  bibliography  off
+          from  the rest of the HTML file.  The default delimiter
+          is the name of the  bibliography  file  with  the  <STRONG>.bib</STRONG>
+          extension stripped.
+
+     <STRONG>-h</STRONG> <EM>heading</EM>
+          Use the string <EM>heading</EM> instead  of  the  default  title
+          when  creating a new <EM>htmlfile</EM>.  If updating an existing
+          <EM>htmlfile</EM>, this option is ignored.
+
+     <STRONG>-r</STRONG>   Reverse the chronological sorting order.  Normally, the
+          bibliography  is  sorted from the earliest entry to the
+          latest entry.  With this option, the order is reversed.
+
+     <STRONG>-s</STRONG> <EM>style</EM>
+          Create a <EM>style</EM>-style  bibliography.   Supported  styles
+          are  <STRONG>empty</STRONG>  (the  default),  <STRONG>plain</STRONG>,  <STRONG>unsort</STRONG>, <STRONG>alpha</STRONG>, and
+          <STRONG>named</STRONG>.  An <STRONG>empty</STRONG> bibliography is a  bulleted  list.   A
+          <STRONG>plain</STRONG>  bibliography is a numbered list.  <STRONG>unsort</STRONG> is like
+          <STRONG>plain</STRONG> except that the entries in the HTML file  are  in
+          the  same  order as as they are in the source file.  An
+          <STRONG>alpha</STRONG> bibliography has labels that are  in  the  BibTeX
+          alpha  style.   A  <STRONG>named</STRONG> bibliography has labels of the
+          form [name, year].
+
+     <STRONG>-t</STRONG>    Write a timestamp with the date at which the  bibliog-
+          raphy was updated to <EM>htmlfile</EM>.
+
+     <STRONG>-v</STRONG>    Report version number on stderr.
+
+     <STRONG>-3</STRONG>    Perform some HTML 3.0 mappings.
+
+
+</PRE>
+<H2>FILES</H2><PRE>
+     <STRONG>html-a.bst</STRONG>    alpha HTML BibTeX style file
+     <STRONG>html-n.bst</STRONG>    named HTML BibTeX style file
+     <STRONG>html-u.bst</STRONG>    unsort HTML BibTeX style file
+     <STRONG>html-aa.bst</STRONG>, <STRONG>html-na.bst</STRONG>, <STRONG>html-ua.bst</STRONG>
+                   versions  of  the  above  style   files   with
+                   abstracts
+     <STRONG>bibsearch</STRONG>     a  CGI  script  for  performing   bibliography
+                   searches
+
+
+</PRE>
+<H2>SEE ALSO</H2><PRE>
+     <STRONG>perl</STRONG>(L), <STRONG>bibtex</STRONG>(L).
+
+
+</PRE>
+<H2>BUGS</H2><PRE>
+     The LaTeX to HTML translation, while decent, is not perfect.
+
+     Requires bibtex and perl.  However, I think that most  sites
+     that  would want to convert BibTeX to HTML will already have
+     both programs installed.
+
+     Relies on dviselect to count the number of pages  in  a  DVI
+     file.
+
+
+</PRE>
+<H2>AUTHOR</H2><PRE>
+     David Hull (<EM>hull</EM>@<EM>cs.uiuc</EM>.<EM>edu)</EM>,  University  of  Illinois  at
+     Urbana-Champaign.                                        See
+     <EM>http</EM>://<EM>pertsserver.cs</EM>.<EM>uiuc.edu</EM>/~<EM>hull</EM>/<EM>bib2html</EM>/    for    the
+     latest  version.  This is free software, and may be modified
+     or redistributed under the terms of the GNU Public License.
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>

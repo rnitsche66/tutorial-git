@@ -1,0 +1,76 @@
+% ****************************************************
+\message{Ventil Style vom 25. August 1998}
+% ****************************************************
+% ***********************************************
+% Generierung einer savebox-Umgebung fuer ein Hydraulikventil
+% ***********************************************
+\newsavebox{\ventil}
+\savebox{\ventil}(0,0)[bl]{
+%\unitlength=1pt
+\thicklines
+%-----------------------------------------------------------------
+  \put(0,0){\line(0,1){7}}   % Anfang links links unten
+  \put(0,7){\vector(2,1){12}}% Voltage-Pfeil
+  \multiput(2,7)(0,6){2}{\line(1,0){6}} % Votage-Box unten-mitte
+  \multiput(2,7)(6,0){2}{\line(0,1){12}} % Votage-Box links-rechts
+%  \put(2.1,14.5){\footnotesize$\blacktriangle$} % Dreieck unten
+%-----------------------------------------------------------------  
+  \multiput(2,19)(0,18){4}{\line(1,0){18}} %Kammerlinien waagrecht
+  \multiput(2,19)(18,0){2}{\line(0,1){54}} %Kammerlinien senkrecht
+  \multiput(2,31)(0,30){2}{\line(1,0){3}}  %unterster/oberst. Zufl.
+  \multiput(5,29)(0,30){2}{\line(0,1){4}}  %entspr. senkr. Str.
+  \multiput(2,43)(0,6){2}{\line(1,0){3}}  %Zufl. mittlere Kammer
+  \multiput(5,41)(0,6){2}{\line(0,1){4}}  %entspr. senkr. Str.
+  \put(2,67){\vector(1,0){18}}   %Durchfluss oben
+  \put(20,31){\vector(-3,-1){17.9}} %Rueckfluss unten
+ %\put(2,25){\line(1,0){5}}%hier muss der Rueckfl.pfeil zuliegen kommen:OK
+  \put(20,49){\line(-1,0){3}} % Abfluss
+  \put(17,47){\line(0,1){4}} %entspr. senkr. Str.
+%-----------------------------------------------------------------  
+  \put(2,79){\line(1,0){6}} % Dreieck-Box oben 
+  \multiput(2,79)(6,0){2}{\line(0,-1){6}} % Votage-Box links-rechts
+%  \put(2.1,73.3){\footnotesize$\blacktriangledown$} % Dreieck oben
+%--Federn unten-------------------------------------------
+  \multiput(14.5,11)(0,5){2}{\begin{rotate}{-25}\line(1,0){6} \end{rotate}}
+  \multiput(14.5,11)(0,5){2}{\begin{rotate}{25}\line(1,0){6} \end{rotate}}
+%--Federn oben -------------------------------------------
+  \multiput(20,75.5)(0,5){2}{\begin{rotate}{25}\line(-1,0){6} \end{rotate}}
+  \multiput(20,75.5)(0,5){2}{\begin{rotate}{-25}\line(-1,0){6} \end{rotate}}
+}
+%Gespiegeltes Ventil -> Eingang rechts
+\newsavebox{\ventilre}
+\savebox{\ventilre}(0,0)[bl]{
+%\unitlength=1pt
+\thicklines
+%-----------------------------------------------------------------
+  \put(12,0){\line(0,1){7}}   % Anfang links links unten
+  \put(12,7){\vector(2,1){12}}% Voltage-Pfeil
+  \multiput(14,7)(0,6){2}{\line(1,0){6}} % Votage-Box unten-mitte
+  \multiput(14,7)(6,0){2}{\line(0,1){12}} % Votage-Box links-rechts
+%  \put(14.1,14.5){\footnotesize$\blacktriangle$} % Dreieck unten
+%-----------------------------------------------------------------  
+  \multiput(2,19)(0,18){4}{\line(1,0){18}} %Kammerlinien waagrecht
+  \multiput(2,19)(18,0){2}{\line(0,1){54}} %Kammerlinien senkrecht
+  \multiput(17,31)(0,30){2}{\line(1,0){3}}  %unterster/oberst. Zufl.
+  \multiput(17,29)(0,30){2}{\line(0,1){4}}  %entspr. senkr. Str.
+  \put(2,43){\line(1,0){3}}  %Abfl. mittlere Kammer
+  \put(5,41){\line(0,1){4}}  %entspr. senkr. Str.
+  \put(19.9,67){\vector(-3,-1){17.9}}   %Rueckfluss oben
+  \put(20,25){\vector(-1,0){18}} %Durchfluss unten
+ %\put(2,25){\line(1,0){5}}%hier muss der Rueckfl.pfeil zuliegen kommen:OK
+  \multiput(20,49)(0,-6){2}{\line(-1,0){3}} % Zufluesse mittl. Kammer
+  \multiput(17,47)(0,-6){2}{\line(0,1){4}} %entspr. senkr. Str.
+%-----------------------------------------------------------------  
+  \put(14,79){\line(1,0){6}} % Dreieck-Box oben 
+  \multiput(14,79)(6,0){2}{\line(0,-1){6}} % Votage-Box links-rechts
+%  \put(14.1,73.3){\footnotesize$\blacktriangledown$} % Dreieck oben
+%--Federn unten-------------------------------------------
+  \multiput(2.5,11)(0,5){2}{\begin{rotate}{-25}\line(1,0){6} \end{rotate}}
+  \multiput(2.5,11)(0,5){2}{\begin{rotate}{25}\line(1,0){6} \end{rotate}}
+%--Federn oben -------------------------------------------
+  \multiput(8,75.5)(0,5){2}{\begin{rotate}{25}\line(-1,0){6} \end{rotate}}
+  \multiput(8,75.5)(0,5){2}{\begin{rotate}{-25}\line(-1,0){6} \end{rotate}}
+}
+%eof
+
+

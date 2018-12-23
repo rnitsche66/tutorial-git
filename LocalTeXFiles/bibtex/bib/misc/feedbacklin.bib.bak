@@ -1,0 +1,2119 @@
+ @STRING{AB = "Academic Press"}
+ @STRING{AMS = "Amer. Math. Soc."}
+ @STRING{AP = "Academic Press"}
+ @STRING{Aut = "Automatica"}
+ @STRING{AW = "Addison Wesley"}
+ @STRING{Birk = "Birkh{\"a}user"}
+ @STRING{crasP = "C.~R. Acad. Sci. Paris, S\'erie I"}
+ @STRING{crasPzwei = "C.~R. Acad. Sci. Paris, S\'erie II b"}
+ @STRING{FM = "Forum Math."}
+ @STRING{IeeeTAC = "IEEE Trans. Automat. Control"}
+ @STRING{IeeeCST = "IEEE Trans. Control Systems Technology"}
+ @STRING{IJC = "Int. J. Control"}
+ @STRING{EJC = "European J. Control"}
+ @STRING{IJSS = "Int. J. Systems Sci."}
+ @STRING{ISR = "Interner Bericht. Institut f{\"u}r Systemdynamik und Regelungstechnik,
+		  Universit{\"a}t Stuttgart"}
+ @STRING{Sta = "Studienarbeit, Institut f{\"u}r Systemdynamik und Regelungstechnik,
+                Universit{\"a}t Stuttgart"}
+ @STRING{Dpa = "Diplomarbeit, Institut f{\"u}r Systemdynamik und Regelungstechnik,
+                Universit{\"a}t Stuttgart"}
+ @STRING{JMSEC = "Journal of Mathematical Systems, Estimation, and Control"}
+ @STRING{Kyb = "Kybernetika"}
+ @STRING{LAA = "Linear Algebra Applications"}
+ @STRING{LNCIS = "Lect. Notes in Contr. Inform. Sci."}
+ @STRING{MCSS = "Math. Control Signals Systems"}
+ @STRING{MGH = "McGraw-Hill"}
+ @STRING{MST = "Math. Systems Theory"}
+ @STRING{PH = "Prentice-Hall"}
+ @STRING{PSCT = "Progress in Systems and Control Theory"}
+ @STRING{SCL = "Systems \&\ Control Letters"}
+ @STRING{SCL = "Systems Control Letters"}
+ @STRING{siamC = "SIAM J. Control"}
+ @STRING{siamCO = "SIAM J. Control and Optim."}
+ @STRING{SV = "Springer-Verlag"}
+ @STRING{VDI = "VDI-Fortschritt-Berichte"}
+
+ @STRING{ECC91 = "Proc. 1st European Control Conference ECC '91, Grenoble/France
+    	         "}
+ @STRING{ECC93 = "Proc. 2nd European Control Conference ECC '93,
+		  Groningen/The Netherlands"}
+ @STRING{ECC95 = "Proc. 3rd European Control Conference ECC '95,
+		  Roma/Italy"}
+ @STRING{ECC97 = "Proc. 4th European Control Conference ECC '97,
+		  Brussels/Belgium"}
+ @STRING{NOLCOS04 = "Proc. 6th IFAC-Symposium NOLCOS '04, Stuttgart/Germany"}
+ @STRING{NOLCOS92 = "Proc. 2nd IFAC-Symposium NOLCOS '92, Bordeaux/France"}
+ @STRING{NOLCOS95 = "Proc. 3rd IFAC-Symposium NOLCOS '95, Lake Tahoe/USA"}
+
+ @STRING{IFACWC96 = "Proc. 13th IFAC World Congress '96, San
+		  Francisco, USA"}
+ @STRING{IMACSLille = "Proc. Symposium on Control, Optimization and
+		  Supervision ``Computational Engineering in Systems
+		  Applications'' IMACS Multiconference, Lille/France,
+		  July 9-12, 1996"}
+ @STRING{EDITORCESA96 = "{Borne, P. \emph{et al.}}"}
+ @STRING{EDITORECC95  = "{Isidori, A. \emph{et al.}}"}
+ @STRING{EDITORECC97  = "{N.N.}"}
+ @STRING{EDITORMTNS93 = "{Helmke, U. \emph{et al.}}"}
+ @STRING{MTNS93 = "Proc. of the International Symposium MTNS '93,
+		   Regensburg, Germany, 2-6 August 1993"}
+%************************************************************************
+% <<A>>
+%**<FF>******************************************************************
+@manual{ACSL,
+      TITLE = {{A}dvanced {C}ontinuous {S}imulation {L}anguage --
+		  Reference Manual},
+      AUTHOR = {Mitchell \& Gauthier},
+      ORGANIZATION = {MGA Inc.},
+      YEAR = 1991}
+%**<FF>******************************************************************
+@inproceedings{AkhrifBlankenship:88,
+            AUTHOR ={Akhrif, O. and Blankenship, G. L.} ,
+            TITLE={Computer algebra algorithms for nonlinear control} ,
+            BOOKTITLE={Advanced Computing Concepts and Techniques in
+		  Control Engeneering} ,
+            EDITOR={Denham, M.J. and Laub, A.J.},
+            PUBLISHER=SV,
+            PAGES={53-80},
+            YEAR=1988}
+%**<FF>******************************************************************
+@inproceedings{AllgoewerChen:94,
+      AUTHOR = {Chen, H. and Kremling, A. and Allg\"ower, F.},
+      TITLE = {{N}onlinear predictive control of a {CSTR} benchmark problem},
+      EDITOR = EDITORECC95,
+      BOOKTITLE = ECC95,
+      PAGES = {3247-3252},
+      YEAR = {1995}}
+%**<FF>******************************************************************
+@inproceedings{AllgoewerEngell:95,
+      EDITOR={Engell, S.}, 
+      AUTHOR = {Klatt, K.-U. and Engell, S. and Kremling, A. and
+		  Allg\"ower, F.},
+      TITLE ={{Testbeispiel: R\"uhrkesselreaktor mit Parallel- und Folgereaktion}},
+      BOOKTITLE={{E}ntwurf nichtlinearer {R}egelungen}, 
+      PAGES  = {425-432},
+      YEAR=1995, 
+      PUBLISHER={Oldenbourg-Verlag}}
+%**<FF>******************************************************************
+@inproceedings{ArandaPomet:Nolcos95,
+            AUTHOR ={Aranda-Bricaire, E. and Pomet, J.-B.},
+            TITLE={{S}ome Explicit Conditions for a Control System to
+		  be Feedback Equivalent to Extended {G}oursat Normal Form},
+            BOOKTITLE= NOLCOS95,
+            PAGES={535-540},
+            YEAR = 1995
+            }
+%**<FF>******************************************************************
+@book{Aris:65,
+      AUTHOR={Aris, R.},
+      TITLE={{I}ntroduction to the {A}nalysis of {C}hemical {R}eactors}, 
+      YEAR=1965, 
+      PUBLISHER={Prentice-Hall}}
+%************************************************************************
+% <<B>>
+%************************************************************************
+%**<FF>******************************************************************
+@manual{Stud:Banerjee,
+      TITLE = {{E}ntwurf schaltender {R}egler f\"ur ein {R}\"uhrkesselreaktormodell},
+      AUTHOR = {Banerjee, A.},
+      ORGANIZATION = Sta,
+      YEAR = 1994}
+%**<FF>******************************************************************
+@article{BastinVanImpe:95,
+      TITLE = {{N}onlinear and Adaptive Control in Biotechnology: A Tutorial},
+      AUTHOR = {Bastin, G. and Van~Impe, J. F.},
+      JOURNAL = EJC,
+      VOLUME = {1},
+      PAGES  = {1-37},
+      YEAR = 1995}
+%**<FF>******************************************************************
+@article{BaumannRugh:86,
+      TITLE = {{F}eedback Control of Nonlinear Systems by Extended Linearization},
+      AUTHOR = {Baumann, W. T. and Rugh, W. J.},
+      JOURNAL = IeeeTAC,
+      VOLUME = {31},
+      PAGES  = {40-46},
+      YEAR = 1986}
+%**<FF>******************************************************************
+@article{Baumann:88,
+      TITLE = {{F}eedback Control of Multiinput Nonlinear Systems by Extended Linearization},
+      AUTHOR = {Baumann, W. T.},
+      JOURNAL = IeeeTAC,
+      VOLUME = {33},
+      PAGES  = {193-197},
+      YEAR = 1988}
+%**<FF>******************************************************************
+@book{Bindel:98,
+      AUTHOR = {Bindel, R.},
+      TITLE  = {{Antriebssystem zur Reduzierung der prinzipbedingten
+		  Energieverluste bei rechnergesteuerten
+		  Gro{\ss}manipulatoren mit Gelenkarmkinematik}},
+      PUBLISHER = {Internal Report, Fraunhofer IPA, Stuttgart},
+      YEAR = 1998}
+%**<FF>******************************************************************
+@book{Backe,
+      AUTHOR = {Back\'e, W.},
+      TITLE  = {{Servohydraulik -- Umdruck zur Vorlesung}},
+      PUBLISHER = {RWTH Aachen},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@book{Findeisen,
+      AUTHOR = {Findeisen, D.},
+      TITLE  = {{\"Olhydraulik}},
+      PUBLISHER = {Springer-Verlag},
+      YEAR = 1994}
+%**<FF>******************************************************************
+@book{BindelDiss:98,
+      AUTHOR = {Bindel, R.},
+      TITLE  = {{Antriebssystem zur Reduzierung der prinzipbedingten
+		  Energieverluste bei rechnergesteuerten
+		  Gro{\ss}manipulatoren mit Gelenkarmkinematik}},
+      PUBLISHER = {Dissertation. Universit\"at Stuttgart},
+      YEAR = 1998}
+%**<FF>******************************************************************
+@article{BindelWestkaemper:98,
+      AUTHOR = {Westk\"amper, E. and Bindel, R.},
+      TITLE  = {{Mehrgr\"o{\ss}enregelung hydraulischer Antriebe --
+		  Potentiale f\"ur Handhabungsger\"ate}},
+      JOURNAL = {\"Olhydraulik und Pneumatik},
+      VOLUME  = {23},
+      PAGES   = {240-245},		  
+      YEAR    = 1998}
+%**<FF>******************************************************************
+@Article{BindelNitscheRothfussZeitz:00at,
+  author = 	 "Bindel, R. and Nitsche, R. and Rothfu{\ss}, R. and Zeitz, M.",
+  title = 	 "{F}lachheitsbasierte {R}egelung eines hydraulischen
+		  {A}ntriebs mit zwei {V}entilen f{\"u}r einen {G}ro{\ss}manipulator",
+  journal = 	 "at Automatisierungstechnik",
+  year = 	 "2000",
+  volume = 	 "48",
+  number =       "3",
+  pages = 	 "124-131",
+  month = 	 "March",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@inproceedings{BirkZeitz:Capri,
+            AUTHOR={Birk, J. and Zeitz, M.},
+            TITLE={{C}omputer-Aided Design of Nonlinear Observers} ,
+            BOOKTITLE={Nonlinear Control Systems Design -- Selected
+                       Papers from the IFAC-Symposium, Capri/Italy 1989},
+            EDITOR = {A. Isidori},
+            PUBLISHER = {Pergamon Press},
+            PAGES = {1-6},
+            ADDRESS = "Oxford",
+            YEAR= "1989"}
+%**<FF>******************************************************************
+@inproceedings{BirkZeitz:Paris,
+            AUTHOR ={Birk, J. and Zeitz, M.} ,
+            TITLE={Program for Symbolic and Rule-Based Analysis and
+                   Design of Nonlinear Systems} ,
+            EDITOR={Jacob, G. and Lamnabhi-Lagarrigue, F.},
+            BOOKTITLE={Algebraic Computing in Control. Proc. of
+                       the first European Conference. Lectures Notes in
+                       Control and Information Sciences 165} ,
+            PUBLISHER=SV,
+            PAGES={115-119},
+            YEAR=1991}
+%**<FF>******************************************************************
+@inproceedings{BirkSchaffnerZeitz:Bordeaux,
+            AUTHOR ={Birk, J. and Schaffner, J. and Zeitz, J.},
+            TITLE={Rule-Based Selection of Nonlinear Observer Design Methods},
+            BOOKTITLE=NOLCOS92,
+            EDITOR= {M. Fliess},
+            PAGES={621-627},
+            ADDRESS = {Bordeaux/France},
+            YEAR = 1992
+            }
+%**<FF>******************************************************************
+@inproceedings{BirkZeitz:Bordeaux,
+            AUTHOR ={Birk, J. and Zeitz, M.},
+            TITLE={Computer-Aided Analysis of Nonlinear Observation Problems},
+            BOOKTITLE=NOLCOS92,
+            EDITOR={M. Fliess},
+            PAGES={251-256},
+            ADDRESS = {Bordeaux/France},
+            YEAR = 1992
+            }
+%**<FF>******************************************************************
+@inproceedings{BirkSchaffnerZeitz:Bordeaux2,
+            AUTHOR ={Birk, J. and Schaffner, J. and Zeitz, M.},
+            TITLE={Rule-Based Selection of Nonlinear Observer Design Methods},
+            BOOKTITLE={Nonlinear Control Systems Design 1992 - Selected Papers
+            from the $2^{\mbox{nd}}$ IFAC-Symposium, Bordeaux/France,
+            24-26 June 1992},
+            YEAR = 1993,
+            PUBLISHER= {Pergamon Press},
+            EDITOR= {M. Fliess},
+            PAGES={231-238}
+         }
+%**<FF>******************************************************************
+@article{BirkZeitz:88,
+      TITLE = {{E}xtended {L}uenberger observer for nonlinear
+		  multivariable systems},
+      AUTHOR = {Birk, J. and Zeitz, M.},
+      JOURNAL = IJC,
+      VOLUME = {47},
+      PAGES  = {1823-1836},
+      YEAR = 1988}
+%**<FF>******************************************************************
+@article{BestleZeitz:83,
+      TITLE  = {{C}anonical form observer design for non-linear
+		  time-variable systems},
+      AUTHOR = {Bestle, D. and Zeitz, M.},
+      JOURNAL = IJC,
+      VOLUME = {38},
+      PAGES  = {419-431},
+      YEAR = 1983}
+%**<FF>******************************************************************
+@phdthesis{Birk:92,
+      AUTHOR = {Birk, J.},
+      TITLE  = {{R}echnergest\"utzte {A}nalyse und {L}\"osung nichtlinearer
+           {B}eobachtungsaufgaben},
+      SCHOOL = {VDI-Fortschritt-Berichte Nr.8/294, VDI-Verlag},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@manual{Stud:Braun,
+      TITLE = {{N}umerische {L}\"osung von 
+               {D}ifferential-{A}lgebra-{G}leichungen
+                mit der {S}imulationssprache \ACSL},
+      AUTHOR = {Braun, A.},
+      ORGANIZATION = Sta,
+      YEAR = 1994}
+%**<FF>******************************************************************
+@inproceedings{Brockett:78,
+            AUTHOR ={Brockett, R. W.} ,
+            TITLE={{Feedback} invariants for nonlinear systems} ,
+            BOOKTITLE={Proc. IFAC Congress, Helsinki 1978},
+            PAGES={1115-1120},
+            YEAR=1978}
+%**<FF>******************************************************************
+@inproceedings{BesanconBornard:95,
+      AUTHOR  = {Besan\c{c}on, G. and Bornard, G.},
+      TITLE   = {Performance and Limitations of Symbolic Computation
+		  in Nonlinear Analysis and Control: An Example Using {M}athematica},
+      PAGES   = {617-622},
+      BOOKTITLE = {Proc. IFAC Conference System Structure and
+		  Control, Nantes/France},
+      YEAR    = 1995}
+%**<FF>******************************************************************
+@article{BoniventoIsidori:04,
+      TITLE = {Implicit fault-tolerant control: application to induction motors},
+      AUTHOR  = {Bonivento, C. and Isidori, A. and Marconi, L. and Paoli, A.},
+      JOURNAL = {Automatica},
+      VOLUME  = 40,
+      PAGES   = {355-371},		  
+      YEAR    = {2004}}
+%**<FF>******************************************************************
+@inproceedings{BulloMurray:IFACWC96,
+      AUTHOR = {Bullo, F. and Murray, R. M.},
+      TITLE = {Experimental Comparison of Trajectory Trackers for a
+		  Car with Trailers},
+      BOOKTITLE = IFACWC96,
+      PAGES = {407-412},
+      YEAR = {1996}}
+%************************************************************************
+% <<C>>
+%************************************************************************
+%**<FF>******************************************************************
+@book{Cesari:71,
+      AUTHOR={Cesari, L.}, 
+      TITLE={{A}symptotic Behavior and Stability Problems in Ordinary
+		  Differential Equations}, 
+      PUBLISHER=SV,
+      YEAR=1971} 
+%**<FF>******************************************************************
+@phdthesis{Charlet:89,
+      AUTHOR = {Charlet, B.},
+      TITLE  = {Sur quelques probl\`emes de stabilisation robuste des
+                syst\`emes non lin\'eaires},
+      SCHOOL = {L'\'Ecole Nationale sup\'erieure des Mines de Paris},
+      YEAR = 1989}
+%**<FF>******************************************************************
+@inproceedings{LevineKasinski:83,
+            AUTHOR ={Kasinski, A. and L\'evine, J.},
+            TITLE={A Fast Graph Theoretic Algorithm for the Feedback
+		  Decoupling Problem of Nonlinear Systems},
+            BOOKTITLE={Lect. Notes in Contr. Inform. Sci., Vol. 63, Part II},
+            EDITOR={Fuhrmann},
+            PUBLISHER=SV,
+            PAGES={550-563},
+            YEAR=1983}
+%**<FF>******************************************************************
+@inproceedings{LevineDandrea:86,
+      AUTHOR={D'Andrea, B.  and L\'evine, J.},
+      TITLE={{C}. {A}. {D}. for Nonlinear Systems Decoupling, Perturbations
+		  Rejection and Feedback Linearization with
+		  Applications to the Dynamic Control of a Robot Arm},
+      EDITOR = {Fliess, M. and Hazewinkel, M.},
+      BOOKTITLE={{A}lgebraic and {G}eometric {M}ethods in {N}onlinear
+		  {C}ontrol {T}heory}, 
+      PUBLISHER = {Reidel},
+      PAGES = {545-572},
+      YEAR = 1986}
+%**<FF>******************************************************************
+@article{CharletLevineMarino:89,
+      AUTHOR = {Char\-let, B. and L\'evine, J. and Marino, R.},
+      TITLE  = {{O}n dynamic feedback linearization},
+      JOURNAL = SCL,
+      PAGES   = {143-151},
+      VOLUME  = 13,
+      YEAR    = 1989}
+%**<FF>******************************************************************
+@article{CharletLevineMarino:91,
+      AUTHOR = {Char\-let, B. and L\'evine, J. and Marino, R.},
+      TITLE  = {{S}ufficient Conditions for dynamic state feedback linearization},
+      JOURNAL = siamCO, 
+      PAGES   = {38-57},
+      VOLUME  = 29,
+      YEAR    = 1991}
+%**<FF>******************************************************************
+@article{Chiasson:93,
+      TITLE = {{D}ynamic feedback linearization of the induction motor},
+      AUTHOR = {Chiasson, J.},
+      JOURNAL = IeeeTAC,
+      VOLUME = {38},
+      PAGES  = {1588-1594},
+      YEAR = 1993}
+%**<FF>******************************************************************
+%************************************************************************
+% <<D>>
+%************************************************************************
+%**<FF>******************************************************************
+@inproceedings{DelaleauStankovic:04,
+      AUTHOR  = {Delaleau, E. and Stankovi{\'c}, A.},
+      TITLE   = {{Flatness-based hierarchical control of the {PM} synchronous motor}},
+      PAGES   = {65-70},
+      OPTEDITOR  =  {},
+      OPTvolume = 	 {},
+      OPTnumber = 	 {},
+      OPTseries = 	 {},
+      address =  {Boston, Massachusetts},
+      month = 	 {June 30 - July 2},
+      BOOKTITLE = {Proceedings of the 2004 American Control Conference},
+      YEAR    = 2004}
+%**<FF>******************************************************************
+@article{DelaleauFliess:92,
+      TITLE   = {Algorithme de structure, filtrations et d\'e\-coup\-lage},
+      AUTHOR  = {Delaleau, E. and Fliess, M.},
+      JOURNAL = crasP,
+      PAGES   = {101-106},
+      VOLUME  = {315},
+      YEAR    = 1992}
+%**<FF>******************************************************************
+@inproceedings{DelaleauFliess:92b,
+      AUTHOR  = {Delaleau, E. and Fliess, M.},
+      TITLE   = {An algebraic interpretation of the structure
+		  algorithm with an application to feedback decoupling},
+      PAGES   = {489-494},
+      EDITOR = {M. Fliess},
+      BOOKTITLE = NOLCOS92,
+      YEAR    = 1992}
+%**<FF>******************************************************************
+@article{DelaleauRespondek:93,
+      TITLE   = {Lowering the orders of derivatives of controls in
+                 generalized state space systems},
+      AUTHOR  = {Delaleau, E. and Respondek, W.},
+      JOURNAL = JMSEC,
+      YEAR    = 1994,
+      NOTE    = {To appear}}
+%**<FF>******************************************************************
+@phdthesis{Delaleau:93,
+      AUTHOR = {Delaleau, E.},
+      TITLE  = {Sur les d\'eriv\'ees de l'entr\'e en repr\'esentation
+		  et commande des syst\`emes non lin\'eaires},
+      SCHOOL = {Universit\'e Paris XI Orsay},
+      YEAR = 1993}
+%**<FF>******************************************************************
+@inproceedings{Delaleau:93-2,
+      AUTHOR = {E. Delaleau},
+      TITLE = {Lowering orders of input derivatives in generalized state
+           representations of nonlinear systems},
+      PAGES = {347-351},
+      EDITOR = {M. Fliess},
+      BOOKTITLE = {Nonlinear Control Systems Design},
+      PP = {Selected papers from the 2nd IFAC Symposium, Bordeaux/France,
+            24-26 June 1992},
+      YEAR = {1993},
+      EDITOR = {Isidori, A.},
+      PUBLISHER = {Pergamon Press}}
+%**<FF>******************************************************************
+@inproceedings{DelaleauRudolph:95,
+      AUTHOR = {Delaleau, E. and Rudolph, J.},
+      TITLE = {{D}ecoupling and Linearization by Quasi-Static
+		 Feedback of Generalized States},
+      EDITOR = EDITORECC95,
+      BOOKTITLE = ECC95,
+      PAGES = {1069-1074},
+      YEAR = {1995}}
+%**<FF>******************************************************************
+@inproceedings{ChelouahDelaleauMartinRouchon96:Lille,
+      TITLE = {Differential flatness and control of induction motors},
+      AUTHOR = {Chelouah, A. and Delaleau, E. and Martin, P. and Rouchon, P.},
+      BOOKTITLE = IMACSLille,
+      PAGES = {80-85},
+      YEAR = 1996}
+%      EDITOR = {???},
+%**<FF>******************************************************************
+@inproceedings{DeLuca:88,
+      AUTHOR  = {De Luca, A.},
+      TITLE   = {{D}ynamic Control of Robots with Joint Elasticity},
+      PAGES   = {152-158},
+      BOOKTITLE = {Proc. IEEE Int. Conf. on Robotics and
+		  Automation, Philadelphia, Pennsylvania/USA},
+      YEAR    = 1988}
+%**<FF>******************************************************************
+@inproceedings{DeLuca:03,
+      AUTHOR  = {De Luca, A. and Mattone, R.},
+      TITLE   = {{A}ctuator Failure Detection and Isolation Using Generalized Momenta},
+      PAGES   = {634-639},
+      BOOKTITLE = {Proc. IEEE Int. Conf. on Robotics and
+		  Automation, Taipei, Taiwan},
+      YEAR    = 2003}
+%**<FF>******************************************************************
+@inproceedings{DeLuca:06,
+      AUTHOR  = {De Luca, A. and Albu-Sch{\"a}, A. and Haddadin, S. and Hirzinger, G.},
+      TITLE   = {{C}ollision Detection and Safe Reaction with the DLR-III Lightweight Manipulator Arm},
+      PAGES   = {1623-1630},
+      BOOKTITLE = {Proc. IEEE/RSJ Int. Conf. on Intelligent Robotics and
+		  Systems, Beijing, China},
+      YEAR    = 2006}
+%************************************************************************
+% <<E>>
+%************************************************************************
+%**<FF>******************************************************************
+@inproceedings{EngellKlatt:92Gain,
+      EDITOR={Engell, S.}, 
+      AUTHOR = {Klatt, K.-U. and Engell, S.},
+      TITLE ={{Nichtlinearer Reglerentwurf mit Gain-Scheduling Techniken}},
+      BOOKTITLE={{E}ntwurf nichtlinearer {R}egelungen}, 
+      PAGES  = {93-121},
+      YEAR=1995, 
+      PUBLISHER={Oldenbourg-Verlag}}
+%**<FF>******************************************************************
+%  VOLUME = {1026},
+%  EDITOR = {Verein Deutscher Ingenieure},
+@inproceedings{EngellKlatt:92,
+      BOOKTITLE={{N}ichtlineare {R}egelung -- {M}ethoden, {W}erkzeuge, {A}nwendungen},
+      AUTHOR = {Klatt, K.-U. and Engell, S.},
+      TITLE = {{K}on\-ti\-nu\-ier\-lich\-er 
+               {R}\"uhr\-kes\-sel\-re\-ak\-tor mit {N}eben-
+		  und {F}olgereaktion, {V}{D}{I}-{B}erichte, {N}r.~1026},
+      PUBLISHER = {VDI-Verlag},
+      PAGES = {101-108},
+      YEAR = 1993}
+%**<FF>******************************************************************
+@book{Engell:95,
+      EDITOR={Engell, S.}, 
+      TITLE={{E}ntwurf nichtlinearer {R}egelungen}, 
+      YEAR=1995, 
+      PUBLISHER={Oldenbourg-Verlag}}
+%************************************************************************
+% <<F>>
+%************************************************************************
+%**<FF>******************************************************************
+@inproceedings{FTC_FliessJoinRamirez:06,
+            AUTHOR ={Fliess, M. and Join, C. and Sira-Ram\'\i{}rez, H.} ,
+            TITLE={Closed-Loop Fault-Tolerant Control for Uncertain Nonlinear Systems} ,
+            EDITOR={Meurer, T. and Graichen, K. and Gilles, E.D.},
+            BOOKTITLE={Control and Observer Design for Nonlinear Finite
+                       and Infinite Dimensional Systems} ,
+            PUBLISHER=SV,
+            series = {Lect. Notes Control Informat. Sci.},
+            volume = {322},
+            PAGES={217-233},
+            YEAR=2005}
+%**<FF>******************************************************************
+@article{Fliess:89,
+      TITLE = {G\'en\'eralisations non lin\'eaires de la forme canonique de
+               commande et lin\'earisation par bouclage},
+      AUTHOR = {Fliess, M.},
+      JOURNAL = crasP,
+      VOLUME = {308},
+      PAGES  = {377-379},
+      YEAR = 1989}
+%**<FF>******************************************************************
+@inproceedings{FliessMessager:90,
+      TITLE = {{V}ers une stabilisation non lin\'eaire discontinue},
+      AUTHOR = {Fliess, M. and Messager, F.}, 
+      BOOKTITLE = {Lect. Notes in Contr. Inform. Sci., Vol. 144},
+      PP = {Anal. Optimiz. Syst.},
+      EDITOR = {Bensoussan, A. and Lions, J.L.},      
+      PAGES = {778-787},
+      PUBLISHER = SV,
+      YEAR = 1990}
+%**<FF>******************************************************************
+@inproceedings{Fliess:91ECC,
+      TITLE = {Some remarks on gain scheduling},
+      AUTHOR = {Fliess, M.}, 
+      BOOKTITLE = ECC91,
+      PAGES = {177-181},
+      YEAR = 1991}
+%**<FF>******************************************************************
+@article{Fliess:90,
+      TITLE = {Generalized controller canonical forms for linear and
+		  nonlinear dynamics},
+      AUTHOR = {Fliess, M. }, 
+      JOURNAL = IeeeTAC,
+      VOLUME  = 35,
+      PAGES = {994-1001},
+      YEAR = 1990}
+%**<FF>******************************************************************
+@article{Fliess:89ForumM,
+      TITLE = {Automatique et corps diff\'erentiels},
+      AUTHOR = {Fliess, M.}, 
+      JOURNAL = FM,
+      VOLUME  = 1,
+      PAGES = {227-238},
+      YEAR = 1989}
+%**<FF>******************************************************************
+@article{Fliess:90SCL,
+      TITLE = {Some basic structural properties of generalized linear systems},
+      AUTHOR = {Fliess, M.}, 
+      JOURNAL = SCL,
+      VOLUME  = 15,
+      PAGES = {391-396},
+      YEAR = 1990}
+%**<FF>******************************************************************
+@article{FliLevMarRou:92,
+      TITLE = {Sur les syst\`emes non lin\'eaires diff\'erentiellement plats},
+      AUTHOR = {Fliess, M. and L\'evine, J. and Martin, P. and Rouchon, P.},
+      JOURNAL = crasP,
+      VOLUME = {315},
+      PAGES  = {619-624},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@inproceedings{Flatness:92,
+      TITLE = {{O}n differentially flat nonlinear systems},
+      AUTHOR = {Fliess, M. and L\'evine, J. and Martin, P. and Rouchon, P.},
+      BOOKTITLE = {Nonlinear Control Systems Design},
+      PP = {Selected papers from the 2nd IFAC Symposium, Bordeaux/France, 24-26 June 1992},
+      EDITOR = {Fliess, M.},
+      PUBLISHER = {Pergamon Press},
+      PAGES = {408-412},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@inproceedings{FLMR:93,
+      TITLE  = {{T}owards a new differential geometric setting in
+		  nonlinear control},
+      AUTHOR = {Fliess, M. and L\'evine, J. and Martin, P. and Rouchon, P.},
+      BOOKTITLE = {Proc. International Geometrical Coll. Moscow},
+      YEAR    = 1993}
+%**<FF>******************************************************************
+@article{FliLevMarRou:93,
+      TITLE = {Lin\'earisation par bouclage dynamique et
+		  transformations de {L}ie-{B}\"acklund},
+      AUTHOR = {Fliess, M. and L\'evine, J. and Martin, P. and Rouchon, P.},
+      JOURNAL = crasP,
+      VOLUME = {317},
+      PAGES  = {981-986},
+      YEAR = 1993}
+%**<FF>******************************************************************
+@manual{FlatnessINRIA:93,
+      TITLE = {{C}ommande {N}on {L}in\'eaire {P}our
+		  {L}'{I}ng\'enieur},
+      AUTHOR = {Fliess, M. and L\'evine, J. and Martin, P. and Rouchon, P.},
+      ORGANIZATION = {Inst.  Nat. de Recherche en Informatique et en Automatique},
+      YEAR = 1993}
+%**<FF>******************************************************************
+@article{FLR:93,
+  author = {M. Fliess and J. L{\'e}vine and P. Rouchon},
+  title = {Generalized state variable representation for a simplified crane
+           description},
+  journal = IJC,
+  volume = {58},
+  year = {1993},
+  pages = {277-283}
+  }
+%**<FF>******************************************************************
+@inbook{FliessGlad:93ECC,
+      AUTHOR = {Fliess, M. and Glad, T.},
+      TITLE={An Algebraic Approach to Linear and Nonlinear Control},
+      PUBLISHER={{I}n: {T}rentelman, H. L. and Willems, J. C. ({E}ds.): 
+               {E}ssays on Control: Perspectives in the Theory and
+		  its Applications, Birkh\"auser},
+      PAGES = {223-268},
+      YEAR=1993}
+%**<FF>******************************************************************
+@inbook{MartinMurrayRouchon:97,
+      AUTHOR = {Martin, P. and Murray, R. M. and Rouchon, P.},
+      TITLE={Flat Systems},
+      PUBLISHER={{I}n: {B}astin, G. and Gevers, M. ({E}ds.): 
+                 Plenary Lectures and Mini-Courses, 4th European Control Conference ECC '97,
+		  Brussels/Belgium},
+      PAGES = {211-264},
+      YEAR=1997}
+%**<FF>******************************************************************
+@article{Flatness:94,
+      TITLE = {Flatness and Defect of Nonlinear Systems: 
+               Introductory Theory and Examples},
+      AUTHOR = {Fliess, M. and L\'evine, J. and Martin, P. and Rouchon, P.},
+      JOURNAL= IJC,
+      VOLUME = 61,
+      PAGES = {1327-1361},
+      YEAR = 1995
+      }
+%**<FF>******************************************************************
+@inproceedings{FLMR:95ECC,
+      AUTHOR = {Fliess, M. and L\'evine, J. and Martin, P. and Rouchon, P.},
+      TITLE = {{D}esign of trajectory stabilizing feedback for
+		  driftless flat systems},
+      EDITOR = EDITORECC95,
+      BOOKTITLE = ECC95,
+      PAGES = {1882-1887},
+      YEAR = {1995}}
+%**<FF>******************************************************************
+@inproceedings{FliessRudolph96:Lille,
+      TITLE = {{L}ocal ``tracking observers'' for flat systems},
+      AUTHOR = {Fliess, M. and Rudolph, J.},
+      BOOKTITLE = IMACSLille,
+      PAGES = {213-217},
+      YEAR = 1996}
+%      EDITOR = {???},
+%**<FF>******************************************************************
+@inproceedings{FliMouRouRud:96,
+      TITLE = {Syst\`emes lin\'eaires sur les op\'erateurs de
+		  {Mikusi\'nski} et commande d'une poutre flexible},
+      AUTHOR = {Fliess, M. and Mounier, H. and Rouchon, P. and
+		  Rudolph, J.},
+      BOOKTITLE = {ESAIM Proc. \'Elasticit\'e, Visco\'elasticit\'e et
+		  Contr\^ole Optimal, 8\`eme Entretiens du Centre
+		  Jacques Cartier },
+      VOLUME = {1},
+      PAGES  = {157-168},
+      YEAR = 1997}
+%**<FF>******************************************************************
+@inproceedings{MouAustFliRouRud:97,
+      TITLE = {Theory and practice in the motion planning of a
+		  flexible robot arm using {Mikusi\'nski} operators},
+      AUTHOR = {Mounier, H. and Aoustin, Y. and Fliess, M. and Rouchon, P. and
+		  Rudolph, J.},
+      BOOKTITLE = {Proc. Syroco-97, Nantes, Sept. 1997},
+      NOTE = {To appear},
+      YEAR = 1997}
+%**<FF>******************************************************************
+@article{Foellinger:78,
+      TITLE = {{Entwurf zeitvarianter Systeme durch Polvorgabe}},
+      AUTHOR = {F\"ol\-linger, O.},
+      JOURNAL = {Regelungstechnik},
+      VOLUME = {6},
+      PAGES  = {189-196},
+      YEAR = 1978}
+%**<FF>******************************************************************
+@book{Foellinger:85,
+      TITLE = {{Regelungstechnik: Einf\"uhrung in die Methoden und ihre Anwendung}},
+      AUTHOR = {F\"ol\-linger, O.},
+      PUBLISHER = {H\"uthig-Verlag},
+      YEAR = 1985}
+%**<FF>******************************************************************
+@book{Franke:87,
+      AUTHOR={Franke, D.},
+      TITLE={{Systeme mit \"ortlich verteilten Parametern -- Eine
+		  Einf\"uhrung in die Modellbildung, Analyse und Regelung}},
+      YEAR=1987, 
+      PUBLISHER=SV}
+%**<FF>******************************************************************
+@book{Freund:71,
+      AUTHOR={Freund, E.},
+      TITLE={{Zeitvariable Mehrgr\"o{\ss}ensysteme}},
+      YEAR=1971, 
+      PUBLISHER=SV}
+%**<FF>******************************************************************
+@phdthesis{Frese:92,
+      AUTHOR = {Frese, F.},
+      TITLE  = {{U}ntersuchungen zum {E}influ{\ss} der {S}ubstrat- und
+		  {P}recursorkonzentrationen auf die
+		  {P}enicillinbildung mit {H}ilfe eines
+		  modellgest\"utzten {M}e{\ss}verfahrens},
+      SCHOOL = {Technische Universit\"at Berlin},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@manual{Stud:Fritz,
+      TITLE = {{N}ichtlineare {R}egelung einer biologischen 
+               {A}bwasserbehandlungsanlage},
+      AUTHOR = {Fritz, A.},
+      ORGANIZATION = Sta,
+      YEAR = 1995}
+%************************************************************************
+% <<G>>
+%************************************************************************
+%**<FF>******************************************************************
+@article{GardnerShadwick:92,
+      AUTHOR = {Gardner, R. B. and Shadwick, W.F.},
+      TITLE  = {{T}he {GS} Algorithm for Exact Linearization to
+		  {Brunovsk\'y} Canonical Form},
+      JOURNAL = IeeeTAC,
+      PAGES   = {224-230},
+      VOLUME  = 37,
+      YEAR    = 1992}
+%**<FF>******************************************************************
+@book{Gelb:76,
+      AUTHOR={Gelb, A.},
+      TITLE={{A}pplied Optimal Control},
+      YEAR=1976, 
+      PUBLISHER={M.I.T. Press}}
+%**<FF>******************************************************************
+@book{Gilles:73,
+      AUTHOR = {Gilles, E.~D.},
+      TITLE  = {{Systeme mit verteilten Parametern}},
+      PUBLISHER = {??},
+      YEAR    = 1973}
+%**<FF>******************************************************************
+@article{Gilles:87,
+      AUTHOR = {Gilles, E.~D.},
+      TITLE  = {{M}odellgest\"utzte {P}roze{\ss}leittechnik in der
+		  verfahrenstechnischen {P}roduktion},
+      JOURNAL = {Chem.-Ing.-Techn.},
+      PAGES   = {715-726},
+      VOLUME  = 59,
+      YEAR    = 1987}
+%**<FF>******************************************************************
+@Book{GuzellaOnder04,
+  author = 	 {Guzella, L. and Onder, C.},
+  ALTeditor = 	 {},
+  title = 	 {Introduction to Modeling and Control of Internal Combustion Engine Systems},
+  publisher = 	 {Springer-Verlag},
+  year = 	 {2004},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Berlin Heidelberg New York},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {ISBN 3-540-22274-X },
+  OPTannote = 	 {}
+}
+%**<FF>******************************************************************
+%************************************************************************
+% <<H>>
+%************************************************************************
+%**<FF>******************************************************************
+@article{HaetAl_impedance:2000,
+      AUTHOR = {Ha, Q.P. and Nguyen, D.C. and Durrant-Whyte, H.F.},
+      TITLE  = {Impedance Control of a hydraulically actuated robotic excavator},
+      JOURNAL = {Automation in Construction},
+      PAGES   = {421-435},
+      OPTVOLUME  = 9,
+      NUMBER  = 9,
+      YEAR    = 2000}
+%%**<FF>******************************************************************
+@manual{Stud:DenHaan,
+      TITLE = {{S}liding Mode Control of a Continuous Stirred Tank
+		  Reactor},
+      AUTHOR = {den Haan, F. J. L.},
+      ORGANIZATION = ISR,
+      YEAR = 1994}
+%**<FF>******************************************************************
+@manual{Stud:Haeussler,
+      TITLE = {{E}ntkopplung und {I}nversion linearer {S}ysteme: 
+               {U}ntersuchung algebraischer Ans\"atze bez\"uglich
+               {R}echnerimplementierung},
+      AUTHOR = {H\"au{\ss}ler, R.},
+      ORGANIZATION = Sta,
+      YEAR = 1993}
+%**<FF>******************************************************************
+@manual{Stud:Hagenmeyer,
+      TITLE = {{Nichtlineare Regelung und Beobachtung eines Fed-Batch-Bioreaktors}},
+      AUTHOR = {Hagenmeyer, V.},
+      ORGANIZATION = Sta,
+      YEAR = 1996}
+%**<FF>******************************************************************
+@article{Hauser:91,
+      AUTHOR = {Hauser, J.},
+      TITLE  = {{Nonlinear} control via uniform system approximation},
+      JOURNAL = SCL,
+      PAGES   = {154-154},
+      VOLUME  = 17,
+      YEAR    = 1991}
+%**<FF>******************************************************************
+@inproceedings{Hauser:92,
+            AUTHOR ={Hauser, J.},
+            TITLE={{Higher} order approximate feedback linearization},
+            BOOKTITLE=NOLCOS92,
+            EDITOR= {M. Fliess},
+            PAGES={37-42},
+            ADDRESS = {Bordeaux/France},
+            YEAR = 1992
+            }
+
+%**<FF>******************************************************************
+@article{Hilbert:12,
+      AUTHOR = {Hilbert, D.},
+      TITLE  = {{\"Uber den Begriff der Klasse von Differentialgleichungen}},
+      JOURNAL = {Math. Ann.},
+      PAGES   = {95-108},
+      VOLUME  = 73,
+      YEAR    = 1912}
+%**<FF>******************************************************************
+@inbook{Hilbert:65,
+      AUTHOR = {Hilbert, D.},
+      TITLE  = {{\"Uber den Begriff der Klasse von Differentialgleichungen}},
+      PAGES   = {81-93},
+      VOLUME  = 3,
+      PUBLISHER = {In: Gesammelte Abhandlungen, Chelsea, New York},		    
+      YEAR    = 1965}
+%**<FF>******************************************************************
+@book{Ho-Gi:94,
+      AUTHOR = {Ho-Gi, Ki.},
+      TITLE  = {Modellierung und Steuerung von Gro{\ss}manipulatoren
+		  mit hydraulischen Antrieben},
+      PUBLISHER = {Dissertation. Carl Hanser Verlag, Technische
+		  Universit\"at Stuttgart},
+      YEAR = 1994}
+%**<FF>******************************************************************
+@inproceedings{HuntSuMeyer:83,
+      AUTHOR = {Hunt, L. R. and Su, R. and Meyer, G.},
+      TITLE  = {{D}esign for multi-input nonlinear systems},
+      EDITOR = {Brockett, R.W.},
+      BOOKTITLE = {{D}ifferential {G}eometric {C}ontrol {T}heory},
+      PAGES   = {258-298},
+      PUBLISHER = Birk,
+      YEAR    = 1983}
+%**<FF>******************************************************************
+@article{HuntTuri:93,
+      AUTHOR = {Hunt, L. R. and Turi, J.},
+      TITLE  = {{A} new algorithm for constructing approximate
+		  transformations for nonlinear systems},
+      JOURNAL = IeeeTAC,
+      PAGES   = {1553-1556},
+      VOLUME  = 38,
+      NUMBER  = 10,
+      YEAR    = 1993}
+%************************************************************************
+% <<I>>
+%************************************************************************
+%**<FF>******************************************************************
+@Article{Isermann:07at1,
+  author = 	 "Isermann, R.",
+  title = 	 "{Fehlertolerante mechatronische Systeme, Teil 1}",
+  journal = 	 "at Automatisierungstechnik",
+  year = 	 "2007",
+  volume = 	 "55",
+  number =       "4",
+  pages = 	 "170-179",
+  OPTmonth = 	 "April",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+@Article{Isermann:07at2,
+  author = 	 "Isermann, R.",
+  title = 	 "{Fehlertolerante mechatronische Systeme, Teil 2}",
+  journal = 	 "at Automatisierungstechnik",
+  year = 	 "2007",
+  volume = 	 "55",
+  number =       "5",
+  pages = 	 "170-179",
+  OPTmonth = 	 "Mai",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%**<FF>******************************************************************
+%**<FF>******************************************************************
+@article{IsidoriKrener:82,
+      AUTHOR = {Isidori, A. Krener, A. J.},
+      TITLE  = {{O}n feedback equivalence of nonlinear systems},
+      JOURNAL = SCL,
+      PAGES   = {118-121},
+      VOLUME  = 2,
+      YEAR    = 1982}
+%**<FF>******************************************************************
+@inproceedings{Isidori:86,
+      AUTHOR={Isidori, A.},
+      TITLE={{C}ontrol of nonlinear systems via dynamic state feedback},
+      EDITOR = {Fliess, M. and Hazewinkel, M.},
+      BOOKTITLE={{A}lgebraic and {G}eometric {M}ethods in {N}onlinear
+		  {C}ontrol {T}heory}, 
+      PUBLISHER = {Reidel},
+      PAGES = {121-145},
+      YEAR = 1986}
+%**<FF>******************************************************************
+@book{Isidori:89,
+      AUTHOR={Isidori, A.}, 
+      TITLE={{N}onlinear {C}ontrol {S}ystems}, 
+      YEAR=1989, 
+      EDITION={2nd},
+      PUBLISHER={Springer-Verlag}}
+%**<FF>******************************************************************
+@book{Isidori:95,
+      AUTHOR={Isidori, A.}, 
+      TITLE={{N}onlinear {C}ontrol {S}ystems}, 
+      YEAR=1995, 
+      EDITION={3rd},
+      PUBLISHER={Springer-Verlag}}
+%**<FF>******************************************************************
+@inproceedings{IsidoriMoogDeLuca:86,
+      AUTHOR={Isidori, A. and Moog, C.H. and De Luca, A.},
+      TITLE={{A} sufficient condition for full linearization via
+		  dynamic state feedback},
+      BOOKTITLE={Proc. 25th IEEE CDC, Athens},
+      PAGES = {203-207},
+      YEAR = 1986}
+%************************************************************************
+% <<J>>
+%************************************************************************
+%**<FF>******************************************************************
+@article{JakResp:80,
+      AUTHOR = {Jacubczyk, B. and Respondek, W.},
+      TITLE  = {{O}n linearization of control systems},
+      JOURNAL = {Bull. Acad. Polonaise Sci. Ser. Sci. Math.},
+      VOLUME  = 28, 
+      PAGES  = {517-522},
+      YEAR = 1980}
+%**<FF>******************************************************************
+@inbook{Respondek:90,
+      AUTHOR = {Respondek, W.},
+      TITLE  = {Right and left invertibility of nonlinear control systems},
+      PUBLISHER = {In: Sussmann, H. J. ({E}ditor): Nonlineare Control
+		  Theory, Marcel Dekker},
+      PAGES = {133-176},
+      YEAR = {1990}}
+%**<FF>******************************************************************
+@inproceedings{Jakubczyk:94,
+      TITLE = {Dynamic Feedback Equivalence of Nonlinear Control Systems},
+      AUTHOR = {Jakubczyk, B.},
+      BOOKTITLE = {Geometry in Nonlinear Control and Differential
+		  Inclusions, Banach Center Publications, Inst. of
+		  Mathematics, Polish Academy of Sciences},
+      VOLUME  = 32,
+      YEAR    = {1995},
+      PAGES   = {0-0}}
+%**<FF>******************************************************************
+@article{Jager:95,
+      AUTHOR = {de Jager, B.},
+      TITLE  = {{T}he Use of Symbolic Computation in Nonlinear
+		  Control: Is It Viable?},
+      JOURNAL = IeeeTAC,
+      VOLUME  = 40, 
+      PAGES  = {84-89},
+      YEAR = 1995}
+%**<FF>******************************************************************
+%************************************************************************
+% <<K>>
+%************************************************************************
+%**<FF>******************************************************************
+@book{Kailath:80,
+      AUTHOR={Kailath, Th.}, 
+      TITLE={{L}inear {S}ystems}, 
+      YEAR=1980, 
+      PUBLISHER={Prentice-Hall}}
+%**<FF>******************************************************************
+@book{Kamke:65,
+      AUTHOR={Kamke, E.}, 
+      TITLE={{Differentialgleichungen L\"osungsmethoden und L\"osungen
+		  -- Band 2: Partielle Differentialgleichungen}
+		  erster Ordnung},
+      PUBLISHER={Akademische Verlagsgesellschaft Leipzig},
+      YEAR=1965}
+%**<FF>******************************************************************
+@manual{Kammerer:94,
+      TITLE = {{\"U}bertragung eines mathematischen {M}odells f\"ur
+		  {S}treptomyces tendae auf andere St\"amme von {S}treptomyceten},
+      AUTHOR = {Kammerer, Chr.}, 
+      ORGANIZATION = Sta, 
+      YEAR = 1994} 
+%**<FF>******************************************************************		
+@inproceedings{Keller:86,
+      AUTHOR={Keller, H. and Fritz, H.},
+      TITLE={{D}esign of nonlinear observers by a two-step-transformation},
+      EDITOR = {Fliess, M. and Hazewinkel, M.},
+      BOOKTITLE={{A}lgebraic and {G}eometric {M}ethods in {N}onlinear
+		  {C}ontrol {T}heory}, 
+      PUBLISHER = {Reidel},
+      PAGES = {89-98},
+      YEAR = 1986}
+%**<FF>******************************************************************
+@inproceedings{Khalil:08,
+      AUTHOR={Khalil, H.},
+      TITLE={{H}igh-Gain Observers in Nonlinear Feedback Control},
+      BOOKTITLE={Proc. Int. Conf. on Control, Automation and
+		  Systems, Seoul, Korea}, 
+      PAGES = {1-11},
+      YEAR = 2008}
+%**<FF>******************************************************************
+@book{King:92,          
+      TITLE  = {{M}athematische {M}odelle myzelf\"ormig wachsender
+                  {M}ikroorganismen {\rm VDI-Fortschritt-Berichte Nr.17/103}},
+      AUTHOR = {King, R.},
+      PUBLISHER = {VDI-Verlag},
+      YEAR = 1992}        
+%**<FF>******************************************************************
+@PhdThesis{DissKhayyat:2000,
+  author = 	 {Khayyat, A.A.A.},
+  title = 	 {Force Tracking of Hydrauilic Manipulators
+                  Within an Impedance Control Framework},
+  school = 	 {University of Manitoba, Winnipeg, Manitoba, Canada},
+  year = 	 {2000},
+  OPTkey = 	 {},
+  OPTtype = 	 {},
+  OPTaddress = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+%**<FF>******************************************************************
+@manual{Klatt:92,
+      TITLE = {{K}ontinuierlicher {R}\"uhrkesselreaktor mit {N}eben-
+		  und {F}olgereaktion},
+      AUTHOR = {Klatt, K.-U. and Engell, S.},
+      ORGANIZATION = {Lehrstuhl f\"ur Anlagensteuerungstechnik,
+		  Universit\"at Dortmund},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@article{KravarisChung:87,
+      AUTHOR = {Kravaris, C. and Chung, C.-B.},
+      TITLE  = {{N}onlinear state feedback synthesis by global
+		  input/output linearization},
+      JOURNAL = {AIChE J.},
+      PAGES   = {592-603},
+      VOLUME  = 33,
+      YEAR    = 1987}
+%**<FF>******************************************************************
+@article{Krener:73,
+      AUTHOR = {Krener, A.J.},
+      TITLE  = {{O}n the equivalence of control systems and the
+		  linearization of nonlinear systems},
+      JOURNAL = siamCO,
+      PAGES   = {670-676},
+      VOLUME  = 11,
+      YEAR    = 1973}
+%**<FF>******************************************************************
+@article{Krener:84,
+      AUTHOR = {Krener, A.J.},
+      TITLE  = {{A}pproximate linearization by state feedback and
+		  coordinate change},
+      JOURNAL = SCL,
+      PAGES   = {181-185},
+      VOLUME  = 5,
+      YEAR    = 1984}
+%**<FF>******************************************************************
+@article{Krener:85,
+      AUTHOR = {Krener, A.},
+      TITLE  = {(Ad\_f,g), (ad\_f,g) and locally
+                     (ad\_f,g) invariant controllability
+                     distributions},
+      JOURNAL = siamCO,
+      PAGES   = {523-549},
+      VOLUME  = 23,
+      YEAR    = 1985}
+%%**<FF>******************************************************************
+@article{Krener:87,
+      AUTHOR = {Krener, A.},
+      TITLE  = {Normal Forms for Linear and Nonlinear Systems},
+      JOURNAL = {Cont. Math.},
+      PAGES   = {157-189},
+      VOLUME  = 68,
+      YEAR    = 1987}
+%**<FF>******************************************************************
+@inproceedings{Krener:90,
+      AUTHOR={Krener, A.J.},
+      TITLE={{N}onlinear controller design via  approximate normal forms},
+      EDITOR = {Gr\"unbaum, F.A.},
+      BOOKTITLE={{S}ignal Processing}, 
+      PUBLISHER = SV,
+      PAGES = {139-154},
+      YEAR = 1990}
+%**<FF>******************************************************************
+@inproceedings{KrenerIsidoriRespondek:83,
+      AUTHOR={Krener, A.J. and Isidori, A. and Respondek, W.},
+      TITLE={{P}artial and robust linearization by feedback},
+      BOOKTITLE={Proc. 22nd IEEE CDC, San Antonio, Texas},
+      PAGES = {126-130},
+      YEAR = 1983}
+%**<FF>******************************************************************
+@inproceedings{Krener:MTNS93,
+      TITLE = {{N}onlinear stabilizability and detectability},
+      AUTHOR = {Krener, A. J.},
+      BOOKTITLE = {{S}ystems and {N}etworks: {M}athematical Theory and
+		  {A}pplications},
+      PP     = MTNS93,
+      VOLUME = 1,
+      EDITOR = EDITORMTNS93,
+      PAGES = {231-250},
+      YEAR = 1993,
+      PUBLISHER = {Akademie Verlag},
+      ADDRESS = {New York}}
+%**<FF>******************************************************************
+@manual{Stud:Kuebler,
+      TITLE = {{I}ndex-{R}eduktion bei 
+               {D}ifferential-{A}lgebra-{M}odellgleichungen
+               mit dem {C}omputer-{A}lgebra-{S}ystem \Mma},
+      AUTHOR = {K\"ubler, R.},
+      ORGANIZATION = Sta,
+      YEAR = 1995}
+%**<FF>******************************************************************
+@inproceedings{KugiKemmetmueller:Nolcos04,
+            AUTHOR ={Kugi, A. and Kemmetm{\"u}ller, W.},
+            TITLE={{I}mpedance Control of Hydraulic Piston Actuators},
+            BOOKTITLE= NOLCOS04,
+            PAGES={1241-1246},
+            YEAR = 2004
+            }
+%**<FF>******************************************************************
+%************************************************************************
+% <<L>>
+%************************************************************************
+@BOOK{Landau:2011,
+  title = {Adaptive Control},
+  publisher = {Springer-Verlag},
+  year = {2011},
+  author = {Landau, I.D. and Lozano, R. and M'Saad, M.},
+  address = {London},
+}
+%************************************************************************
+@phdthesis{Lammerts:94,
+      AUTHOR = {Lammerts, I. M. M.},
+      TITLE  = {Adaptive Computed Reference Computed Torque Control of
+		  Flexible Manipulators},
+      SCHOOL = {Technical University of Eindhoven, The Netherlands},
+      YEAR = 1994}
+%**<FF>******************************************************************
+%**<FF>******************************************************************
+@book{LandauLifschitz:82,
+      AUTHOR={Landau, L. and Lifschitz, E.}, 
+      TITLE={{M}echanics}, 
+      YEAR=1982, 
+      PUBLISHER={Mir},
+      EDITION = {4th}}
+%**<FF>******************************************************************
+@inproceedings{LevineLottinPonsart:IFACWC96,
+      AUTHOR = {L\'evine, J. and Lottin, J. and Ponsart, J.-C. },
+      TITLE = {Control of Magnetic Bearings: Flatness with Contraints},
+      BOOKTITLE = IFACWC96,
+      PAGES = {401-406},
+      YEAR = {1996}}
+%**<FF>******************************************************************
+@inproceedings{LevineLottinPonsart:IFACWC96,
+      AUTHOR = {L\'evine, J. and Lottin, J. and Ponsart, J.-C. },
+      TITLE = {Control of Magnetic Bearings: Flatness with Contraints},
+      BOOKTITLE = IFACWC96,
+      PAGES = {401-406},
+      YEAR = {1996}}
+%**<FF>******************************************************************
+@inproceedings{LevineMullhauptSrinivasanBonvin:97ECC,
+      TITLE = {A Toy more difficult to control than the real thing},
+      AUTHOR = {Mullhaupt, P. and Srinivasan, B. and L\'evine, J. and
+		  Bonvin, D.},
+      BOOKTITLE = ECC97,
+      NOTE = {FR-M-A 6},
+      YEAR = 1997}
+%      EDITOR = EDITORECC97,
+%**<FF>******************************************************************
+@inproceedings{BitauldFliessLevine:97ECC,
+      TITLE = {A flatness based control synthesis of linear systems
+		  and application to windshield wipers},
+      AUTHOR = {Bitauld, L. and Fliess, M. and L\'evine, J.},
+      BOOKTITLE = ECC97,
+      NOTE = {TH-A-I 3},
+      YEAR = 1997}
+%      EDITOR = EDITORECC97,
+%**<FF>******************************************************************
+@inproceedings{MouRud:97ecc,
+      AUTHOR = {Mounier, H. and Rudolph, J.},
+      TITLE = {First steps towards flatness based control of a class
+		  of nonlinear chemical reactors with time delays},
+      YEAR = {1997},
+      NOTE = {TU-E-H 4},
+      BOOKTITLE = ECC97}
+%**<FF>******************************************************************
+@article{LevineLottinPonsart:96,
+      TITLE = {A Nonlinear Approach to the Control of Magnetic Bearings},
+      AUTHOR = {L\'evine, J. and Lottin, J. and Ponsart, J.-C},
+      JOURNAL = IeeeCST,
+      VOLUME = {4},
+      PAGES  = {524-544},
+      YEAR = 1996}
+%**<FF>******************************************************************
+@manual{Stud:Loeffler,
+      TITLE = {{R}echnergest\"utzter {E}ntwurf linearer
+		  $H_\infty$-Regler mit \Mma},
+      AUTHOR = {L\"offler, J.},
+      ORGANIZATION = Sta,
+      YEAR = 1994}
+%**<FF>******************************************************************
+@Book{BlankeLunze:FTC06,
+  author = 	 {Blanke, A. and Kinnaert, M. and Lunze, J. and Staroswiecki},
+  ALTeditor = 	 {},
+  title = 	 {Diagnosis and Fault-Tolerant Control},
+  publisher = 	 {Springer-Verlag},
+  year = 	 {2006},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Berlin Heidelberg New York},
+  edition = 	 {2nd},
+  OPTmonth = 	 {},
+  OPTnote = 	 {ISBN: 3-540-35652-5},
+  OPTannote = 	 {}
+}
+%**<FF>******************************************************************
+@Article{LunzeRichter:07at,
+  author = 	 "Lunze, J. and Richter, H.",
+  title = 	 "{E}ntwurfsverfahren für den verallgemeinerten virtuellen {A}ktor zur
+		  {R}ekonfiguration von {R}egelkreisen",
+  journal = 	 "at Automatisierungstechnik",
+  year = 	 "2007",
+  volume = 	 "54",
+  number =       "3",
+  pages = 	 "353-361",
+  OPTmonth = 	 "March",
+  OPTnote = 	 "",
+  OPTannote = 	 ""
+}
+%************************************************************************
+% <<M>>
+%************************************************************************
+%**<FF>******************************************************************
+@article{Marino:86,
+      AUTHOR = {Marino, R.},
+      TITLE  = {{O}n the largest feedback linearizable subsystem},
+      JOURNAL = SCL,
+      PAGES   = {345-351},
+      VOLUME  = 6,
+      YEAR    = 1986}
+%**<FF>******************************************************************
+@article{MarinoBoothbyElliott:85,
+      AUTHOR = {Marino, R. and Boothby, W. M. and Elliott, D. L.},
+      TITLE  = {{G}eometric Properties of Linearizable Control Systems},
+      JOURNAL = {Math. Systems Theory},
+      PAGES   = {97-123},
+      VOLUME  = 18,
+      YEAR    = 1985}
+%**<FF>******************************************************************
+@inproceedings{MartinRouchon:IFACWC96,
+      AUTHOR = {Martin, P. and Rouchon, P.},
+      TITLE = {Flatness and sampling control of induction  motors},
+      BOOKTITLE = IFACWC96,
+      PAGES = {389-394},
+      YEAR = {1996}}
+%**<FF>******************************************************************
+@article{MayneMichalska:90,
+      AUTHOR = {Mayne, D. Q. and Michalska, H.},
+      TITLE  = {{R}eceding horizon control of nonlinear systems},
+      JOURNAL = IeeeTAC,
+      PAGES   = {814-824},
+      VOLUME  = 35,
+      YEAR    = 1990}
+%**<FF>******************************************************************
+@book{Martin:92,
+      AUTHOR = {Martin, P.},
+      TITLE  = {Contribution \`a l'\'etude des syst\`emes
+		  diff\'erentiellement plats},
+      PUBLISHER = {\'Ecole Nationale Sup\'erieure des Mines de Paris},
+      NOTE = {Th\`ese de Doctorat},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@article{MartinDevasiaPaden:95,
+      TITLE = {{A} Different Look at Output Tracking: Control of a
+		  {VTOL} Aircraft},
+      AUTHOR  = {Martin, P. and Devasia, S. and Paden, B.},
+      JOURNAL = {Automatica},
+      VOLUME  = 32,
+      PAGES   = {101-107},		  
+      YEAR    = {1995}}
+%**<FF>******************************************************************
+@inproceedings{MartinRouchon96:Lille,
+      TITLE = {Two remarks on induction motors},
+      AUTHOR = {Martin, P. and Rouchon, P.},
+      BOOKTITLE = IMACSLille,
+      PAGES = {76-79},
+      YEAR = 1996}
+%      EDITOR = {???},
+%**<FF>******************************************************************
+@book{Mathematica,
+      AUTHOR={Wolfram, S.},
+      TITLE={{M}athematica -- {A} System for Doing Mathematics by Computer}, 
+      YEAR=1991, 
+      PUBLISHER={Addison Wesley}}
+%**<FF>******************************************************************
+@book{Matlab,
+      AUTHOR={{The Mathworks Inc.}},
+      TITLE={{{\sc matlab} user's guide}},
+      YEAR={1995}, 
+      PUBLISHER={}}
+%**<FF>******************************************************************
+@manual{Stud:Menold,
+      TITLE = {{F}lachheitsbasierte {R}egelung einer {R}\"uhrkesselkaskade},
+      AUTHOR = {Menold, Patrick},
+      ORGANIZATION = Sta,
+      YEAR = 1996}
+%**<FF>******************************************************************
+@inproceedings{Murray:CDC93,
+      AUTHOR={Murray, R. M.},
+      TITLE={{Applications} and extensions of {Goursat} Normal Form to
+		  Control of Nonlinear Systems},
+      BOOKTITLE={Proc. 32nd IEEE CDC, San Antonio, Texas},
+      PAGES = {},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@inproceedings{MurrayNieuwstadtRatinam:CDC1993,
+      AUTHOR={van Nieuwstadt, M. J. and Ratinam, M. and Mur\-ray, R. M.},
+      TITLE={{Differential} flatness and absolute equivalence},
+      BOOKTITLE={Proc. 33rd IEEE CDC, Lake Buena Vista, Florida},
+      PAGES = {326-332},
+      YEAR = 1993}
+%**<FF>******************************************************************
+@article{MurraySastry:93,
+      TITLE = {{N}onholonomic Motion Planning: Steering Using Sinusoids},
+      AUTHOR = {Murray, R. and Sastry, S. S.},
+      JOURNAL = IeeeTAC,
+      VOLUME = {38},
+      PAGES  = {700-716},
+      YEAR = 1993}
+%************************************************************************
+% <<N>>
+%************************************************************************
+%**<FF>******************************************************************
+@inproceedings{NieuwstadtMurray96:Lille,
+      TITLE = {{F}ast Mode Switching for a Thrust Vectored Aircraft},
+      AUTHOR = {van Nieuwstadt, M. J. and Mur\-ray, R. M.},
+      BOOKTITLE = IMACSLille,
+      PAGES = {86-91},
+      YEAR = 1996}
+%      EDITOR = {???},
+%**<FF>******************************************************************
+@inproceedings{Murray:IFACWC96,
+      AUTHOR = {Murray, R. M.},
+      TITLE = {Trajectory Generation for a Towed Cable System Using
+		  Differential Flatness},
+      BOOKTITLE = IFACWC96,
+      PAGES = {395-400},
+      YEAR = {1996}}
+%**<FF>******************************************************************
+@book{NijvdS:90,
+      AUTHOR={Nijmeijer, H. and van der Schaft, A. J.}, 
+      TITLE={{N}onlinear {D}ynamical {C}ontrol {S}ystems}, 
+      YEAR=1990, 
+      PUBLISHER={Springer-Verlag}}
+%**<FF>******************************************************************
+@inproceedings{SanchezNijmeijer:95,
+            AUTHOR ={Sanchez, F.H. and Nijmeijer, H.},
+            TITLE={Dynamic State Feedback in a Continuous Stirred
+		  Tank Reactor},
+            BOOKTITLE=NOLCOS95,
+            PAGES={27-32},
+            ADDRESS = {Lake Tahoe, USA},
+            YEAR = 1995
+            }
+%**<FF>******************************************************************
+@manual{Stud:Nitsche,
+      TITLE = {{E}ntwurf nichtlinearer {R}egler 
+               f\"ur einen hydraulischen {A}ntrieb},
+      AUTHOR = {Nitsche, R.},
+      ORGANIZATION = Sta,
+      YEAR = 1995}
+%************************************************************************
+% <<O>>
+%************************************************************************
+%**<FF>******************************************************************
+@book{Olver:93,
+      AUTHOR={Olver, P. J.}, 
+      TITLE={{A}pplications of {L}ie Groups to Differential 
+              Equations}, 
+      EDITION={2nd},
+      YEAR=1993, 
+      PUBLISHER={Springer-Verlag}}
+%************************************************************************
+% <<P>>
+%************************************************************************
+%**<FF>******************************************************************
+@InProceedings{Patton:SAFEPROC97,
+  author = 	 {Patton, R.J.},
+  title = 	 {Fault-tolerant control: the 1997 situation,},
+  booktitle = {Proc. of the 5th IFAC Symposium on Fault Detection,
+               Supervision and Safety of Technical Processes (SAFEPROCESS'97)},
+  pages = 	 {1033-1055},
+  year = 	 {1997},
+  address = 	 {Hull, UK},
+  month = 	 {August},
+  OPTnote = 	 {http://www.cs.aue.auc.dk/~ymzhang/courses/FTC/index.html},
+  OPTannote = 	 {}
+}
+
+%**<FF>******************************************************************
+@phdthesis{Piechottka:89,
+      AUTHOR = {Piechottka, U.},
+      TITLE  = {{\"Uber die Steuerbarkeit bilinearer Systeme}},
+      SCHOOL = {VDI-Fortschritt-Berichte Nr.8/197, VDI-Verlag},
+      YEAR = 1989}
+%**<FF>******************************************************************
+@inproceedings{PhelpsKrener:88,
+      TITLE  = {Computation of observer normal form using {\sc Macsyma}},
+      AUTHOR = {Phelps, A. R. and Krener, A. J.},
+      EDITOR = {Byrnes, C. and Martin, C. and Seaks, R.},
+      BOOKTITLE = {Analysis and Control of Nonlinear Systems},
+      PUBLISHER = {North-Holland},
+      PAGES = {475-482},
+      YEAR    = 1988}
+%**<FF>******************************************************************
+@inproceedings{PometMoogAranda:92,
+      TITLE  = {A Non-Exact {B}runovsky Form and Dynamic Feedback Linearization},
+      AUTHOR = {Pomet, J.-B. and Moog, C.H. and Aranda, A.},
+      BOOKTITLE = {Proc. 31st CDC IEEE, Tucson},
+      PAGES = {2012-2017},
+      YEAR    = 1992}
+%**<FF>******************************************************************
+@inproceedings{Pomet:93,
+      TITLE  = {A differential geometric setting for dynamic
+		  equivalence and dynamic linearization},
+      AUTHOR = {Pomet, J.-B.},
+      BOOKTITLE = {Geometry in Nonlinear Control and Differential
+		  Inclusions, Banach Center Publications, Inst. of
+		  Mathematics, Polish Academy of Sciences},
+      VOLUME  = 32,
+      YEAR    = {1995},
+      PAGES   = {319-339}}
+%**<FF>******************************************************************
+@inproceedings{Pomet:94bPREPRINT,
+      TITLE  = {On dynamic feedback linearization of Four-dimensional affine control
+                systems with two inputs},
+      AUTHOR = {Pomet, J.-B.},
+      BOOKTITLE = {Preprint, INRIA report No. 2314},
+      YEAR    = {1995},
+      NOTE    = {1995}}
+@article{Pomet:94b,
+      TITLE   = {On dynamic feedback linearization of Four-dimensional affine control
+                 systems with two inputs},
+      AUTHOR  = {Pomet, J.-B.},
+      JOURNAL = {{ESAIM : Contr\^ole, Optimisation et Calcul des Variations}},
+      YEAR    = {1997},
+      NOTE    = {To appear}}
+%**<FF>******************************************************************
+@manual{Stud:Pothof,
+      TITLE = {{C}omparison between fuzzy and stochastic control of an
+		  activated sludge process},
+      AUTHOR = {Ivo Pothof},
+      ORGANIZATION = ISR,
+      YEAR = 1994}
+%**<FF>******************************************************************
+%************************************************************************
+% <<Q>>
+%************************************************************************
+%**<FF>******************************************************************
+@book{Quang_EMotoren:93,
+      AUTHOR={Quang, N.P. and Dittrich, J.A.},
+      TITLE={Praxis der feldorientierten Drehstromantriebsregelungen},
+      YEAR=1993, 
+      PUBLISHER={expert verlag}}
+%************************************************************************
+% <<R>>
+%************************************************************************
+%**<FF>******************************************************************
+@article{RebouletChampetier:84,
+      TITLE = {{A} new method for linearizing non-linear systems: {T}he pseudolinearization},
+      AUTHOR = {Reboulet, C. and Champetier, C.},
+      JOURNAL = IJC,
+      VOLUME = {40},
+      PAGES  = {631-638},
+      YEAR = 1984}
+%**<FF>******************************************************************
+@inproceedings{MaiJoinReger:06,
+      TITLE = {An example of flatness based fault tolerant control using algraic derivative estimation},
+      AUTHOR = {Mai, P. and Join, C. and Reger, J.},
+      BOOKTITLE = {Workshop on Advanced Control and Diagnosis (ACD)},
+      ADDRESS = "Nancy",
+      YEAR = 2006}
+%**<FF>******************************************************************
+@book{Ritt:50,
+      AUTHOR={Ritt, J. F.},
+      TITLE={{D}ifferential Algebra},
+      YEAR=1950, 
+      PUBLISHER={American Mathematical Society}}
+%**<FF>******************************************************************
+@manual{Stud:Rothfuss,
+      TITLE = {{Nichtlinearer Regler- und Beobachterentwurf mit
+		  Hilfe n\"aherungsweiser Normalformen}},
+      AUTHOR = {Rothfu{\ss}, R.},
+      ORGANIZATION = Sta,
+      YEAR = 1992}
+%**<FF>******************************************************************
+@inproceedings{RothSchZeitz:ECC93,
+      TITLE = {{C}omputer-aided stability analysis of nonlinear
+                systems by means of a computer algebra system},
+      AUTHOR = {Rothfu{\ss}, R. and Schaffner, J. and Zeitz, M.},
+      BOOKTITLE = ECC93,
+      VOLUME = 4,
+      EDITOR = {Nieuwenhuis, J.W. and Praagman, C. and Trentelman, H.L.},
+      PAGES = {2096-2102},
+      YEAR = 1993}
+%**<FF>******************************************************************
+@inproceedings{RothSchZeitz:MTNS93,
+      TITLE = {{C}omputer-algebra program for analysis and design of
+		  nonlinear control systems},
+      AUTHOR = {Rothfu{\ss}, R. and Schaffner, J. and Zeitz, M.},
+      BOOKTITLE = {{S}ystems and {N}etworks: {M}athematical Theory and
+		  {A}pplications},
+      PP     = MTNS93,
+      VOLUME = 2,
+      EDITOR = EDITORMTNS93, 
+      PAGES = {437-440},
+      YEAR = 1993,
+      PUBLISHER = {Akademie Verlag},
+      ADDRESS = {New York}}
+%**<FF>******************************************************************
+@inproceedings{RothfussSchaffnerZeitz:Langen93,
+      AUTHOR = {Rothfu{\ss}, R. and Schaffner, J. and Zeitz, M.}, 
+      TITLE={{Rechnergest\"utzte Analyse und Synthese nichtlinearer Systeme}},
+      BOOKTITLE = {Nichtlineare Regelung},
+      EDITION={{I}n: {{VDI}-{B}erichte 1026}}, 
+      PUBLISHER={VDI-Verlag},
+      PAGES = {267-291},
+      YEAR=1993}
+%**<FF>******************************************************************
+@inbook{RothfussZeitz:95,
+      AUTHOR = {Rothfu{\ss}, R. and Zeitz, M.}, 
+      TITLE={{Analyse nichtlinearer Systeme}},
+      PUBLISHER={{I}n: {E}ngell, {S}. ({E}ditor): 
+               {{E}ntwurf nichtlinearer {R}egelungen}. Oldenbourg-Verlag},
+      PAGES = {3-22},
+      YEAR=1995}
+%**<FF>******************************************************************
+@inproceedings{RothfussRudolph:nantes,
+      AUTHOR = {Rudolph, J. and Rothfu{\ss}, R. and Pomet, J.-B.},
+      TITLE = {{A} Generalized Controller Form for Linearization by
+		  Quasi-Static State Feedback},
+      BOOKTITLE = {Proc. IFAC Conference System Structure and
+		  Control, Nantes (France)},
+      PAGES= {143-148},
+      YEAR = {1995}}
+%**<FF>******************************************************************
+@inproceedings{RothfussRudolphZeitz:nolcos,
+      AUTHOR = {Rothfu{\ss}, R. and Rudolph, J. and Zeitz, M.},
+      TITLE = {{A} Procedure Towards Linearizing Dynamic Feedback},
+      BOOKTITLE = NOLCOS95,
+      PAGES = {303-308},
+      YEAR = {1995}}
+%**<FF>******************************************************************
+@inproceedings{RothfussZeitz:IFACWC961,
+      AUTHOR = {Rothfu{\ss}, R. and Zeitz, M.},
+      TITLE = {{A} Toolbox for Symbolic Nonlinear Feedback Design},
+      BOOKTITLE = {IFAC World Congress 1996},
+      YEAR = {submitted}}
+%**<FF>******************************************************************
+@inproceedings{RothfussZeitz:IFACWC961proc,
+      AUTHOR = {Rothfu{\ss}, R. and Zeitz, M.},
+      TITLE = {{A} Toolbox for Symbolic Nonlinear Feedback Design},
+      BOOKTITLE = {These proceedings.},
+      YEAR = {1996}}
+%**<FF>******************************************************************
+@inproceedings{RothfussRudolphZeitz:IFACWC962proc,
+      AUTHOR = {Rothfu{\ss}, R. and Rudolph, J. and Zeitz, M.},
+      TITLE = {{C}ontrolling a chemical reactor model using its flatness},
+      BOOKTITLE = {These proceedings.},
+      YEAR = {1996}}
+%**<FF>******************************************************************
+@inproceedings{RothfussZeitz:IFACWC961final,
+      AUTHOR = {Rothfu{\ss}, R. and Zeitz, M.},
+      TITLE = {{A} Toolbox for Symbolic Nonlinear Feedback Design},
+      BOOKTITLE = IFACWC96,
+      PAGES = {283-288},
+      YEAR = {1996}}
+%**<FF>******************************************************************
+@techreport{risr:rothfuss96a
+   ,author       = {Rothfuss, R.}
+   ,title        = {Flache Systeme und exakte Zustandslinearisierung
+                    durch endogene Zustandsr{\"u}ckf{\"u}hrung}
+   ,keywords     = {flat systems, feedback linearization, endogeneous feedback}
+   ,institution  = {Inst. f{\"u}r Systemdynamik und Regelungstechnik}
+   ,year         = {1996}
+   ,type         = {Internal Report}
+   ,expired      = {no}
+   ,number       = {96-9}
+   ,address      = {Stuttgart}
+   ,keywords     = {}
+}
+%**<FF>******************************************************************
+@inproceedings{RothfussRudolphZeitz:IFACWC962final,
+      AUTHOR = {Rothfu{\ss}, R. and Rudolph, J. and Zeitz, M.},
+      TITLE = {{C}ontrolling a chemical reactor model using its flatness},
+      BOOKTITLE = IFACWC96,
+      PAGES = {383-388},
+      YEAR = {1996}}
+%**<FF>******************************************************************
+@inproceedings{RothfussRudolphZeitz:Rom95,
+      AUTHOR = {Rothfu{\ss}, R. and Rudolph, J. and Zeitz, M.},
+      TITLE = {{F}latness based control of a chemical reactor model},
+      PAGES = {637-642},
+      EDITOR = EDITORECC95,
+      BOOKTITLE = ECC95,
+      YEAR = {1995}}
+%**<FF>******************************************************************
+@article{RothfussRudolphZeitz:95Automatica,
+      TITLE = {{F}latness Based Control of a Nonlinear Chemical
+                  Reactor Model},
+      AUTHOR  = {Rothfu{\ss}, R. and Rudolph, J. and Zeitz, M.},
+      JOURNAL = {Automatica},
+      YEAR    = {1996}}
+%**<FF>******************************************************************
+@article{RothfussRudolphZeitz:96Automatica,
+      TITLE = {{F}latness Based Control of a Nonlinear Chemical
+                  Reactor Model},
+      AUTHOR  = {Rothfu{\ss}, R. and Rudolph, J. and Zeitz, M.},
+      JOURNAL = {Automatica},
+      PAGES   = {1433-1439},
+      VOLUME  ={32},
+      YEAR    = {1996}}
+%**<FF>******************************************************************
+@article{RothfussRudolphZeitz:Bericht,
+      TITLE = {{F}latness Based Control of a Nonlinear Chemical
+		  Reactor Model},
+      AUTHOR  = {Rothfu{\ss}, R. and Rudolph, J. and Zeitz, M.},
+      JOURNAL = {Interner Bericht},
+      YEAR    = {1996}}
+%**<FF>******************************************************************
+@Article{Rothfuss:AT1997,
+  author =       {Rothfuß, R. and Rudolph, R. and Zeitz, M.},
+  title =        {{Flachheit: Ein neuer Zugang zur Analyse und Regelung nichtlinearer Systeme}},
+  journal =      {at Automatisierungstechnik},
+  year =         {1997},
+  OPTkey =       {},
+  volume =       {45},
+  number =       {11},
+  pages =        {517-525},
+  OPTmonth =     {},
+  OPTnote =      {},
+  OPTannote =    {},
+  OPTurl       =    {flatness/at97_flachheit.pdf}
+}
+%**<FF>******************************************************************
+@article{Rothfuss:97InternerBerichtCAS,
+      TITLE = {{Eine \Mma-Funktionsbibliothek zur flachheitsbasierten
+		  Analyse und Regelung nichtlinearer Systeme}},
+      AUTHOR  = {Rothfu{\ss}, R.},
+      JOURNAL = {Interner Bericht},
+      YEAR    = {1997}}
+%**<FF>******************************************************************
+@book{Rothfuss:97,
+      AUTHOR = {Rothfu{\ss}, R.},
+      TITLE  = {Anwendung der flachheitsbasierten Analyse und Regelung
+		  nichtlinearer Mehrgr\"o{\ss}ensysteme},
+      PUBLISHER = {Dissertation. Universit\"at Stuttgart},
+      YEAR = 1997}
+%**<FF>******************************************************************
+@phdthesis{Rothfuss:97VDI,
+      AUTHOR = {Rothfu{\ss}, R.},
+      TITLE  = {{Anwendung der flachheitsbasierten Analyse und Regelung
+		  nichtlinearer Mehrgr\"o{\ss}ensysteme}},
+      SCHOOL = {VDI-Fortschritt-Berichte Nr.8/664, VDI-Verlag},
+      YEAR = 1997}
+%**<FF>******************************************************************
+@inproceedings{RFLM:93ECC,
+      TITLE = {{F}latness and motion planning: the car with $n$ trailers},
+      AUTHOR = {Rouchon, P. and Fliess, M. and L\'evine, J. and
+		  Martin, P.},
+      BOOKTITLE = ECC93,
+      EDITOR = {Nieuwenhuis, J.W. and Praagman, C. and Trentelman, H.L.},
+      PAGES = {1518-1522},
+      YEAR = 1993}
+%**<FF>******************************************************************
+@inproceedings{Rudolph96:Lille,
+      TITLE = {{F}latness of some examples of coupled chemical reactors},
+      AUTHOR = {Rudolph, J.},
+      BOOKTITLE = IMACSLille,
+      PAGES = {206-210},
+      YEAR = 1996}
+%      EDITOR = {???},
+%**<FF>******************************************************************
+@inproceedings{MartinRouchon:93,
+      TITLE = {{S}ystems without drift and flatness},
+      AUTHOR = {Martin, P. and Rouchon, P.},
+      BOOKTITLE = {{S}ystems and {N}etworks: {M}athematical Theory and
+		  {A}pplications},
+      PP     = MTNS93,
+      VOLUME = 2,
+      EDITOR = EDITORMTNS93, 
+      PAGES = {347-348},
+      YEAR = 1993,
+      PUBLISHER = {Akademie Verlag},
+      ADDRESS = {New York}}
+%**<FF>******************************************************************
+@article{Rouchon:94,
+      TITLE = {Necessary Condition and Genericity of Dynamic Feedback
+		  Linearization}, 
+      AUTHOR  = {Rouchon, P.},
+      JOURNAL = JMSEC,
+      VOLUME  = 4,
+      PAGES   = {1-14},
+      YEAR    = {1994}}
+%**<FF>******************************************************************
+@article{Rudolph:94jmsec,
+      TITLE = {Viewing Input-Output System Equivalence from Differential Algebra},
+      AUTHOR  = {Rudolph, J.},
+      JOURNAL = JMSEC,
+      VOLUME  = 4,
+      PAGES   = {353-383},
+      YEAR    = {1994}}
+%**<FF>******************************************************************
+@inproceedings{RudolphBirkZeitz:91,
+      TITLE  = {{D}ependence on Time Derivatives of the Input in the
+		  Nonlinear Controller Canonical Form},
+      AUTHOR = {Rudolph, J. and Birk, J. and Zeitz, M.},
+      BOOKTITLE = {{N}ew {T}rends in {S}ystem {T}heory},
+      PP     = {Proc. of the Universit\`a di Genova - the Ohio
+		  State University joint conference, July 9-11, 1990}, 
+      EDITOR  = {Conte, G. and Perdon, A.M. and Wyman, B.},
+      PUBLISHER = Birk,
+      PAGES   = {636-643},
+      YEAR    = 1991}
+%**<FF>******************************************************************
+@inproceedings{RudolphWellFormed:93,
+      AUTHOR = {Rudolph, J.},
+      TITLE = {{W}ell formed dynamics under quasi-static state
+	        feedback},
+      BOOKTITLE = {Geometry in Nonlinear Control and Differential
+		  Inclusions, Banach Center Publications, Inst. of
+		  Mathematics, Polish Academy of Sciences},
+      VOLUME  = 32,
+      PAGES   = {349-359},
+      YEAR    = {1995}
+} 
+%**<FF>******************************************************************
+@article{Rudolph:94,
+      TITLE = {Well-formed dynamics under quasi-static state feedback},
+      AUTHOR = {Rudolph, J.},
+      JOURNAL = {Banach Center Publications, Warsaw},
+      NOTE    = {To appear},
+      YEAR  = 1995}
+%**<FF>******************************************************************
+@article{RudolphZeitz:94,
+      TITLE = {A block triangular nonlinear observer normalform},
+      AUTHOR = {Rudolph, J. and Zeitz, M.},
+      JOURNAL = SCL,
+      PAGES = {1-8},
+      VOLUME = 23,
+      YEAR = 1994
+}
+%**<FF>******************************************************************
+@inproceedings{RudolphRothfuss:94,
+     TITLE = {{A} Generalized Controller Form for Linearization by Quasi-Static
+             State Feedback},
+     AUTHOR = {Rudolph, J. and Rothfu{\ss}, R.},
+     YEAR = {{S}ubmitted}
+}
+%**<FF>******************************************************************
+@inproceedings{Rudolph:MTNS93,
+     TITLE = {{A} Canonical Form under Quasi-Static Feedback},
+     AUTHOR = {Rudolph, J.},
+     BOOKTITLE = {{S}ystems and {N}etworks: {M}athematical {T}heory
+		  and {A}pplications},
+     PP = {Proc. of the International Symposium MTNS '93,
+		  Regensburg, Germany, August 2-6},
+     EDITOR = EDITORMTNS93, 
+     PAGES = {445-448},
+     VOLUME = 2,
+     PUBLISHER = {Akademie-Verlag},
+     ADDRESS = {New York},		
+     YEAR = {1993}
+}
+%**<FF>******************************************************************
+@inproceedings{RudolphElAsmi:MTNS93,
+     TITLE = {{F}iltrations and {H}ilbert polynomials in control theory},
+     AUTHOR = {Rudolph, J. and El Asmi, S.},
+     BOOKTITLE = {{S}ystems and {N}etworks: {M}athematical {T}heory
+		  and {A}pplications},
+     PP = {Proc. of the International Symposium MTNS '93,
+		  Regensburg, Germany, August 2-6},
+     EDITOR = EDITORMTNS93, 
+     PAGES = {449-452},
+     VOLUME = 2,
+     YEAR = {1993}
+}
+%**<FF>******************************************************************
+@inproceedings{RudolphDelaleau:94Smol,
+  author = {Rudolph, J. and Delaleau, E.},
+  title = {Some remarks on quasi-static feedback of generalized states},
+  booktitle = {Prepr. 1st IFAC Workshop on New Trends in Design of Control
+               Systems, Smolenice, Slovak Republic},
+  year = {1995},
+  pages = {47-52}
+  }
+%**<FF>******************************************************************
+@misc{RudolphFliess:96,
+      AUTHOR = {Fliess, M. and Rudolph, J.},
+      TITLE = {{H}ardy fields and local asymptotic observers for
+		  differentially flat systems},
+      NOTE  = {In preparation},
+      YEAR = 1996
+}
+%**<FF>******************************************************************
+l
+		  @article{RudolphFliess:97,
+      TITLE   = {{Corps de Hardy et observateurs asymptotiques locaux
+		  pour syst\`emes diff\'erentiellement plats}},
+      AUTHOR  = {Fliess, M. and Rudolph, J.},
+      JOURNAL = crasPzwei,
+      PAGES   = {513-519},
+      VOLUME  = {324},
+      YEAR    = 1997}
+%**<FF>******************************************************************
+@inproceedings{RudolphFliess:96Lille,
+  author =  {Fliess, M. and Rudolph, J.},
+  title = {Local ``tracking observers'' for flat systems},
+  booktitle = IMACSLille,
+  year = {1996},
+  pages = {213-217}
+  }
+%**<FF>******************************************************************
+@misc{RudolphFliess:96franz,
+      AUTHOR = {Fliess, M. and Rudolph, J.},
+      TITLE = {{C}orps de {H}ardy et observateurs asymptotiques locaux
+		  pour syst\`emes diff\'erentiellement plats},
+      NOTE  = {In preparation},
+      YEAR = 1996
+}
+%**<FF>******************************************************************
+@article{Rudolph:Duality,
+      TITLE = {Duality in Time-Varying Linear Systems: A Module
+               Theoretic Approach},
+      AUTHOR  = {Rudolph, J.},
+      JOURNAL = {Linear Algebra and its Applications},
+      VOLUME  = {245},
+      PAGES   = {83-106},		   
+      YEAR    = 1996}
+%************************************************************************
+% <<S>>
+%************************************************************************
+%**<FF>******************************************************************
+@manual{Stud:Schaeffler,
+      TITLE = {{R}eduktion der {O}rdnung von 
+               {E}ingangsableitungen bei nichtlinearen 
+               {Z}ustandsdarstellungen},
+      AUTHOR = {Sch\"affler, R.},
+      NOTE = {Studienarbeit},
+      ORGANIZATION = Sta,
+      YEAR = 1995}
+%**<FF>******************************************************************
+@phdthesis{Schaffner:96,
+      AUTHOR = {Schaffner, J.},
+      TITLE  = {{Zum Beobachterentwurf f\"ur nichtlineare Systeme mit
+		  mehreren Me\ss{}gr\"o\ss{}en}},
+      SCHOOL = {VDI-Fortschritt-Berichte Nr.8/620, VDI-Verlag},
+      YEAR = 1997}
+%**<FF>******************************************************************
+@article{Shadwick:90,
+      AUTHOR = {Shadwick, W.},
+      TITLE  = {{A}bsolute equivalence and dynamic feedback linearization},
+      JOURNAL = SCL,
+      PAGES   = {35-39},
+      VOLUME  = 15,
+      YEAR    = 1990}
+%**<FF>******************************************************************
+@inproceedings{Sampei:95,
+      AUTHOR = {Sampei, M. and Kiyota, H. and Ishikawa, M.},
+      TITLE  = {Time-state control form and its application to a
+                non-holonomic space robot},
+      BOOKTITLE = NOLCOS95,
+      PAGES   = {759-764},
+      YEAR    = 1995}
+%**<FF>******************************************************************
+@inproceedings{DaSilva:96Lille,
+  author =  {Pereira da Silva, P. S.},
+  title = {Constrained Robots are Flat},
+  booktitle = IMACSLille,
+  year = {1996},
+  pages = {92-97}
+  }
+%**<FF>******************************************************************
+@inproceedings{PetitCreffRouchon:97,
+      TITLE = {$\delta$-freeness of a class of linear delayed systems},
+      AUTHOR = {Petit, N. and Creff, Y. and Rouchon, P.},
+      BOOKTITLE = ECC97,
+      NOTE      = {FR-A-J 2},
+      YEAR = 1997}
+%      EDITOR = EDITORECC97,
+%**<FF>******************************************************************
+@article{SiraRamirez:93,
+      TITLE = {{A} differential algebraic approach to sliding mode
+		  control of nonlinear systems},
+      AUTHOR = {Sira-Ram\'\i{}rez, H.},
+      JOURNAL = IJC,
+      VOLUME = {57},
+      PAGES  = {1039-1061},
+      YEAR = 1993}
+%**<FF>******************************************************************
+@inproceedings{SiraRamirez:IFACWC96,
+      AUTHOR = {Sira-Ram\'\i{}rez, H. and Ortega, R. and Martin, P. and
+		  Rouchon, P. and M\'arquez, R.},
+      TITLE = {Regulation of {DC-to-DC} Power Converters: A Differential
+		  Flatness Approach},
+      BOOKTITLE = IFACWC96,
+      PAGES = {43-48},
+      YEAR = {1996}}
+%**<FF>******************************************************************
+@book{SlotineLi:91,
+      AUTHOR={Slotine, J. J. and Li, W.}, 
+      TITLE={{A}pplied {N}onlinear {C}ontrol}, 
+      YEAR=1991, 
+      PUBLISHER={Prentice-Hall}}
+%**<FF>******************************************************************
+@phdthesis{Sluis:92,
+      AUTHOR = {Sluis, W. M.},
+      TITLE  = {Absolute Equivalence and its Applications to Control Theory},
+      SCHOOL = {University of Waterloo, Ontario, Canada},
+      YEAR = 1992}
+%**<FF>******************************************************************
+@article{Sommer:80,
+      TITLE = {{C}ontrol design for multivariable non-linear
+		  time-varying systems},
+      AUTHOR = {Som\-mer, R.},
+      JOURNAL = IJC,
+      VOLUME = {31},
+      PAGES  = {883-891},
+      YEAR = 1980}
+%**<FF>******************************************************************
+@phdthesis{Sommer:81,
+      AUTHOR = {Sommer, R.},
+      TITLE  = {{Synthese nichtlinearer, zeitvarianter Systeme mit
+		  Hilfe einer kanonischen Form}},
+      SCHOOL = {VDI-Fortschritt-Berichte Nr.8/36, VDI-Verlag},
+      YEAR = 1981}
+%**<FF>******************************************************************
+@article{Sontag:88,
+      TITLE = {{F}inite dimensional open loop control generator for
+		  nonlinear control systems},
+      AUTHOR = {Sontag, E.},
+      JOURNAL = IJC,
+      VOLUME = {47},
+      PAGES  = {537-556},
+      YEAR = 1988}
+%**<FF>******************************************************************
+@inbook{SchaffnerZeitz:95,
+      EDITOR={Engell, S.},
+      AUTHOR = {Schaffner, J. and Zeitz, M.}, 
+      TITLE={{Entwurf nichtlinearer Beobachter}},
+      EDITION={{I}n: {E}ngell, {S}. ({E}ditor): 
+               {\rm {E}ntwurf nichtlinearer {R}egelungen}}}, 
+      YEAR=1995, 
+      PAGES = {53-76},
+      PUBLISHER={Oldenbourg-Verlag}}
+%**<FF>******************************************************************
+@book{Schwarz:91,
+      AUTHOR={Schwarz, H.},
+      TITLE={{Nichtlineare Regelsysteme -- Systemtheoretische Grundlagen}},
+      YEAR=1991, 
+      PUBLISHER={Oldenbourg-Verlag}}
+%**<FF>******************************************************************
+@article{SussmannJurdjevic:72,
+      TITLE = {{C}ontrollability of nonlinear systems},
+      AUTHOR = {Sussmann, H. J. and Jurdjevic, V.},
+      JOURNAL = {Journal of Differential Equations},
+      VOLUME = {12},
+      PAGES  = {95-116},
+      YEAR = 1972}
+%************************************************************************
+% <<T>>
+%************************************************************************
+%************************************************************************
+% <<U>>
+%************************************************************************
+%**<FF>******************************************************************
+@book{Utkin:92,
+      AUTHOR={Utkin, V.I.},
+      TITLE={{S}liding Modes in Control and Optimization},
+      YEAR=1992, 
+      PUBLISHER=SV}
+%************************************************************************
+% <<V>>
+%************************************************************************
+%************************************************************************
+% <<W>>
+%************************************************************************
+%**<FF>******************************************************************
+@article{WangRugh:89,
+      AUTHOR = {Wang, J. and Rugh, W. J.},
+      TITLE  = {{O}n the pseudo-linearization problem for nonlinear systems},
+      JOURNAL = SCL,
+      PAGES   = {161-167},
+      VOLUME  = 12,
+      YEAR    = 1989}
+%**<FF>******************************************************************
+@article{Williamson:77,
+      AUTHOR = {Williamson, D.},
+      TITLE  = {{O}bservation  of bilinear systems with application to
+		  biological control},
+      JOURNAL = Aut,
+      PAGES   = {243-254},
+      VOLUME  = 13,
+      YEAR    = 1977}
+%************************************************************************
+% <<X>>
+%************************************************************************
+%**<FF>******************************************************************
+@manual{Stud:Xiaofeng,
+      TITLE = {{R}echnergest\"utzter {E}ntwurf exakt 
+               linearisierender \ZRb{}en},
+      AUTHOR = {Yan, Xiaofeng},
+      ORGANIZATION = Dpa,
+      YEAR = 1995}
+%************************************************************************
+% <<Y>>
+%************************************************************************
+%************************************************************************
+% <<Z>>
+%************************************************************************
+%**<FF>******************************************************************
+@InProceedings{ZhangJiang:SAFEPROC03,
+  author = 	 {Zhang, Y.M. and Jiang, J.},
+  title = 	 {Bibliographical Review on Reconfigurable Fault-Tolerant Control Systems},
+  booktitle = {Proc. of the 5th IFAC Symposium on Fault Detection,
+               Supervision and Safety of Technical Processes (SAFEPROCESS'03)},
+  pages = 	 {265-276},
+  year = 	 {2003},
+  address = 	 {Washington, D.C., USA},
+  month = 	 {June},
+  OPTnote = 	 {http://www.cs.aue.auc.dk/~ymzhang/courses/FTC/index.html},
+  OPTannote = 	 {}
+}
+
+%**<FF>******************************************************************
+@book{Zeitzhabil:77,
+      TITLE  = {{N}ichtlineare {B}eobachter f\"ur chemische
+		  {R}eaktoren, {\rm VDI-Fortschritt-Berichte}, {\rm Nr.~27}},
+      AUTHOR = {Zeitz, M.},
+      PUBLISHER = {VDI-Verlag},
+      YEAR = 1977}
+%**<FF>******************************************************************
+@article{Zeitz:84,
+      TITLE  = {Observability canonical (phase-variable) form for
+		  non-linear time-variable systems},
+      AUTHOR = {Zeitz, M.},
+      JOURNAL = IJSS,
+      VOLUME = {15},
+      PAGES  = {949-958},
+      YEAR = 1984}
+%**<FF>******************************************************************
+@article{Zeitz:87,
+      TITLE  = {{T}he extended {L}uenberger observer for nonlinear systems},
+      AUTHOR = {Zeitz, M.},
+      JOURNAL = SCL,
+      VOLUME = {19},
+      PAGES  = {149-156},
+      YEAR = 1987}
+%**<FF>******************************************************************
+@inproceedings{Zeitz:90,
+      TITLE  = {Canonical forms for nonlinear systems},
+      AUTHOR = {Zeitz, M.},
+      BOOKTITLE = {Nonlinear Control Systems Design},
+      PP = {Selected papers from the 1st IFAC Symposium, Capri,
+            Italy, 14-16 June 1989},
+      PAGES = {33-38},
+      EDITOR = {Isidori, A.},
+      PUBLISHER = {Pergamon Press},
+      YEAR    = 1990}
+%**<FF>******************************************************************
+@manual{Stud:Zimmermann,
+      TITLE = {{E}ntwurf nichtlinearer {R}egler und {B}eobachter mit 
+                n\"aherungsweisen {N}ormalformen},
+      AUTHOR = {Zimmermann, Chr.},
+      ORGANIZATION = Sta,
+      YEAR = 1994}
+%**<FF>******************************************************************
+%EOF
+
+
+
+

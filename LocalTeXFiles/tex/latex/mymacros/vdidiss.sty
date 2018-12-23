@@ -1,0 +1,46 @@
+\ProvidesFile{vdidiss.sty}
+              [1995/08/26 v1.0
+      Option fuer VDI-Diss (U.Kabatek)]
+%
+\message{Report-Option fuer VDI-Diss (U.Kabatek)}
+%
+\setlength\textwidth      {170mm}
+\setlength\oddsidemargin   {-5mm}
+\setlength\evensidemargin  {-5mm}
+\setlength\textheight     {240mm}% duerfte 250mm
+\setlength\headheight       {0mm}
+\setlength\headsep        {-10mm}
+\setlength\topskip          {0mm}
+\setlength\footskip        {15mm}
+\addtolength\footskip      {12pt}
+%
+\setlength\parindent        {0pt}
+\setlength\parskip          {10pt plus 2pt minus 2pt}
+\linespread{1.2}
+%
+\renewcommand{\figurename}{Bild}
+\renewcommand{\bibname}{Literatur}
+%
+% modifiziert aus report.cls [1995/06/26 v1.3g]
+%
+\def\@makechapterhead#1{%
+  \vspace*{35\p@}%
+  {\parindent \z@ \raggedright
+    \normalfont
+    \interlinepenalty\@M
+    \LARGE \bfseries \thechapter{} #1\par\nobreak
+    \vskip 35\p@
+  }}
+\def\@makeschapterhead#1{%
+  \vspace*{35\p@}%
+  {\parindent \z@ \raggedright
+    \normalfont
+    \interlinepenalty\@M
+    \LARGE \bfseries  #1\par\nobreak
+    \vskip 35\p@
+  }}
+%
+\endinput
+%% End of file `vdidiss.sty'.
+
+
